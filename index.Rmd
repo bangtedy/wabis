@@ -1,0 +1,10 @@
+---
+title: "Wawasan Agribisnis"
+site: distill::distill_website
+---
+
+### Kode Mata Kuliah: PA1431
+
+### SKS/Pertemuan: 2/16
+
+### Dosen: [Tedy Herlambang](https://bangtedy.github.io)

@@ -1,0 +1,33 @@
+name: "Merdeka Belajar"
+title: "Wawasan Agribisnis"
+include: [".nojekyll"]
+base_url: https://bangtedy.github.io/wabis/
+description: |
+  Kampus Merdeka
+output_dir: "docs"
+twitter:
+  creator: "@t_hlb"
+collections:
+  posts:
+    share: [facebook, twitter, linkedin]
+    feed_items_max: false
+  galeri:
+    share: [facebook, twitter, linkedin]
+    feed_items_max: false
+navbar:
+  right:
+    - text: "Home"
+      href: index.html
+    - text: "Silabus"
+      href: silabus.html
+    - text: "Materi"
+      href: blog.html
+    - text: "Galeri"
+      href: galeri.html
+    - icon: fa fa-github
+      href: https://github.com/bangtedy/
+    - icon: fa fa-twitter
+      href: https://twitter.com/t_hlb
+output: 
+  distill::distill_article:
+    css: styles.css
