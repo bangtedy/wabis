@@ -267,12 +267,17 @@ and socially acceptable.
 
 ---
 class: inverse, right, bottom
+background-image: url(assets/simpleflower.svg)
+background-size: 260px
+background-position: 5% 95%
 
-### Matur nuwun, mator sakalangkong, find me at...
+### Thanks, find me at...
 <hr width="45%" align="right" size="0.3" color="orange"></hr>
 
-[<i class="fab fa-twitter"></i>@t_hlb](https://twitter.com/t_hlb)
+<a href="http://twitter.com/t_hlb">
+.white[`r icons::fontawesome("twitter")` @t_hlb]
+</a>
 
-[<i class="fa-solid fa-blog"></i>bangtedy.github.io](https://bangtedy.github.io)
-
-
+<a href="http://github.com/bangtedy">
+.white[`r icons::fontawesome("github")` @bangtedy]
+</a>
