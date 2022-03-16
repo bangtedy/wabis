@@ -1,6 +1,7 @@
 ---
 title: "Wawasan Agribisnis"
 site: distill::distill_website
+creative_commons: CC BY
 ---
 
 ### Kode Mata Kuliah: PA1431

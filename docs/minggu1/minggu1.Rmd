@@ -1,0 +1,183 @@
+---
+title: "Agribisnis"
+subtitle: "Sistem dan Manajemen"
+author: "Tedy Herlambang"
+institute: "UPM"
+date: " Maret 2022"
+output:
+  xaringan::moon_reader:
+    css: 
+      - default
+      - css/nhsr.css
+      - css/nhsr-fonts.css
+    lib_dir: libs
+    seal: false
+    nature:
+      highlightStyle: googlecode
+      highlightLines: true
+      highlightLanguage: ["r"]
+      countIncrementalSlides: false
+      ratio: "16:9"
+    includes:
+      # after_body: [css/insert-logo.html]
+---
+
+```{r setup, include = FALSE}
+library(knitr)
+library(tidyverse)
+library(NHSRtheme)
+# set default options
+opts_chunk$set(echo = FALSE,
+               fig.width = 7.252,
+               fig.height = 4,
+               dpi = 300)
+
+# uncomment the following lines if you want to use the NHS-R theme colours by default
+# scale_fill_continuous <- partial(scale_fill_nhs, discrete = FALSE)
+# scale_fill_discrete <- partial(scale_fill_nhs, discrete = TRUE)
+# scale_colour_continuous <- partial(scale_colour_nhs, discrete = FALSE)
+# scale_colour_discrete <- partial(scale_colour_nhs, discrete = TRUE)
+```
+
+class: title-slide, left, bottom
+
+# `r rmarkdown::metadata$title`
+----
+## **`r rmarkdown::metadata$subtitle`**
+### `r rmarkdown::metadata$author`
+### `r rmarkdown::metadata$date`
+
+```{r share-again, echo=FALSE}
+xaringanExtra::use_share_again()
+```
+
+```{r style-share-again, echo=FALSE}
+xaringanExtra::style_share_again(
+  share_buttons = c("twitter", "linkedin", "pocket")
+)
+```
+
+```{r xaringanExtra, echo=FALSE}
+xaringanExtra::use_xaringan_extra(c("tile_view", "animate_css", "tachyons", "scribble"))
+```
+
+---
+
+# Tujuan Pembelajaran
+
+Setelah mempelajari bab ini, mahasiswa diharapkan dapat:
+
+* Mendefinisikan dan menjelaskan agribisnis sebagai sistem dan manajemen
+
+* Mendiskusikan asal muasal agribisnis dan perkembangannya
+
+* Memahami perbedaan antara agribisnis dengan bisnis tradisional
+
+* Mengidentifikasi komponen utama agribisnis di jaman sekarang
+
+* Memahami pentingnya model manajemen agribisnis
+
+* Menghargai pertumbuhan peluang di dalam agribisnis
+
+
+---
+
+# Definisi Agribisnis
+
+* Agribusiness involves the production, distribution, and consumption of food, clothing, and even shelter.
+
+* It includes all economic activity in the food and fiber system: 
+  - The input supply industries, 
+  - Agricultural production, 
+  - Post-harvest, value-added activities: commodity processing, food manufacturing, and food distribution.
+
+* Most people understand and see its parts, but relatively few see the industry in its entirety. 
+
+* In 1957 one ground-breaking book, A Concept of Agribusiness --> The book debuted
+the term “agribusiness.”
+
+---
+
+# Agribisnis Sekarang
+
+* Agribusiness firms ranging from large multinational corporations to
+emerging food manufacturing and input supply firms.
+* A strong demand for more and better employees trained in both management and
+agricultural sciences.
+
+---
+
+# Industri-Industri Inti (*The Core Industries*)
+
+* Everyone knows what “business” is --> how about Agribusiness?
+* Agribusiness involves:
+  1. Inputs—seeds, fertilizer, financing, equipment—that are used in 
+ production; 
+  2. Intermediate activities— grading, storage, processing, packaging, distribution, pricing, marketing; and 
+  3. Final consumption activities—restaurants, groceries.
+
+* The input supply industries, production agriculture, and value-added activities are considered the agribusiness core industries. 
+* These core industries use the material and services of certain ancillary industries which are considered agribusiness support industries.
+* Farming are part of the core of agribusiness, representing its production process stage. 
+* Thus, farming are part of agribusiness. But, they are not the end; they are not even the beginning.
+
+---
+
+# Model Manajemen Agribisnis
+
+* For centuries, agricultural productivity came from the application of two resources: .green[land and labour]. 
+
+* More recently a substantial proportion of increased productivity in agriculture output has come from the use of another resource: **capital**
+  - Primarily in the form of technological change including biotechnology, improved animal husbandry, and improvements in machinery and chemicals.
+
+* Future improvements will come from the application of a fourth resource: **management**.
+
+* The industry needs individuals who can harness resources to move a perishable product around the globe --> .green[Agribusiness Management] 
+---
+
+# The Chain of Agribusiness—The Value Chain
+
+* The linkages between the agribusiness industry activities: the chain of agribusiness. 
+* This chain can be further refined as the agribusiness value chain.
+* It begins with raw materials and commodities of relatively low value; 
+* Then each step in the chain modifies the material or commodity and adds value to the
+product derived from its step.
+
+---
+
+## Contoh Rantai Pasok Buah
+- Growers harvest raw fruits or vegetables that are transported in bulk to processors or wholesalers, 
+- Then they are modified or repackaged and transported to grocery chains in processed form or in smaller batches, 
+- Finally at local grocers who display and sell the products in quantities more suitable for consumers to purchase.
+---
+
+# Another way of looking at the term agribusiness
+
+* Agribusiness involves all the value chain activities usually associated with a business or industry with the additional provision that most of the materials, commodities, and end products are **perishable** (ringkih, gampang rusak, cepat busuk). 
+* The perishable nature of a product, along with variability in such factors as color, texture, size, and shape, is the distinguishing characteristic of agribusiness products and industries from other businesses. 
+
+> This aspect of the agribusiness industry is also a key factor in all business decisions. 
+
+---
+
+# Agribisnis di sekitar kita
+* For this reason the story of Ayam Geprek, or Bebek Goreng or Kios Buah is an agribusiness story. 
+* Bagaimana dengan Warteg, Warung Padang, Warung Nasi Pecel dan Rawon?
+* Its entire business system involved a highly perishable commodity: daging ayam, beras, bumbu-bumbu, minyak goreng, dll.
+
+---
+
+## .red[Diskusi]
+
+* Berikan contoh perusahaan, usaha, kegiatan yang bisa dikategorikan sebagai agribisnis disekitar Anda! 
+* Bagaimana dengan peluang usaha di bidang Agribisnis di sekitar Anda?
+
+---
+class: inverse, right, bottom
+
+### Matur nuwun, mator sakalangkong, find me at...
+<hr width="45%" align="right" size="0.3" color="orange"></hr>
+
+[<i class="fab fa-twitter"></i>@t_hlb](https://twitter.com/t_hlb)
+
+[<i class="fa-solid fa-blog"></i>bangtedy.github.io](https://bangtedy.github.io)

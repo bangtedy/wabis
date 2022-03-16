@@ -1,33 +1,20 @@
-name: "Merdeka Belajar"
+name: "source-for-distill"
 title: "Wawasan Agribisnis"
-include: [".nojekyll"]
-base_url: https://bangtedy.github.io/wabis/
 description: |
-  Kampus Merdeka
+  My Blog
 output_dir: "docs"
-twitter:
-  creator: "@t_hlb"
-collections:
-  posts:
-    share: [facebook, twitter, linkedin]
-    feed_items_max: false
-  galeri:
-    share: [facebook, twitter, linkedin]
-    feed_items_max: false
 navbar:
   right:
     - text: "Home"
       href: index.html
     - text: "Silabus"
-      href: silabus.html
-    - text: "Materi"
-      href: blog.html
-    - text: "Galeri"
-      href: galeri.html
-    - icon: fa fa-github
-      href: https://github.com/bangtedy/
-    - icon: fa fa-twitter
-      href: https://twitter.com/t_hlb
+      href: about.html
+    - text: "Materi UTS"
+      menu:
+        - text: "Minggu 1"
+          href: minggu1/minggu1.html
+        - text: "Minggu 2"
+          href: minggu2/minggu2.html
 output: 
   distill::distill_article:
     css: styles.css

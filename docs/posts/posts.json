@@ -1,19 +1,19 @@
 [
   {
-    "path": "posts/",
-    "title": "Agribisnis: Sistem dan Manajemen",
-    "description": "Materi Minggu 1",
+    "path": "posts/welcome/",
+    "title": "Welcome to My Blog",
+    "description": "Welcome to our new blog, My Blog. We hope you enjoy \nreading what we have to say!",
     "author": [
       {
-        "name": "Tedy Herlambang",
-        "url": "https://bangtedy.github.io/"
+        "name": "Nora Jones",
+        "url": "https://example.com/norajones"
       }
     ],
-    "date": "2022-03-13",
+    "date": "2022-03-15",
     "categories": [],
-    "contents": "\r\nTujuan Pembelajaran\r\nSetelah mempelajari bab ini, mahasiswa diharapkan dapat:\r\nMendefinisikan dan menjelaskan agribisnis sebagai sistem dan\r\nmanajemen\r\nMendiskusikan asal muasal agribisnis dan perkembangannya\r\nMemahami perbedaan antara agribisnis dengan bisnis\r\ntradisional\r\nMengidentifikasi komponen utama agribisnis di jaman\r\nsekarang\r\nMemahami pentingnya model manajemen agribisnis\r\nMenghargai pertumbuhan peluang di dalam agribisnis\r\nDefinisi Agribisnis\r\nAgribusiness involves the production, distribution, and\r\nconsumption of food, clothing, and even shelter.\r\nIt includes all economic activity in the food and fiber system:\r\nthe input supply industries, agricultural production, and post-harvest,\r\nvalue-added activities such as commodity processing, food manufacturing,\r\nand food distribution.\r\nMost people understand and see its parts, but relatively few see\r\nthe industry in its entirety.\r\nIn 1957 one ground-breaking book, A Concept of Agribusiness –>\r\nThe book debuted the term “agribusiness.”\r\nToday\r\nAgribusiness firms ranging from large multinational corporations to\r\nemerging food manufacturing and input supply firms\r\nA strong demand for more and better employees trained in both\r\nmanagement and agricultural sciences.\r\nThe Core Industries\r\nEveryone knows what “business” is –> how about\r\nAgribusiness?\r\nAgribusiness involves:\r\ninputs—seeds, fertilizer, financing, equipment—that are used in\r\nproduction;\r\nintermediate activities— grading, storage, processing, packaging,\r\ndistribution, pricing, marketing; and\r\nfinal consumption activities—restaurants, groceries.\r\n\r\nThe input supply industries, production agriculture, and value-\r\nadded activities are considered the agribusiness core\r\nindustries.\r\nSimilarly, these core industries use the material and services of\r\ncertain ancillary industries which are considered agribusiness support\r\nindustries.\r\nFarming (on farm activities) are part of the core of\r\nagribusiness, representing its production process stage.\r\nSo, while they are part of agribusiness, they are not the end; in\r\nfact, they are not even the beginning.\r\nModel Manajemen Agribisnis\r\nFor centuries, agricultural productivity came from the\r\napplication of two resources: land and labor.\r\nMore recently a substantial proportion of increased productivity\r\nin agriculture output has come from the use of another resource:\r\ncapital, primarily in the form of technological change including\r\nbiotechnology, improved animal husbandry, and improvements in machinery\r\nand chemicals.\r\nFuture improvements will come from the application of a fourth\r\nresource: management.\r\nThe industry needs individuals who can harness resources to move\r\na perishable product around the globe to sustain another equally\r\nperishable entity on our planet: people.\r\nUnderstanding how to do that is what management is all\r\nabout.\r\nThe Chain of\r\nAgribusiness—The Value Chain\r\nThe linkages between the agribusiness industry activities are\r\nfrequently referred to as the chain of agribusiness.\r\nThis chain can be further refined as the agribusiness value\r\nchain.\r\nIt begins with raw materials and commodities of relatively low\r\nvalue; then each step in the chain modifies the material or commodity\r\nand adds value to the product derived from its step.\r\nGrowers harvest raw fruits or vegetables that are transported in\r\nbulk to processors or wholesalers, where they are modified or repackaged\r\nand transported to grocery chains in processed form or in smaller\r\nbatches, and finally to local grocers who display and sell the products\r\nin quantities more suitable for consumers to purchase.\r\nAnother way of\r\nlooking at the term agribusiness\r\nAgribusiness involves all the value chain activities usually\r\nassociated with a business or industry with the additional provision\r\nthat most of the materials, commodities, and end products are\r\nperishable (ringkih, gampang rusak, cepat\r\nbusuk).\r\nThe perishable nature of a product, along with variability in\r\nsuch factors as color, texture, size, and shape, is the distinguishing\r\ncharacteristic of agribusiness products and industries from other\r\nbusinesses.\r\nThis aspect of the agribusiness industry is also a key factor in\r\nall business decisions.\r\nFor this reason the story of Ayam Geprek, or Bebek Goreng or Kios\r\nBuah is an agribusiness story.\r\nBagaimana dengan Warteg, Warung Padang, Warung Nasi Pecel dan\r\nRawon?\r\nIts entire business system involved a highly perishable\r\ncommodity: daging ayam, beras, bumbu-bumbu, minyak goreng, dll.\r\nDiskusi\r\nBerikan contoh perusahaan, usaha, kegiatan yang bisa dikategorikan\r\nsebagai agribisnis disekitar Anda!\r\nBagaimana dengan peluang usaha di bidang Agribisnis di sekitar\r\nAnda?\r\n\r\n\r\n\r\n",
+    "contents": "\r\n\r\n\r\n\r\n",
     "preview": {},
-    "last_modified": "2022-03-13T15:19:53+07:00",
-    "input_file": "minggu1.knit.md"
+    "last_modified": "2022-03-15T16:08:24+07:00",
+    "input_file": {}
   }
 ]

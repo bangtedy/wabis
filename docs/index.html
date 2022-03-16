@@ -90,6 +90,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <title>Wawasan Agribisnis</title>
 
 
+  <link rel="license" href="https://creativecommons.org/licenses/by/4.0/"/>
 
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
@@ -101,13 +102,12 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
   <meta property="twitter:title" content="Wawasan Agribisnis"/>
-  <meta property="twitter:creator" content="@t_hlb"/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","site"]}},"value":[{"type":"character","attributes":{},"value":["Wawasan Agribisnis"]},{"type":"character","attributes":{},"value":["distill::distill_website"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","site","creative_commons"]}},"value":[{"type":"character","attributes":{},"value":["Wawasan Agribisnis"]},{"type":"character","attributes":{},"value":["distill::distill_website"]},{"type":"character","attributes":{},"value":["CC BY"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -1861,6 +1861,12 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
+        if ($(this).children()[0].nodeName == "D-FOOTNOTE") {
+          var fn = $(this).children()[0]
+          $(this).html(fn.shadowRoot.querySelector("sup"))
+          $(this).id = fn.id
+          fn.remove()
+        }
         var refs = $(this).attr('data-cites').split(" ");
         var refHtml = refs.map(function(ref) {
           return "<p>" + $('#ref-' + ref).html() + "</p>";
@@ -2076,6 +2082,30 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
       transition: background-size .4s ease;
       border-bottom: 0px solid;
   }
+
+  .obj {
+    border: 4px #002855;
+    border-style: solid;
+    padding: 1em;
+    margin: 1em 0;
+    min-height: 120px;
+    /*color: #638f9d;*/
+    color: #002855;
+    background-color: #ffffff;
+    font-size: 16px;
+    line-height: 1.5em;
+    font-family: "Roboto";
+    /*background-image: url("../images/arrow.png");*/
+  }
+
+  .obj>p:first-child {
+    padding-top: 0;
+    margin-top: 0 !important;
+    font-family: "Lora";
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+
   </style>
   <!--/radix_placeholder_site_in_header-->
 
@@ -2101,15 +2131,18 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </div>
 <div class="nav-right">
 <a href="index.html">Home</a>
-<a href="silabus.html">Silabus</a>
-<a href="blog.html">Materi</a>
-<a href="galeri.html">Galeri</a>
-<a href="https://github.com/bangtedy/">
-<i class="fa fa-github" aria-hidden="true"></i>
-</a>
-<a href="https://twitter.com/t_hlb">
-<i class="fa fa-twitter" aria-hidden="true"></i>
-</a>
+<a href="about.html">Silabus</a>
+<div class="nav-dropdown">
+<button class="nav-dropbtn">
+Materi UTS
+ 
+<span class="down-arrow">&#x25BE;</span>
+</button>
+<div class="nav-dropdown-content">
+<a href="minggu1/minggu1.html">Minggu 1</a>
+<a href="minggu2/minggu2.html">Minggu 2</a>
+</div>
+</div>
 <a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
 </div>
 </nav>
@@ -2144,7 +2177,10 @@ class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"><
 <!--radix_placeholder_site_after_body-->
 <!--/radix_placeholder_site_after_body-->
 <!--radix_placeholder_appendices-->
-<div class="appendix-bottom"></div>
+<div class="appendix-bottom">
+<h3 id="reuse">Reuse</h3>
+<p>Text and figures are licensed under Creative Commons Attribution <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. The figures that have been reused from other sources don't fall under this license and can be recognized by a note in their caption: "Figure from ...".</p>
+</div>
 <!--/radix_placeholder_appendices-->
 <!--radix_placeholder_navigation_after_body-->
 <!--/radix_placeholder_navigation_after_body-->

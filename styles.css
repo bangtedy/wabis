@@ -28,3 +28,26 @@ p a, aside a, li a, d-appendix a, a.footnote-backlink, table a {
     transition: background-size .4s ease;
     border-bottom: 0px solid;
 }
+
+.obj {
+  border: 4px #002855;
+  border-style: solid;
+  padding: 1em;
+  margin: 1em 0;
+  min-height: 120px;
+  /*color: #638f9d;*/
+  color: #002855;
+  background-color: #ffffff;
+  font-size: 16px;
+  line-height: 1.5em;
+  font-family: "Roboto";
+  /*background-image: url("../images/arrow.png");*/
+}
+
+.obj>p:first-child {
+  padding-top: 0;
+  margin-top: 0 !important;
+  font-family: "Lora";
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
