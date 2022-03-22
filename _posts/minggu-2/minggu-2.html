@@ -87,637 +87,40 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 
   <!--radix_placeholder_meta_tags-->
-  <title>Wawasan Agribisnis</title>
+  <title>Sistem Agribisnis</title>
+
+  <meta property="description" itemprop="description" content="Subsistem Produksi"/>
 
 
-  <link rel="license" href="https://creativecommons.org/licenses/by/4.0/"/>
-
+  <!--  https://schema.org/Article -->
+  <meta property="article:published" itemprop="datePublished" content="2022-03-17"/>
+  <meta property="article:created" itemprop="dateCreated" content="2022-03-17"/>
+  <meta name="article:author" content="Tedy Herlambang"/>
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="Wawasan Agribisnis"/>
+  <meta property="og:title" content="Sistem Agribisnis"/>
   <meta property="og:type" content="article"/>
+  <meta property="og:description" content="Subsistem Produksi"/>
   <meta property="og:locale" content="en_US"/>
-  <meta property="og:site_name" content="Wawasan Agribisnis"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="Wawasan Agribisnis"/>
+  <meta property="twitter:title" content="Sistem Agribisnis"/>
+  <meta property="twitter:description" content="Subsistem Produksi"/>
   <meta property="twitter:creator" content="@t_hlb"/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","creative_commons"]}},"value":[{"type":"character","attributes":{},"value":["Wawasan Agribisnis"]},{"type":"character","attributes":{},"value":["CC BY"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","draft","base_url","twitter","output"]}},"value":[{"type":"character","attributes":{},"value":["Sistem Agribisnis"]},{"type":"character","attributes":{},"value":["Subsistem Produksi\n"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url","orcid_id"]}},"value":[{"type":"character","attributes":{},"value":["Tedy Herlambang"]},{"type":"character","attributes":{},"value":["https://bangtedy.github.io"]},{"type":"character","attributes":{},"value":["0000-0002-7296-4357"]}]}]},{"type":"character","attributes":{},"value":["2022-03-17"]},{"type":"logical","attributes":{},"value":[false]},{"type":"character","attributes":{},"value":["https://bangtedy.github.io/wabis"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["creator"]}},"value":[{"type":"character","attributes":{},"value":["@t_hlb"]}]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
+  
+  <script type="text/json" id="radix-resource-manifest">
+  {"type":"character","attributes":{},"value":["minggu-2_files/anchor-4.2.2/anchor.min.js","minggu-2_files/bowser-1.9.3/bowser.min.js","minggu-2_files/distill-2.2.21/template.v2.js","minggu-2_files/header-attrs-2.13/header-attrs.js","minggu-2_files/jquery-3.6.0/jquery-3.6.0.js","minggu-2_files/jquery-3.6.0/jquery-3.6.0.min.js","minggu-2_files/jquery-3.6.0/jquery-3.6.0.min.map","minggu-2_files/popper-2.6.0/popper.min.js","minggu-2_files/tippy-6.2.7/tippy-bundle.umd.min.js","minggu-2_files/tippy-6.2.7/tippy-light-border.css","minggu-2_files/tippy-6.2.7/tippy.css","minggu-2_files/tippy-6.2.7/tippy.umd.min.js","minggu-2_files/webcomponents-2.0.0/webcomponents.js"]}
+  </script>
   <!--radix_placeholder_navigation_in_header-->
-  <meta name="distill:offset" content=""/>
-
-  <script type="application/javascript">
-
-    window.headroom_prevent_pin = false;
-
-    window.document.addEventListener("DOMContentLoaded", function (event) {
-
-      // initialize headroom for banner
-      var header = $('header').get(0);
-      var headerHeight = header.offsetHeight;
-      var headroom = new Headroom(header, {
-        tolerance: 5,
-        onPin : function() {
-          if (window.headroom_prevent_pin) {
-            window.headroom_prevent_pin = false;
-            headroom.unpin();
-          }
-        }
-      });
-      headroom.init();
-      if(window.location.hash)
-        headroom.unpin();
-      $(header).addClass('headroom--transition');
-
-      // offset scroll location for banner on hash change
-      // (see: https://github.com/WickyNilliams/headroom.js/issues/38)
-      window.addEventListener("hashchange", function(event) {
-        window.scrollTo(0, window.pageYOffset - (headerHeight + 25));
-      });
-
-      // responsive menu
-      $('.distill-site-header').each(function(i, val) {
-        var topnav = $(this);
-        var toggle = topnav.find('.nav-toggle');
-        toggle.on('click', function() {
-          topnav.toggleClass('responsive');
-        });
-      });
-
-      // nav dropdowns
-      $('.nav-dropbtn').click(function(e) {
-        $(this).next('.nav-dropdown-content').toggleClass('nav-dropdown-active');
-        $(this).parent().siblings('.nav-dropdown')
-           .children('.nav-dropdown-content').removeClass('nav-dropdown-active');
-      });
-      $("body").click(function(e){
-        $('.nav-dropdown-content').removeClass('nav-dropdown-active');
-      });
-      $(".nav-dropdown").click(function(e){
-        e.stopPropagation();
-      });
-    });
-  </script>
-
-  <style type="text/css">
-
-  /* Theme (user-documented overrideables for nav appearance) */
-
-  .distill-site-nav {
-    color: rgba(255, 255, 255, 0.8);
-    background-color: #0F2E3D;
-    font-size: 15px;
-    font-weight: 300;
-  }
-
-  .distill-site-nav a {
-    color: inherit;
-    text-decoration: none;
-  }
-
-  .distill-site-nav a:hover {
-    color: white;
-  }
-
-  @media print {
-    .distill-site-nav {
-      display: none;
-    }
-  }
-
-  .distill-site-header {
-
-  }
-
-  .distill-site-footer {
-
-  }
-
-
-  /* Site Header */
-
-  .distill-site-header {
-    width: 100%;
-    box-sizing: border-box;
-    z-index: 3;
-  }
-
-  .distill-site-header .nav-left {
-    display: inline-block;
-    margin-left: 8px;
-  }
-
-  @media screen and (max-width: 768px) {
-    .distill-site-header .nav-left {
-      margin-left: 0;
-    }
-  }
-
-
-  .distill-site-header .nav-right {
-    float: right;
-    margin-right: 8px;
-  }
-
-  .distill-site-header a,
-  .distill-site-header .title {
-    display: inline-block;
-    text-align: center;
-    padding: 14px 10px 14px 10px;
-  }
-
-  .distill-site-header .title {
-    font-size: 18px;
-    min-width: 150px;
-  }
-
-  .distill-site-header .logo {
-    padding: 0;
-  }
-
-  .distill-site-header .logo img {
-    display: none;
-    max-height: 20px;
-    width: auto;
-    margin-bottom: -4px;
-  }
-
-  .distill-site-header .nav-image img {
-    max-height: 18px;
-    width: auto;
-    display: inline-block;
-    margin-bottom: -3px;
-  }
-
-
-
-  @media screen and (min-width: 1000px) {
-    .distill-site-header .logo img {
-      display: inline-block;
-    }
-    .distill-site-header .nav-left {
-      margin-left: 20px;
-    }
-    .distill-site-header .nav-right {
-      margin-right: 20px;
-    }
-    .distill-site-header .title {
-      padding-left: 12px;
-    }
-  }
-
-
-  .distill-site-header .nav-toggle {
-    display: none;
-  }
-
-  .nav-dropdown {
-    display: inline-block;
-    position: relative;
-  }
-
-  .nav-dropdown .nav-dropbtn {
-    border: none;
-    outline: none;
-    color: rgba(255, 255, 255, 0.8);
-    padding: 16px 10px;
-    background-color: transparent;
-    font-family: inherit;
-    font-size: inherit;
-    font-weight: inherit;
-    margin: 0;
-    margin-top: 1px;
-    z-index: 2;
-  }
-
-  .nav-dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: white;
-    min-width: 200px;
-    border: 1px solid rgba(0,0,0,0.15);
-    border-radius: 4px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
-    z-index: 1;
-    margin-top: 2px;
-    white-space: nowrap;
-    padding-top: 4px;
-    padding-bottom: 4px;
-  }
-
-  .nav-dropdown-content hr {
-    margin-top: 4px;
-    margin-bottom: 4px;
-    border: none;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  }
-
-  .nav-dropdown-active {
-    display: block;
-  }
-
-  .nav-dropdown-content a, .nav-dropdown-content .nav-dropdown-header {
-    color: black;
-    padding: 6px 24px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
-
-  .nav-dropdown-content .nav-dropdown-header {
-    display: block;
-    padding: 5px 24px;
-    padding-bottom: 0;
-    text-transform: uppercase;
-    font-size: 14px;
-    color: #999999;
-    white-space: nowrap;
-  }
-
-  .nav-dropdown:hover .nav-dropbtn {
-    color: white;
-  }
-
-  .nav-dropdown-content a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-
-  .nav-right .nav-dropdown-content {
-    margin-left: -45%;
-    right: 0;
-  }
-
-  @media screen and (max-width: 768px) {
-    .distill-site-header a, .distill-site-header .nav-dropdown  {display: none;}
-    .distill-site-header a.nav-toggle {
-      float: right;
-      display: block;
-    }
-    .distill-site-header .title {
-      margin-left: 0;
-    }
-    .distill-site-header .nav-right {
-      margin-right: 0;
-    }
-    .distill-site-header {
-      overflow: hidden;
-    }
-    .nav-right .nav-dropdown-content {
-      margin-left: 0;
-    }
-  }
-
-
-  @media screen and (max-width: 768px) {
-    .distill-site-header.responsive {position: relative; min-height: 500px; }
-    .distill-site-header.responsive a.nav-toggle {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .distill-site-header.responsive a,
-    .distill-site-header.responsive .nav-dropdown {
-      display: block;
-      text-align: left;
-    }
-    .distill-site-header.responsive .nav-left,
-    .distill-site-header.responsive .nav-right {
-      width: 100%;
-    }
-    .distill-site-header.responsive .nav-dropdown {float: none;}
-    .distill-site-header.responsive .nav-dropdown-content {position: relative;}
-    .distill-site-header.responsive .nav-dropdown .nav-dropbtn {
-      display: block;
-      width: 100%;
-      text-align: left;
-    }
-  }
-
-  /* Site Footer */
-
-  .distill-site-footer {
-    width: 100%;
-    overflow: hidden;
-    box-sizing: border-box;
-    z-index: 3;
-    margin-top: 30px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    text-align: center;
-  }
-
-  /* Headroom */
-
-  d-title {
-    padding-top: 6rem;
-  }
-
-  @media print {
-    d-title {
-      padding-top: 4rem;
-    }
-  }
-
-  .headroom {
-    z-index: 1000;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-  }
-
-  .headroom--transition {
-    transition: all .4s ease-in-out;
-  }
-
-  .headroom--unpinned {
-    top: -100px;
-  }
-
-  .headroom--pinned {
-    top: 0;
-  }
-
-  /* adjust viewport for navbar height */
-  /* helps vertically center bootstrap (non-distill) content */
-  .min-vh-100 {
-    min-height: calc(100vh - 100px) !important;
-  }
-
-  </style>
-
-  <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
-  <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
-  <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
-  <script src="site_libs/headroom-0.9.4/headroom.min.js"></script>
-  <script src="site_libs/autocomplete-0.37.1/autocomplete.min.js"></script>
-  <script src="site_libs/fuse-6.4.1/fuse.min.js"></script>
-
-  <script type="application/javascript">
-
-  function getMeta(metaName) {
-    var metas = document.getElementsByTagName('meta');
-    for (let i = 0; i < metas.length; i++) {
-      if (metas[i].getAttribute('name') === metaName) {
-        return metas[i].getAttribute('content');
-      }
-    }
-    return '';
-  }
-
-  function offsetURL(url) {
-    var offset = getMeta('distill:offset');
-    return offset ? offset + '/' + url : url;
-  }
-
-  function createFuseIndex() {
-
-    // create fuse index
-    var options = {
-      keys: [
-        { name: 'title', weight: 20 },
-        { name: 'categories', weight: 15 },
-        { name: 'description', weight: 10 },
-        { name: 'contents', weight: 5 },
-      ],
-      ignoreLocation: true,
-      threshold: 0
-    };
-    var fuse = new window.Fuse([], options);
-
-    // fetch the main search.json
-    return fetch(offsetURL('search.json'))
-      .then(function(response) {
-        if (response.status == 200) {
-          return response.json().then(function(json) {
-            // index main articles
-            json.articles.forEach(function(article) {
-              fuse.add(article);
-            });
-            // download collections and index their articles
-            return Promise.all(json.collections.map(function(collection) {
-              return fetch(offsetURL(collection)).then(function(response) {
-                if (response.status === 200) {
-                  return response.json().then(function(articles) {
-                    articles.forEach(function(article) {
-                      fuse.add(article);
-                    });
-                  })
-                } else {
-                  return Promise.reject(
-                    new Error('Unexpected status from search index request: ' +
-                              response.status)
-                  );
-                }
-              });
-            })).then(function() {
-              return fuse;
-            });
-          });
-
-        } else {
-          return Promise.reject(
-            new Error('Unexpected status from search index request: ' +
-                        response.status)
-          );
-        }
-      });
-  }
-
-  window.document.addEventListener("DOMContentLoaded", function (event) {
-
-    // get search element (bail if we don't have one)
-    var searchEl = window.document.getElementById('distill-search');
-    if (!searchEl)
-      return;
-
-    createFuseIndex()
-      .then(function(fuse) {
-
-        // make search box visible
-        searchEl.classList.remove('hidden');
-
-        // initialize autocomplete
-        var options = {
-          autoselect: true,
-          hint: false,
-          minLength: 2,
-        };
-        window.autocomplete(searchEl, options, [{
-          source: function(query, callback) {
-            const searchOptions = {
-              isCaseSensitive: false,
-              shouldSort: true,
-              minMatchCharLength: 2,
-              limit: 10,
-            };
-            var results = fuse.search(query, searchOptions);
-            callback(results
-              .map(function(result) { return result.item; })
-            );
-          },
-          templates: {
-            suggestion: function(suggestion) {
-              var img = suggestion.preview && Object.keys(suggestion.preview).length > 0
-                ? `<img src="${offsetURL(suggestion.preview)}"</img>`
-                : '';
-              var html = `
-                <div class="search-item">
-                  <h3>${suggestion.title}</h3>
-                  <div class="search-item-description">
-                    ${suggestion.description || ''}
-                  </div>
-                  <div class="search-item-preview">
-                    ${img}
-                  </div>
-                </div>
-              `;
-              return html;
-            }
-          }
-        }]).on('autocomplete:selected', function(event, suggestion) {
-          window.location.href = offsetURL(suggestion.path);
-        });
-        // remove inline display style on autocompleter (we want to
-        // manage responsive display via css)
-        $('.algolia-autocomplete').css("display", "");
-      })
-      .catch(function(error) {
-        console.log(error);
-      });
-
-  });
-
-  </script>
-
-  <style type="text/css">
-
-  .nav-search {
-    font-size: x-small;
-  }
-
-  /* Algolioa Autocomplete */
-
-  .algolia-autocomplete {
-    display: inline-block;
-    margin-left: 10px;
-    vertical-align: sub;
-    background-color: white;
-    color: black;
-    padding: 6px;
-    padding-top: 8px;
-    padding-bottom: 0;
-    border-radius: 6px;
-    border: 1px #0F2E3D solid;
-    width: 180px;
-  }
-
-
-  @media screen and (max-width: 768px) {
-    .distill-site-nav .algolia-autocomplete {
-      display: none;
-      visibility: hidden;
-    }
-    .distill-site-nav.responsive .algolia-autocomplete {
-      display: inline-block;
-      visibility: visible;
-    }
-    .distill-site-nav.responsive .algolia-autocomplete .aa-dropdown-menu {
-      margin-left: 0;
-      width: 400px;
-      max-height: 400px;
-    }
-  }
-
-  .algolia-autocomplete .aa-input, .algolia-autocomplete .aa-hint {
-    width: 90%;
-    outline: none;
-    border: none;
-  }
-
-  .algolia-autocomplete .aa-hint {
-    color: #999;
-  }
-  .algolia-autocomplete .aa-dropdown-menu {
-    width: 550px;
-    max-height: 70vh;
-    overflow-x: visible;
-    overflow-y: scroll;
-    padding: 5px;
-    margin-top: 3px;
-    margin-left: -150px;
-    background-color: #fff;
-    border-radius: 5px;
-    border: 1px solid #999;
-    border-top: none;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion {
-    cursor: pointer;
-    padding: 5px 4px;
-    border-bottom: 1px solid #eee;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion:last-of-type {
-    border-bottom: none;
-    margin-bottom: 2px;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item {
-    overflow: hidden;
-    font-size: 0.8em;
-    line-height: 1.4em;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item h3 {
-    font-size: 1rem;
-    margin-block-start: 0;
-    margin-block-end: 5px;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-description {
-    display: inline-block;
-    overflow: hidden;
-    height: 2.8em;
-    width: 80%;
-    margin-right: 4%;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-preview {
-    display: inline-block;
-    width: 15%;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-preview img {
-    height: 3em;
-    width: auto;
-    display: none;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-preview img[src] {
-    display: initial;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion.aa-cursor {
-    background-color: #eee;
-  }
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion em {
-    font-weight: bold;
-    font-style: normal;
-  }
-
-  </style>
-
-
   <!--/radix_placeholder_navigation_in_header-->
   <!--radix_placeholder_distill-->
 
@@ -2042,75 +1445,19 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </script>
 
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.13/header-attrs.js"></script>
-  <script src="site_libs/popper-2.6.0/popper.min.js"></script>
-  <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
-  <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
-  <script src="site_libs/tippy-6.2.7/tippy.umd.min.js"></script>
-  <script src="site_libs/anchor-4.2.2/anchor.min.js"></script>
-  <script src="site_libs/bowser-1.9.3/bowser.min.js"></script>
-  <script src="site_libs/webcomponents-2.0.0/webcomponents.js"></script>
-  <script src="site_libs/distill-2.2.21/template.v2.js"></script>
+  <script src="minggu-2_files/header-attrs-2.13/header-attrs.js"></script>
+  <script src="minggu-2_files/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+  <script src="minggu-2_files/popper-2.6.0/popper.min.js"></script>
+  <link href="minggu-2_files/tippy-6.2.7/tippy.css" rel="stylesheet" />
+  <link href="minggu-2_files/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
+  <script src="minggu-2_files/tippy-6.2.7/tippy.umd.min.js"></script>
+  <script src="minggu-2_files/anchor-4.2.2/anchor.min.js"></script>
+  <script src="minggu-2_files/bowser-1.9.3/bowser.min.js"></script>
+  <script src="minggu-2_files/webcomponents-2.0.0/webcomponents.js"></script>
+  <script src="minggu-2_files/distill-2.2.21/template.v2.js"></script>
   <!--radix_placeholder_site_in_header-->
-  <style type="text/css">
-  .distill-site-nav {
-    color: white;
-    background-color: #990033;
-  }
-
-  .posts-with-sidebar .posts-sidebar {
-    float: right;
-    width: 10%;    
-    margin-top: 60px;
-    padding-top: 24px;
-    padding-bottom: 24px;
-  }
-
-  .posts-with-sidebar .posts-list {
-    width: 67%;
-    margin-left: 10%;
-  }
-
-  .posts-sidebar {
-    font-size: 75%;
-    margin-right: 10%;
-  }
-
-  p a, aside a, li a, d-appendix a, a.footnote-backlink, table a {
-      color: #3366BB;
-      display: inline-block;
-      text-decoration: none;
-      transition: background-size .4s ease;
-      border-bottom: 0px solid;
-  }
-
-  .obj {
-    border: 4px #002855;
-    border-style: solid;
-    padding: 1em;
-    margin: 1em 0;
-    min-height: 120px;
-    /*color: #638f9d;*/
-    color: #002855;
-    background-color: #ffffff;
-    font-size: 16px;
-    line-height: 1.5em;
-    font-family: "Roboto";
-    /*background-image: url("../images/arrow.png");*/
-  }
-
-  .obj>p:first-child {
-    padding-top: 0;
-    margin-top: 0 !important;
-    font-family: "Lora";
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-  }
-
-  </style>
   <!--/radix_placeholder_site_in_header-->
 
-  <link rel="stylesheet" href="styles.css" type="text/css"/>
 
 </head>
 
@@ -2119,253 +1466,315 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Wawasan Agribisnis","authors":[]}
+{"title":"Sistem Agribisnis","description":"Subsistem Produksi","authors":[{"author":"Tedy Herlambang","authorURL":"https://bangtedy.github.io","affiliation":"&nbsp;","affiliationURL":"#","orcidID":"0000-0002-7296-4357"}],"publishedDate":"2022-03-17T00:00:00.000+07:00","citationText":"Herlambang, 2022"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
 <!--radix_placeholder_navigation_before_body-->
-<header class="header header--fixed" role="banner">
-<nav class="distill-site-nav distill-site-header">
-<div class="nav-left">
-<a href="index.html" class="title">Wawasan Agribisnis</a>
-<input id="distill-search" class="nav-search hidden" type="text" placeholder="Search..."/>
-</div>
-<div class="nav-right">
-<a href="index.html">
-<i class="fa fa-home" aria-hidden="true"></i>
-</a>
-<a href="about.html">Silabus</a>
-<a href="blog.html">Materi</a>
-<a href="index.xml">
-<i class="fa fa-rss" aria-hidden="true"></i>
-</a>
-<a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
-</div>
-</nav>
-</header>
 <!--/radix_placeholder_navigation_before_body-->
 <!--radix_placeholder_site_before_body-->
 <!--/radix_placeholder_site_before_body-->
 
 <div class="d-title">
-<h1>Wawasan Agribisnis</h1>
+<h1>Sistem Agribisnis</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
-
+<p><p>Subsistem Produksi</p></p>
 </div>
 
+<div class="d-byline">
+  Tedy Herlambang <a href="https://bangtedy.github.io"
+class="uri">https://bangtedy.github.io</a> 
+  
+<br/>2022-03-17
+</div>
 
 <div class="d-article">
-<h4 id="deskripsi-mata-kuliah">Deskripsi Mata Kuliah</h4>
-<p>Mata kuliah ini memperkenalkan kepada mahasiswa tentang agribisnis
-sebagai sebuah sistem dan/atau sebagai praktek manajemen. Mata kuliah
-ini memperkenalkan secara umum dan tidak mendalam prinsip-prinsip
-ekonomi serta konsep-konsep manajemen di dalam bisnis pertanian.
-Pembahasan manajemen agribisnis meliputi: manajemen rantai pasok,
-manajemen pemasaran, manajemen risiko, manajemen SDM dan kepemimpinan
-dalam agribisnis.</p>
-<h4 id="tujuan-pembelajaran">Tujuan Pembelajaran</h4>
-<p>Setelah mengikuti perkuliahan ini, secara umum mahasiswa diharapkan
-dapat memahami prinsip-prinsip dasar ekonomi dan bisnis yang diterapkan
-pada sektor pertanian dari hulu sampai hilir.</p>
-<p>Secara khusus, mahasiswa diharapkan dapat:</p>
+<h2 id="capaian-pembelajaran">Capaian Pembelajaran</h2>
+<p>Setelah mempelajari materi ini, mahasiswa seharusnya dapat:</p>
 <ul>
-<li>Menjelaskan agribisnis sebagai suatu sistem.</li>
-<li>Menjelaskan konsep-konsep dasar manajemen agribisnis.</li>
-<li>Menjelaskan bagaimana ekonomi mempengaruhi fondasi pasar dan
-pemasaran produk agribisnis, kinerja agribisnis dan manajemen
-agribisnis.</li>
-<li>Menjelaskan kerangka ekonomi dimana seorang manajer agribisnis
-membuat keputusan</li>
-<li>Menerapkan konsep-konsep manajemen agribisnis pada persoalan
-spesifik fungsi bisnis</li>
+<li>Menjelaskan bagaimana sistem produksi pertanian memerlukan masukan
+materi, energi dan informasi.</li>
+<li>Menjelaskan bagaimana ekosistem pertanian dimanipulasi oleh manusia
+untuk menyalurkan energi menjadi produk berguna (pangan dan bahan
+mentah).</li>
+<li>Menjelaskan fitur-fitur utama sistem pertanian yaitu produktivitas,
+stabilitas, ketahanan (<em>resilience</em>) dan keberlanjutan.</li>
+<li>Menjelaskan berbagai parameter yang menunjukkan produktivitas sistem
+pertanian.</li>
 </ul>
-<h4 id="sekilas-materi">Sekilas Materi</h4>
-<p>Perkuliahan dilakukan sebanyak 14 kali pertemuan dan 2 kali pertemuan
-untuk ujian tengah semester (<strong>UTS</strong>) dan ujian akhir
-semester (<strong>UAS</strong>). Topik-topik yang akan dibahas sebagai
-berikut:</p>
-<div class="obj">
+<hr />
+<h2 id="produksi-pertanian">Produksi Pertanian</h2>
 <ul>
-<li>Minggu 1 Agribisnis: Sistem dan Manajemen</li>
-<li>Minggu 2 Sistem Agribisnis: Subsistem Produksi/Budidaya</li>
-<li>Minggu 3 Sistem Agribisnis: Subsistem Faktor Produksi</li>
-<li>Minggu 4 Sistem Agribisnis: Subsistem Pengolahan Hasil</li>
-<li>Minggu 5 Sistem Agribisnis: Subsistem Pemasaran</li>
-<li>Minggu 6 Sistem Agribisnis: Subsistem Sarana Prasarana</li>
-<li>Minggu 7 Sistem Agribisnis: Subsistem Pembinaan</li>
-<li>Minggu 8 <strong>UJIAN TENGAH SEMESTER</strong></li>
-<li>Minggu 9 Lingkungan Organisasi dan Kompetisi Agribisnis</li>
-<li>Minggu 10 Lingkungan Global dan Etika Agribisnis</li>
-<li>Minggu 11 Pengorganisasian Agribisnis</li>
-<li>Minggu 12 Kepemimpinan Agribisnis</li>
-<li>Minggu 13 Manajemen Rantai Pasok Agribisnis</li>
-<li>Minggu 14 Manajemen Pemasaran Agribisnis</li>
-<li>Minggu 15 Manajemen Risiko Agribisnis</li>
-<li>Minggu 16 <strong>UJIAN AKHIR SEMESTER</strong></li>
+<li>Pertanian membantu memenuhi kebutuhan dan peradaban manusia dengan
+menyediakan: <em>pangan, pakan, pakaian perumahan, obat-obatan,
+rekreasi</em>.</li>
+<li>Pertanian usaha produktif yang mengubah sumberdaya tanah, cahaya,
+udara, suhu dan air menjadi sebuah unit produktif primer yang sangat
+berguna bagi manusia.</li>
+<li>Unit produktif sekunder seperti (ternak, burung, serangga)
+menghasilkan produk yang terkonsentrasi (daging, susu, telur, madu,
+sutra, wool) dengan mengkonsumsi output dari unit primer.</li>
 </ul>
-</div>
-<h4 id="kegiatan-pembelajaran">Kegiatan Pembelajaran</h4>
-<p>Pelaksanaan Pembelajaran Semester Genap Tahun Akademik 2O21/2O22
-dilakukan dengan <em>Tatap Muka Terbatas</em>. Metode perkuliahan adalah
-kombinasi antara ceramah, diskusi, latihan dan presentasi kelompok.
-Mahasiswa harap memperhatikan pengumuman yang disampaikan dosen di WAG
-yang sudah dibentuk.</p>
-<p>Untuk dapat mengikuti perkuliahan dengan baik, mahasiswa sebaiknya
-membaca terlebih dahulu buku acuan pada bab-bab yang sesuai dengan
-materi pada minggu yang berkaitan dan mengerjakan tugas/latihan yang
-diberikan pada saat perkuliahan. Mahasiswa harus mereview semua bahan
-yang diberikan selama 14 kali untuk persiapan UTS dan UAS.</p>
-<h4 id="buku-acuan">Buku Acuan</h4>
-<ol type="1">
-<li><p>Van Fleet, David D.; Ella W. Van Fleet, dan George J. Seperich
-(2014). <em>Agribusiness: Principles of Management</em>. Cengage
-Learning</p></li>
-<li><p>Karmini (2020). Dasar-dasar Agribisnis. Mulawarman University
-Press</p></li>
-</ol>
-<h4 id="evaluasi-dan-penilaian">Evaluasi dan Penilaian</h4>
-<p>Nilai Akhir untuk mata kuliah Kepemimpinan Agribisnis terdiri dari
-nilai ujian tengah semester (UTS), nilai ujian akhir semester (UAS) dan
-nilai komponen lain (KL). Nilai KL terdiri dari tugas individu, tugas
-kelompok, presentasi, kehadiran dan keaktifan.</p>
-<h4 id="tugas-individukelompok">Tugas Individu/Kelompok</h4>
-<p>Tugas diberikan pada saat kuliah dan wajib dikerjakan oleh mahasiswa
-dan hasilnya dikumpulkan sesuai dengan waktu yang telah ditetapkan.
-Keterlambatan pengumpulan tugas akan mengurangi nilai sebesar 10 satuan
-per hari dengan batas maksimum keterlambatan 5 hari.</p>
-<h4 id="persebaran-nilai">Persebaran NIlai</h4>
-<ol type="1">
-<li><p>UTS dan UAS dilakukan melalui ujian tertulis dengan bobot
-maksimum 60%</p></li>
-<li><p>KL dinilai melalui keaktifan mahasiswa pada aktivitas
-pembelajaran (tugas-tugas, diskusi, presentasi dan kehadiran) dengan
-bobot 40%.</p></li>
-</ol>
-<h4 id="selang-penilaian">Selang Penilaian</h4>
-<table>
-<thead>
-<tr class="header">
-<th style="text-align: center;">No</th>
-<th style="text-align: center;">Nilai</th>
-<th style="text-align: center;">Bobot</th>
-<th style="text-align: center;">Min</th>
-<th style="text-align: center;">Max</th>
-<th style="text-align: center;">Lulus</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">A</td>
-<td style="text-align: center;">4.00</td>
-<td style="text-align: center;">80</td>
-<td style="text-align: center;">100</td>
-<td style="text-align: center;">Y</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">B+</td>
-<td style="text-align: center;">3.50</td>
-<td style="text-align: center;">75</td>
-<td style="text-align: center;">79.9</td>
-<td style="text-align: center;">Y</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">3</td>
-<td style="text-align: center;">B</td>
-<td style="text-align: center;">3.00</td>
-<td style="text-align: center;">70</td>
-<td style="text-align: center;">74.9</td>
-<td style="text-align: center;">Y</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">4</td>
-<td style="text-align: center;">C+</td>
-<td style="text-align: center;">2.75</td>
-<td style="text-align: center;">65</td>
-<td style="text-align: center;">69.9</td>
-<td style="text-align: center;">Y</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">5</td>
-<td style="text-align: center;">C</td>
-<td style="text-align: center;">2.00</td>
-<td style="text-align: center;">60</td>
-<td style="text-align: center;">64.9</td>
-<td style="text-align: center;">Y</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">6</td>
-<td style="text-align: center;">D+</td>
-<td style="text-align: center;">1.50</td>
-<td style="text-align: center;">55</td>
-<td style="text-align: center;">59.9</td>
-<td style="text-align: center;">T</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">7</td>
-<td style="text-align: center;">D</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">45</td>
-<td style="text-align: center;">54.9</td>
-<td style="text-align: center;">T</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">8</td>
-<td style="text-align: center;">E</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">44.9</td>
-<td style="text-align: center;">T</td>
-</tr>
-</tbody>
-</table>
-<h4 id="kejujuran-akademik-dan-plagiarisme">Kejujuran Akademik dan
-Plagiarisme</h4>
-<p>Mahasiswa harus mengikuti kebijakan dan aturan Universitas tentang
-kejujuran akademik dan plagiarisme seperti yang tertuang dalam pedoman
-akademik. Pelanggaran terhadap kebijakan tentang kejujuran akademik dan
-plagiarisme akan diberikan sanksi dari surat teguran, diberi nilai nol,
-skorsing sampai dikeluarkan dari Universitas.</p>
-<h4 id="kehadiran-dan-disiplin-mahasiswa">Kehadiran dan Disiplin
-Mahasiswa</h4>
-<p>Dalam hal perkuliahan dilakukan secara <em>luring</em>:</p>
-<ol type="1">
-<li><p>Hadir paling lambat 15 menit. Mahasiswa <strong>TIDAK
-DIPERKENANKAN</strong> masuk kelas setelah 15 menit kuliah
-dimulai.</p></li>
-<li><p>Berpenampilan dan berbusana sopan serta rapi.</p></li>
-<li><p>Tidak menggunakan sandal atau sejenisnya, serta tidak
-mengoperasikan ponsel/laptop kecuali diminta untuk keperluan
-perkualiahan.</p></li>
-<li><p>Mahasiswa wajib mengikuti perkuliahan minimal 80 persen dari
-total 14 kali pertemuan, kecuali dengan alasan dan bukti yang
-valid.</p></li>
-<li><p>Mahasiswa yang menyelesaikan kurang dari 50% tugas-tugas/ujian
-yang diberikan akan diberi nilai <strong>E</strong> (tidak
-lulus).</p></li>
-<li><p>Tidak ada ujian dan penugasan perbaikan.</p></li>
-</ol>
-<h4 id="tindak-kekerasan-dan-pelecehan">Tindak Kekerasan dan
-Pelecehan</h4>
-<p>Mahasiswa harus selalu menjaga sopan santun dan menghormati semua
-dosen, tenaga pendidikan, petugas keamanan, tenaga kesehatan dan sesama
-mahasiswa. Perilaku dan tindak kekerasan serta pelecehan yang
-mendisrupsi kegiatan pembelajaran, mengakibatkan kerusakan fasilitas dan
-properti kampus, akan diproses sesuai dengan aturan yang berlaku.</p>
-<h4 id="evaluasi-perkuliahan-dan-dosen">Evaluasi Perkuliahan dan
-Dosen</h4>
-<p>Masukan mahasiswa untuk tujuan perbaikan perkuliahan akan
-diperhatikan dengan sangat serius. Mahasiswa sangat diharapkan
-menyisihkan waktu di setiap akhir semester untuk memberikan masukan dan
-evaluasi terkait dengan pelaksanaan perkuliahan dan dosen pengajar.
-Evaluasi dan masukan yang diberikan tidak akan mempengaruhi kelulusan
-dan nilai akhir.</p>
-<h4 id="teknologi-yang-diperlukan">Teknologi yang Diperlukan</h4>
-<p>Teknologi yang diperlukan untuk perkuliahan ini adalah komputer
-dengan perangkat lunak yang mendukung, telepon seluler dan koneksi
-internet.</p>
+<hr />
+<h2 id="pentingnya-pertanian">Pentingnya Pertanian</h2>
+<ul>
+<li>Food, feed, fibre, fuel, furniture, raw materials and materials for
+and from factories;</li>
+<li>Menyediakan lingkungan segar dan gratis, pangan berlimpah.</li>
+<li>Produksi pertanian yang memuaskan membawa kedamaian, kemakmuran,
+harmoni, kesehatan dan kekayaan bagi suatu bangsa.</li>
+<li>Pertanian yang maju menghasilkan kehidupan sosial, budaya, politik
+dan ekonomi yang baik.</li>
+</ul>
+<hr />
+<blockquote>
+<p><em>Agriculture is art, science and business of crop production,
+livestock and fisheries</em></p>
+</blockquote>
+<h3
+id="pertanian-dapat-dipandang-sebagai-seni-sains-dan-bisnis-menghasilkan-produk-pertanian-peternakan-perikanan.">Pertanian
+dapat dipandang sebagai seni, sains dan bisnis menghasilkan produk
+pertanian, peternakan, perikanan.</h3>
+<hr />
+<h2 id="as-an-art">As An Art</h2>
+<ul>
+<li>Sebagai seni: merangkul pengetahuan untuk menjalankan kegiatan
+pertanian secara terampil.<br />
+</li>
+<li>Keterampilan yang dibutuhkan:
+<ul>
+<li>Fisik: It involves the ability and capacity to carry out the
+operation in an efficient way for e.g., handling of farm implements,
+animals etc., sowing of seeds, fertilizer and pesticides application
+etc.</li>
+<li>Mental:
+<ul>
+<li><p>petani mampu mengambil keputusan atas dasar pengalaman</p></li>
+<li><p>waktu dan metode pengolahan lahan</p></li>
+<li><p>seleksi tanaman dan sistem cocok tanam yang sesuai dengan tanah
+dan iklim</p></li>
+<li><p>adopsi praktik pertanian yang lebih baik.</p></li>
+</ul></li>
+</ul></li>
+</ul>
+<hr />
+<h2 id="as-a-science">As A Science</h2>
+<ul>
+<li>Sebagai ilmu pengetahuan: It utilizes all modern technologies
+developed on scientific principles such as crop improvement/breeding,
+crop production, crop protection, economics etc., to maximize the yield
+and profit.
+<ul>
+<li>Contoh: pengembangan varietas baru yang tahan hama dan penyakit,
+responsif terhadap pemupukan, manajemen air, herbisida untuk
+mengendalikan gulma, penggunaan agen biologi untuk mengendalikan hama
+dan penyakit.</li>
+<li>Contoh lain: …?</li>
+</ul></li>
+</ul>
+<hr />
+<h2 id="as-a-business">As A Business</h2>
+<ul>
+<li>Sebagai sebuah bisnis : agriculture as a business aims at maximum
+net return through the management of land, labour, water and capital,
+employing the knowledge of various sciences for production of food,
+feed, fibre and fuel.</li>
+</ul>
+<hr />
+<h2 id="cabang-cabang-pertanian">Cabang-cabang Pertanian</h2>
+<ul>
+<li>Crop production: food crops, fodder crops, fibre crops, sugar, oil
+seeds, etc.
+<ul>
+<li>It includes agronomy, soil science, entomology, pathology,
+microbiology, etc.</li>
+</ul></li>
+<li>Hortikultura: cabang pertanian yang berhubungan dengan produksi
+flowers, fruits, vegetables, ornamental plants, spices, condiments
+(includes narcotic crops-opium, etc., which has medicinal value) and
+beverages.</li>
+<li>Rekayasa pertanian (<em>agricultural Engineering</em>): provide
+tools to facilitate proper animal husbandry and crop production tools,
+implements and machinery in animal production.</li>
+<li>Kehutanan: it deals with production of large scale cultivation of
+perennial trees for supplying wood, timber, rubber, etc. and also raw
+materials for industries.</li>
+<li>Peternakan (<em>animal husbandry</em>): maintenance of various types
+of livestock to get maximum output by feeding, rearing, etc.</li>
+<li>Perikanan (<em>fishery</em>): It is for marine fish and inland
+fishes including shrimps and prawns.</li>
+</ul>
+<hr />
+<h2 id="sejarah-pertanian">Sejarah Pertanian</h2>
+<ul>
+<li>Shifting Cultivation</li>
+<li>Subsidiary Farming</li>
+<li>Subsistence Farming</li>
+<li>Mixed Farming</li>
+<li>Advanced Farming</li>
+<li>Scientific Agriculture (19th Century)</li>
+<li>Present Day Agriculture (21st Century) –&gt; Pertanian jaman
+<em>Now</em></li>
+</ul>
+<hr />
+<h2 id="prinsip-prinsip-dasar-agronomi-1">Prinsip-prinsip Dasar Agronomi
+(1)</h2>
+<ul>
+<li>Perencanaan, pengorganisasian dan eksekusi untuk memaksimumkan
+penggunaan tanah, TK, kapital dan faktor produksi lainnya.</li>
+<li>Pemilihan varitas tanaman yang sesuai dengan kondisi agro-klimat,
+situasi tanah, kesuburan tanah, musim dan metode bercocok tanam.</li>
+<li>Pengelolaan lahan: tillage, preparing field channels and bunds for
+irrigation and drainage, checking soil erosion, leveling and adopting
+other suitable land improvement practices.</li>
+<li>Sistem pertanaman: multiple cropping and also mixed or intercropping
+to ensure harvest even under adverse environmental conditions;</li>
+<li>Penerapan nutrisi berimbang pada tanaman dan tanah: increasing soil
+organic matter through the application of green manure, farm yard
+manure, organic wastes, bio fertilizers and profitable recycling of
+organic wastes;</li>
+</ul>
+<hr />
+<h2 id="prinsip-prinsip-dasar-agronomi-2">Prinsip-prinsip Dasar Agronomi
+(2)</h2>
+<ul>
+<li>Pemilihan benih bermutu dan menjaga kerapatan tanaman per area
+dengan bibit yang sehat dan seragam.</li>
+<li>Pengelolaan air: konservasi dan pemakaian kelembapan tanah, skedul
+irigasi sesuai tahap pertumbuhan tanaman.</li>
+<li>Pengendalian hama dan penyakit yang tepat waktu dan sasaran:
+protection measures against weeds, insect-pests, pathogens, as well as
+climatic hazards and correction of deficiencies and disorders;</li>
+<li>Teknologi pasca panen: to reduce field loss and to release land for
+succeeding crop(s) and efficient utilization of residual moisture, plant
+nutrients and other management practices;</li>
+</ul>
+<hr />
+<h2 id="factors-affecting-crop-production">Factors Affecting Crop
+Production</h2>
+<blockquote>
+<p>Internal Factors: yield and other desirable characters that related
+to the genetic make up of the plant</p>
+</blockquote>
+<ul>
+<li>High yields under given environmental conditions.</li>
+<li>Early maturity (in some cases late maturity).</li>
+<li>Resistance to lodging.</li>
+<li>Drought, flood and salinity tolerance.</li>
+<li>Tolerance to insects and diseases.</li>
+<li>Chemical composition of grains (high percentage of oil, increase in
+protein quantity or quality, etc.).</li>
+<li>Quality of grains (fineness, coarseness, etc.).</li>
+<li>Quality of straw (sweetness, juiciness, etc.).</li>
+</ul>
+<hr />
+<h2 id="factors-affecting-crop-production-1">Factors Affecting Crop
+Production</h2>
+<blockquote>
+<p>External factors (Environmental):</p>
+</blockquote>
+<ul>
+<li>Climatic</li>
+<li>Edaphic</li>
+<li>Biotic</li>
+<li>Physiographic</li>
+<li>Socio-economic (Anthropic)</li>
+</ul>
+<hr />
+<h2 id="karakteristik-sistem-pertanian">Karakteristik Sistem
+Pertanian</h2>
+<ul>
+<li>Tujuan primer pertanian: produksi pangan, produk lain dan jasa yang
+cukup sehingga pertanian tetap bertahan.</li>
+<li>Fitur penting pertanian: produktivitas yaitu output per unit of
+resource used, seperti ton/ha</li>
+<li>Produktivitas: hasil yang bisa dimanfaatkan per luas lahan (<em>the
+yield of usable product per unit area</em>)
+<ul>
+<li>Bisa juga artificial inputs as radiation, water, nutrients or labor,
+which are also typically measured per unit of area.</li>
+</ul></li>
+<li>The productivity level serves as an indirect measure of the
+efficiency</li>
+</ul>
+<hr />
+<h2 id="efficiency">Efficiency</h2>
+<ul>
+<li>Efficiency: the ratios of crop productivity and certain inputs.</li>
+<li>For example, efficiency of water use is defined as the ratio of
+yield to the volume of nutrient or water used expressed as kg/m3 water
+or kg/kg nutrient.</li>
+<li>In engineering, efficiency is the ratio between the output and the
+input of any entity in a system, for example, the energy supplied to an
+engine.</li>
+</ul>
+<hr />
+<h2 id="stability">Stability</h2>
+<ul>
+<li>Yields may vary from year to year by weather and other causes.</li>
+<li>Stability refers to the magnitude of these oscillations.</li>
+<li>The lack of stability causes fluctuations in production that
+threaten the persistence of agricultural systems.</li>
+<li>This is particularly true when there are sequences of successive
+years of low yields that may have a catastrophic effect on their
+economic viability.</li>
+</ul>
+<hr />
+<h2 id="resilience">Resilience</h2>
+<ul>
+<li>Resilience is the capacity of the system to recover from a
+catastrophic event, for example a drought.</li>
+<li>High resilience is a desirable property of agroecosystems.</li>
+</ul>
+<hr />
+<h2 id="keberlanjutan-sustainability">Keberlanjutan
+(<em>Sustainability</em>)</h2>
+<ul>
+<li>Sustainability indicates the ability to maintain a certain level of
+production indefinitely.</li>
+<li>This feature stems from the concept of sustainable development, a
+development model that proposes economic growth without adversely
+affecting the opportunities of future generations.</li>
+<li>A farming system is considered sustainable when it is economically
+viable and socially acceptable.</li>
+<li>However, one must define the time frame, because what is feasible
+and acceptable today may not be so in the future.</li>
+<li>The degree of sustainability: a system will be more sustainable when
+its exploitation does not degrade the quality of water and soil
+resources, and when current management practices do not affect the
+productivity and viability of the system in the future.</li>
+</ul>
+<hr />
+<h2 id="peningkatan-keberlanjutan">Peningkatan Keberlanjutan</h2>
+<ul>
+<li>Reducing or eliminating, if possible, the negative environmental
+effects of agriculture while maintaining high productivity.</li>
+<li>Decades of intensive production in many agricultural systems have
+caused negative environmental effects.</li>
+</ul>
+<hr />
+<h2 id="manajemen-sistem-pertanian">Manajemen Sistem Pertanian</h2>
+<ul>
+<li>Strategi pertanian adalah memanipulasi lingkungan dan tanaman untuk
+menghasilkan produk yang berguna.</li>
+<li>Beberapa caranya: tillage for weed removal and seedbed preparation,
+choice of species and cultivars, sowing date and sowing density,
+application of fertilizers and pesticides, etc.</li>
+<li>Faktor eksternal seperti iklim dan pasar sulit diprediksi sehingga
+diperlukan keluwesan dalam pengelolaan tanaman untuk meminimumkan risiko
+gagal panen atau kerugian ekonomi.</li>
+<li>Contoh pemakaian pupuk mungkin dikurangi atau ditunda jika curah
+hujan rendah atau perkiraan harga produk rendah.</li>
+</ul>
+<hr />
+<h2 id="manajemen-sistem-pertanian-1">Manajemen Sistem Pertanian</h2>
+<ul>
+<li>Harus memperhatikan banyak faktor</li>
+<li>Tidak hanya produksi tanaman dan ternak sebagai tujuan ekonomi</li>
+<li>Tetapi juga dampaknya terhadap tanah, air, kesejahteraan ternak,
+kesehatan manusia, lansekap dan keragaman hayati.</li>
+</ul>
 <div class="sourceCode" id="cb1"><pre
 class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
@@ -2379,12 +1788,7 @@ class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"><
 <!--radix_placeholder_site_after_body-->
 <!--/radix_placeholder_site_after_body-->
 <!--radix_placeholder_appendices-->
-<div class="appendix-bottom">
-<h3 id="updates-and-corrections">Corrections</h3>
-<p>If you see mistakes or want to suggest changes, please <a href="https://github.com/bangtedy/wabis/issues/new">create an issue</a> on the source repository.</p>
-<h3 id="reuse">Reuse</h3>
-<p>Text and figures are licensed under Creative Commons Attribution <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. Source code is available at <a href="https://github.com/bangtedy/wabis">https://github.com/bangtedy/wabis</a>, unless otherwise noted. The figures that have been reused from other sources don't fall under this license and can be recognized by a note in their caption: "Figure from ...".</p>
-</div>
+<div class="appendix-bottom"></div>
 <!--/radix_placeholder_appendices-->
 <!--radix_placeholder_navigation_after_body-->
 <!--/radix_placeholder_navigation_after_body-->

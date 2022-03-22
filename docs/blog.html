@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
   <meta name="generator" content="distill" />
+  <link rel="alternate" type="application/rss+xml" href="https://bangtedy.github.io/wabis/blog.xml" />
 
   <style type="text/css">
   /* Hide doc at startup (prevent jankiness while JS renders/transforms) */
@@ -87,28 +88,31 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 
   <!--radix_placeholder_meta_tags-->
-  <title>Wawasan Agribisnis</title>
+  <title>Wawasan Agribisnis: Materi</title>
 
+  <meta property="description" itemprop="description" content="Some additional details about the blog"/>
 
-  <link rel="license" href="https://creativecommons.org/licenses/by/4.0/"/>
 
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="Wawasan Agribisnis"/>
+  <meta property="og:title" content="Wawasan Agribisnis: Materi"/>
   <meta property="og:type" content="article"/>
+  <meta property="og:description" content="Some additional details about the blog"/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:site_name" content="Wawasan Agribisnis"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="Wawasan Agribisnis"/>
+  <meta property="twitter:title" content="Wawasan Agribisnis: Materi"/>
+  <meta property="twitter:description" content="Some additional details about the blog"/>
+  <meta property="twitter:site" content="@t_hlb"/>
   <meta property="twitter:creator" content="@t_hlb"/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","creative_commons"]}},"value":[{"type":"character","attributes":{},"value":["Wawasan Agribisnis"]},{"type":"character","attributes":{},"value":["CC BY"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","listing","twitter"]}},"value":[{"type":"character","attributes":{},"value":["Materi"]},{"type":"character","attributes":{},"value":["Some additional details about the blog\n"]},{"type":"character","attributes":{},"value":["posts"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["site"]}},"value":[{"type":"character","attributes":{},"value":["@t_hlb"]}]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -2114,12 +2118,12 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 </head>
 
-<body>
+<body class="layout-listing">
 
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Wawasan Agribisnis","authors":[]}
+{"title":"Materi","description":"Some additional details about the blog","authors":[]}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2146,226 +2150,192 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--/radix_placeholder_navigation_before_body-->
 <!--radix_placeholder_site_before_body-->
 <!--/radix_placeholder_site_before_body-->
+<!--radix_placeholder_article_listing-->
+
+
+<script type="application/javascript">
+
+function init_posts_list() {
+
+  function load_image(img) {
+    var src = $(img).attr('data-src');
+    if (src) {
+      $(img).attr('src', src);
+      $(img).on("load", function() {
+        img.removeAttribute('data-src');
+      });
+    }
+  }
+
+  function set_posts_visible(posts, visible) {
+    if (visible) {
+
+      // show bottom border by default
+      $(posts).removeClass('post-preview-last');
+
+      // apply limits if need be
+      var max_posts = 25;
+      var apply_limits = $('.posts-container').hasClass('posts-apply-limit');
+      if (apply_limits && posts.length > max_posts) {
+        posts = $(posts).slice(0, max_posts);
+      } else {
+        $('.posts-more a').addClass('hidden');
+      }
+
+      // apply last style
+      $(posts.slice(-1)[0]).addClass('post-preview-last');
+
+      $(posts).removeClass('hidden');
+      $(posts).find('img[data-src]').each(function(i, img) {
+        load_image(img);
+      });
+    } else {
+      $(posts).addClass('hidden');
+    }
+  }
+
+  function apply_hash_filter() {
+
+    // clear active state
+    $('.categories .active').removeClass('active');
+
+    // mark all posts invisible to start
+    set_posts_visible($('.posts-list').children('a'), false);
+
+    // if we have a hash filter
+    if (window.location.hash && window.location.hash.startsWith("#category:")) {
+
+      // mark posts that match the category visible
+      var page_category = window.location.hash.replace(/^#category:/, "");
+      page_category = decodeURIComponent(page_category)
+      var posts = $('.post-metadata').map(function(idx, script) {
+        var metadata = $.parseJSON($(script).html());
+        var post = null;
+        $.each(metadata.categories, function(idx, category) {
+          category = category.replace(/ /g,"_");
+          if ((page_category || '').toLowerCase() === "articles" || category === page_category) {
+            post = $(script).parent().get();
+            return false;
+          }
+        });
+        return post;
+      });
+      set_posts_visible(posts, true);
+
+      // mark the hash active
+      $('.categories li>a[href="' + decodeURIComponent(window.location.hash) + '"]').addClass('active');
+
+      // update the list_caption
+      var list_caption = $('.posts-list-caption');
+      var caption = (page_category || '').toLowerCase() === "articles"
+        ? list_caption.attr('data-caption')
+        : ('Category: ' + page_category.replace(/_/g," "));
+      list_caption.text(caption);
+
+    } else {
+
+      // no hash filter, make all posts visible (subject to max display)
+      set_posts_visible($('.posts-list').children(), true);
+
+      // reset list caption
+      var list_caption = $('.posts-list-caption');
+      list_caption.text(list_caption.attr('data-caption'));
+
+
+    }
+  }
+
+  // more articles
+  function apply_post_limits(apply) {
+    if (apply) {
+      $('.posts-container').addClass('posts-apply-limit');
+      $('.posts-more a').removeClass('hidden');
+    } else {
+      $('.posts-container').removeClass('posts-apply-limit');
+      $('.posts-more a').addClass('hidden');
+    }
+  }
+
+  // click handling for tags
+  $('.dt-tag').click(function(ev) {
+    window.location.hash = '#category:' + $(this).text().replace(/ /g, "_");
+    return false;
+  })
+
+  // hash filter handling
+  apply_hash_filter();
+  $(window).on('hashchange',function() {
+    apply_post_limits(true);
+    apply_hash_filter();
+  });
+
+  // more articles link
+  $('.posts-more a').click(function(e) {
+    e.preventDefault();
+    apply_post_limits(false);
+    apply_hash_filter();
+    return false;
+  });
+
+}
+
+</script>
+
+
+
+<div class="posts-container posts-apply-limit l-page">
+<div class="posts-list">
+<h1 class="posts-list-caption" data-caption="Materi">Materi</h1>
+<a href="posts/minggu-2/" class="post-preview">
+<script class="post-metadata" type="text/json">{"categories":[]}</script>
+<div class="metadata">
+<div class="publishedDate">March 17, 2022</div>
+<div class="dt-authors">
+<div class="dt-author">Tedy Herlambang</div>
+</div>
+</div>
+<div class="thumbnail">
+<img/>
+</div>
+<div class="description">
+<h2>Sistem Agribisnis</h2>
+<div class="dt-tags"></div>
+<p>Subsistem Produksi</p>
+</div>
+</a>
+<a href="posts/minggu-1/" class="post-preview">
+<script class="post-metadata" type="text/json">{"categories":[]}</script>
+<div class="metadata">
+<div class="publishedDate">March 10, 2022</div>
+<div class="dt-authors">
+<div class="dt-author">Tedy Herlambang</div>
+</div>
+</div>
+<div class="thumbnail">
+<img/>
+</div>
+<div class="description">
+<h2>Agribisnis</h2>
+<div class="dt-tags"></div>
+<p>Sistem dan Manajemen</p>
+</div>
+</a>
+</div>
+<div class="posts-more">
+<a href="#">More articles &raquo;</a>
+</div>
+</div>
+<!--/radix_placeholder_article_listing-->
 
 <div class="d-title">
-<h1>Wawasan Agribisnis</h1>
+<h1>Materi</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
-
+<p><p>Some additional details about the blog</p></p>
 </div>
 
 
 <div class="d-article">
-<h4 id="deskripsi-mata-kuliah">Deskripsi Mata Kuliah</h4>
-<p>Mata kuliah ini memperkenalkan kepada mahasiswa tentang agribisnis
-sebagai sebuah sistem dan/atau sebagai praktek manajemen. Mata kuliah
-ini memperkenalkan secara umum dan tidak mendalam prinsip-prinsip
-ekonomi serta konsep-konsep manajemen di dalam bisnis pertanian.
-Pembahasan manajemen agribisnis meliputi: manajemen rantai pasok,
-manajemen pemasaran, manajemen risiko, manajemen SDM dan kepemimpinan
-dalam agribisnis.</p>
-<h4 id="tujuan-pembelajaran">Tujuan Pembelajaran</h4>
-<p>Setelah mengikuti perkuliahan ini, secara umum mahasiswa diharapkan
-dapat memahami prinsip-prinsip dasar ekonomi dan bisnis yang diterapkan
-pada sektor pertanian dari hulu sampai hilir.</p>
-<p>Secara khusus, mahasiswa diharapkan dapat:</p>
-<ul>
-<li>Menjelaskan agribisnis sebagai suatu sistem.</li>
-<li>Menjelaskan konsep-konsep dasar manajemen agribisnis.</li>
-<li>Menjelaskan bagaimana ekonomi mempengaruhi fondasi pasar dan
-pemasaran produk agribisnis, kinerja agribisnis dan manajemen
-agribisnis.</li>
-<li>Menjelaskan kerangka ekonomi dimana seorang manajer agribisnis
-membuat keputusan</li>
-<li>Menerapkan konsep-konsep manajemen agribisnis pada persoalan
-spesifik fungsi bisnis</li>
-</ul>
-<h4 id="sekilas-materi">Sekilas Materi</h4>
-<p>Perkuliahan dilakukan sebanyak 14 kali pertemuan dan 2 kali pertemuan
-untuk ujian tengah semester (<strong>UTS</strong>) dan ujian akhir
-semester (<strong>UAS</strong>). Topik-topik yang akan dibahas sebagai
-berikut:</p>
-<div class="obj">
-<ul>
-<li>Minggu 1 Agribisnis: Sistem dan Manajemen</li>
-<li>Minggu 2 Sistem Agribisnis: Subsistem Produksi/Budidaya</li>
-<li>Minggu 3 Sistem Agribisnis: Subsistem Faktor Produksi</li>
-<li>Minggu 4 Sistem Agribisnis: Subsistem Pengolahan Hasil</li>
-<li>Minggu 5 Sistem Agribisnis: Subsistem Pemasaran</li>
-<li>Minggu 6 Sistem Agribisnis: Subsistem Sarana Prasarana</li>
-<li>Minggu 7 Sistem Agribisnis: Subsistem Pembinaan</li>
-<li>Minggu 8 <strong>UJIAN TENGAH SEMESTER</strong></li>
-<li>Minggu 9 Lingkungan Organisasi dan Kompetisi Agribisnis</li>
-<li>Minggu 10 Lingkungan Global dan Etika Agribisnis</li>
-<li>Minggu 11 Pengorganisasian Agribisnis</li>
-<li>Minggu 12 Kepemimpinan Agribisnis</li>
-<li>Minggu 13 Manajemen Rantai Pasok Agribisnis</li>
-<li>Minggu 14 Manajemen Pemasaran Agribisnis</li>
-<li>Minggu 15 Manajemen Risiko Agribisnis</li>
-<li>Minggu 16 <strong>UJIAN AKHIR SEMESTER</strong></li>
-</ul>
-</div>
-<h4 id="kegiatan-pembelajaran">Kegiatan Pembelajaran</h4>
-<p>Pelaksanaan Pembelajaran Semester Genap Tahun Akademik 2O21/2O22
-dilakukan dengan <em>Tatap Muka Terbatas</em>. Metode perkuliahan adalah
-kombinasi antara ceramah, diskusi, latihan dan presentasi kelompok.
-Mahasiswa harap memperhatikan pengumuman yang disampaikan dosen di WAG
-yang sudah dibentuk.</p>
-<p>Untuk dapat mengikuti perkuliahan dengan baik, mahasiswa sebaiknya
-membaca terlebih dahulu buku acuan pada bab-bab yang sesuai dengan
-materi pada minggu yang berkaitan dan mengerjakan tugas/latihan yang
-diberikan pada saat perkuliahan. Mahasiswa harus mereview semua bahan
-yang diberikan selama 14 kali untuk persiapan UTS dan UAS.</p>
-<h4 id="buku-acuan">Buku Acuan</h4>
-<ol type="1">
-<li><p>Van Fleet, David D.; Ella W. Van Fleet, dan George J. Seperich
-(2014). <em>Agribusiness: Principles of Management</em>. Cengage
-Learning</p></li>
-<li><p>Karmini (2020). Dasar-dasar Agribisnis. Mulawarman University
-Press</p></li>
-</ol>
-<h4 id="evaluasi-dan-penilaian">Evaluasi dan Penilaian</h4>
-<p>Nilai Akhir untuk mata kuliah Kepemimpinan Agribisnis terdiri dari
-nilai ujian tengah semester (UTS), nilai ujian akhir semester (UAS) dan
-nilai komponen lain (KL). Nilai KL terdiri dari tugas individu, tugas
-kelompok, presentasi, kehadiran dan keaktifan.</p>
-<h4 id="tugas-individukelompok">Tugas Individu/Kelompok</h4>
-<p>Tugas diberikan pada saat kuliah dan wajib dikerjakan oleh mahasiswa
-dan hasilnya dikumpulkan sesuai dengan waktu yang telah ditetapkan.
-Keterlambatan pengumpulan tugas akan mengurangi nilai sebesar 10 satuan
-per hari dengan batas maksimum keterlambatan 5 hari.</p>
-<h4 id="persebaran-nilai">Persebaran NIlai</h4>
-<ol type="1">
-<li><p>UTS dan UAS dilakukan melalui ujian tertulis dengan bobot
-maksimum 60%</p></li>
-<li><p>KL dinilai melalui keaktifan mahasiswa pada aktivitas
-pembelajaran (tugas-tugas, diskusi, presentasi dan kehadiran) dengan
-bobot 40%.</p></li>
-</ol>
-<h4 id="selang-penilaian">Selang Penilaian</h4>
-<table>
-<thead>
-<tr class="header">
-<th style="text-align: center;">No</th>
-<th style="text-align: center;">Nilai</th>
-<th style="text-align: center;">Bobot</th>
-<th style="text-align: center;">Min</th>
-<th style="text-align: center;">Max</th>
-<th style="text-align: center;">Lulus</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">A</td>
-<td style="text-align: center;">4.00</td>
-<td style="text-align: center;">80</td>
-<td style="text-align: center;">100</td>
-<td style="text-align: center;">Y</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">B+</td>
-<td style="text-align: center;">3.50</td>
-<td style="text-align: center;">75</td>
-<td style="text-align: center;">79.9</td>
-<td style="text-align: center;">Y</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">3</td>
-<td style="text-align: center;">B</td>
-<td style="text-align: center;">3.00</td>
-<td style="text-align: center;">70</td>
-<td style="text-align: center;">74.9</td>
-<td style="text-align: center;">Y</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">4</td>
-<td style="text-align: center;">C+</td>
-<td style="text-align: center;">2.75</td>
-<td style="text-align: center;">65</td>
-<td style="text-align: center;">69.9</td>
-<td style="text-align: center;">Y</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">5</td>
-<td style="text-align: center;">C</td>
-<td style="text-align: center;">2.00</td>
-<td style="text-align: center;">60</td>
-<td style="text-align: center;">64.9</td>
-<td style="text-align: center;">Y</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">6</td>
-<td style="text-align: center;">D+</td>
-<td style="text-align: center;">1.50</td>
-<td style="text-align: center;">55</td>
-<td style="text-align: center;">59.9</td>
-<td style="text-align: center;">T</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">7</td>
-<td style="text-align: center;">D</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">45</td>
-<td style="text-align: center;">54.9</td>
-<td style="text-align: center;">T</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">8</td>
-<td style="text-align: center;">E</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">44.9</td>
-<td style="text-align: center;">T</td>
-</tr>
-</tbody>
-</table>
-<h4 id="kejujuran-akademik-dan-plagiarisme">Kejujuran Akademik dan
-Plagiarisme</h4>
-<p>Mahasiswa harus mengikuti kebijakan dan aturan Universitas tentang
-kejujuran akademik dan plagiarisme seperti yang tertuang dalam pedoman
-akademik. Pelanggaran terhadap kebijakan tentang kejujuran akademik dan
-plagiarisme akan diberikan sanksi dari surat teguran, diberi nilai nol,
-skorsing sampai dikeluarkan dari Universitas.</p>
-<h4 id="kehadiran-dan-disiplin-mahasiswa">Kehadiran dan Disiplin
-Mahasiswa</h4>
-<p>Dalam hal perkuliahan dilakukan secara <em>luring</em>:</p>
-<ol type="1">
-<li><p>Hadir paling lambat 15 menit. Mahasiswa <strong>TIDAK
-DIPERKENANKAN</strong> masuk kelas setelah 15 menit kuliah
-dimulai.</p></li>
-<li><p>Berpenampilan dan berbusana sopan serta rapi.</p></li>
-<li><p>Tidak menggunakan sandal atau sejenisnya, serta tidak
-mengoperasikan ponsel/laptop kecuali diminta untuk keperluan
-perkualiahan.</p></li>
-<li><p>Mahasiswa wajib mengikuti perkuliahan minimal 80 persen dari
-total 14 kali pertemuan, kecuali dengan alasan dan bukti yang
-valid.</p></li>
-<li><p>Mahasiswa yang menyelesaikan kurang dari 50% tugas-tugas/ujian
-yang diberikan akan diberi nilai <strong>E</strong> (tidak
-lulus).</p></li>
-<li><p>Tidak ada ujian dan penugasan perbaikan.</p></li>
-</ol>
-<h4 id="tindak-kekerasan-dan-pelecehan">Tindak Kekerasan dan
-Pelecehan</h4>
-<p>Mahasiswa harus selalu menjaga sopan santun dan menghormati semua
-dosen, tenaga pendidikan, petugas keamanan, tenaga kesehatan dan sesama
-mahasiswa. Perilaku dan tindak kekerasan serta pelecehan yang
-mendisrupsi kegiatan pembelajaran, mengakibatkan kerusakan fasilitas dan
-properti kampus, akan diproses sesuai dengan aturan yang berlaku.</p>
-<h4 id="evaluasi-perkuliahan-dan-dosen">Evaluasi Perkuliahan dan
-Dosen</h4>
-<p>Masukan mahasiswa untuk tujuan perbaikan perkuliahan akan
-diperhatikan dengan sangat serius. Mahasiswa sangat diharapkan
-menyisihkan waktu di setiap akhir semester untuk memberikan masukan dan
-evaluasi terkait dengan pelaksanaan perkuliahan dan dosen pengajar.
-Evaluasi dan masukan yang diberikan tidak akan mempengaruhi kelulusan
-dan nilai akhir.</p>
-<h4 id="teknologi-yang-diperlukan">Teknologi yang Diperlukan</h4>
-<p>Teknologi yang diperlukan untuk perkuliahan ini adalah komputer
-dengan perangkat lunak yang mendukung, telepon seluler dan koneksi
-internet.</p>
 <div class="sourceCode" id="cb1"><pre
 class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
@@ -2382,8 +2352,6 @@ class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"><
 <div class="appendix-bottom">
 <h3 id="updates-and-corrections">Corrections</h3>
 <p>If you see mistakes or want to suggest changes, please <a href="https://github.com/bangtedy/wabis/issues/new">create an issue</a> on the source repository.</p>
-<h3 id="reuse">Reuse</h3>
-<p>Text and figures are licensed under Creative Commons Attribution <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. Source code is available at <a href="https://github.com/bangtedy/wabis">https://github.com/bangtedy/wabis</a>, unless otherwise noted. The figures that have been reused from other sources don't fall under this license and can be recognized by a note in their caption: "Figure from ...".</p>
 </div>
 <!--/radix_placeholder_appendices-->
 <!--radix_placeholder_navigation_after_body-->

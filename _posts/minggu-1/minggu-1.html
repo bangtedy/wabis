@@ -87,637 +87,40 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 
   <!--radix_placeholder_meta_tags-->
-  <title>Wawasan Agribisnis</title>
+  <title>Agribisnis</title>
+
+  <meta property="description" itemprop="description" content="Sistem dan Manajemen"/>
 
 
-  <link rel="license" href="https://creativecommons.org/licenses/by/4.0/"/>
-
+  <!--  https://schema.org/Article -->
+  <meta property="article:published" itemprop="datePublished" content="2022-03-10"/>
+  <meta property="article:created" itemprop="dateCreated" content="2022-03-10"/>
+  <meta name="article:author" content="Tedy Herlambang"/>
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="Wawasan Agribisnis"/>
+  <meta property="og:title" content="Agribisnis"/>
   <meta property="og:type" content="article"/>
+  <meta property="og:description" content="Sistem dan Manajemen"/>
   <meta property="og:locale" content="en_US"/>
-  <meta property="og:site_name" content="Wawasan Agribisnis"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="Wawasan Agribisnis"/>
+  <meta property="twitter:title" content="Agribisnis"/>
+  <meta property="twitter:description" content="Sistem dan Manajemen"/>
   <meta property="twitter:creator" content="@t_hlb"/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","creative_commons"]}},"value":[{"type":"character","attributes":{},"value":["Wawasan Agribisnis"]},{"type":"character","attributes":{},"value":["CC BY"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","draft","base_url","twitter","output"]}},"value":[{"type":"character","attributes":{},"value":["Agribisnis"]},{"type":"character","attributes":{},"value":["Sistem dan Manajemen\n"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url","orcid_id"]}},"value":[{"type":"character","attributes":{},"value":["Tedy Herlambang"]},{"type":"character","attributes":{},"value":["https://bangtedy.github.io"]},{"type":"character","attributes":{},"value":["0000-0002-7296-4357"]}]}]},{"type":"character","attributes":{},"value":["2022-03-10"]},{"type":"logical","attributes":{},"value":[false]},{"type":"character","attributes":{},"value":["https://bangtedy.github.io/wabis"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["creator"]}},"value":[{"type":"character","attributes":{},"value":["@t_hlb"]}]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
+  
+  <script type="text/json" id="radix-resource-manifest">
+  {"type":"character","attributes":{},"value":["minggu-1_files/anchor-4.2.2/anchor.min.js","minggu-1_files/bowser-1.9.3/bowser.min.js","minggu-1_files/distill-2.2.21/template.v2.js","minggu-1_files/header-attrs-2.13/header-attrs.js","minggu-1_files/jquery-3.6.0/jquery-3.6.0.js","minggu-1_files/jquery-3.6.0/jquery-3.6.0.min.js","minggu-1_files/jquery-3.6.0/jquery-3.6.0.min.map","minggu-1_files/popper-2.6.0/popper.min.js","minggu-1_files/tippy-6.2.7/tippy-bundle.umd.min.js","minggu-1_files/tippy-6.2.7/tippy-light-border.css","minggu-1_files/tippy-6.2.7/tippy.css","minggu-1_files/tippy-6.2.7/tippy.umd.min.js","minggu-1_files/webcomponents-2.0.0/webcomponents.js"]}
+  </script>
   <!--radix_placeholder_navigation_in_header-->
-  <meta name="distill:offset" content=""/>
-
-  <script type="application/javascript">
-
-    window.headroom_prevent_pin = false;
-
-    window.document.addEventListener("DOMContentLoaded", function (event) {
-
-      // initialize headroom for banner
-      var header = $('header').get(0);
-      var headerHeight = header.offsetHeight;
-      var headroom = new Headroom(header, {
-        tolerance: 5,
-        onPin : function() {
-          if (window.headroom_prevent_pin) {
-            window.headroom_prevent_pin = false;
-            headroom.unpin();
-          }
-        }
-      });
-      headroom.init();
-      if(window.location.hash)
-        headroom.unpin();
-      $(header).addClass('headroom--transition');
-
-      // offset scroll location for banner on hash change
-      // (see: https://github.com/WickyNilliams/headroom.js/issues/38)
-      window.addEventListener("hashchange", function(event) {
-        window.scrollTo(0, window.pageYOffset - (headerHeight + 25));
-      });
-
-      // responsive menu
-      $('.distill-site-header').each(function(i, val) {
-        var topnav = $(this);
-        var toggle = topnav.find('.nav-toggle');
-        toggle.on('click', function() {
-          topnav.toggleClass('responsive');
-        });
-      });
-
-      // nav dropdowns
-      $('.nav-dropbtn').click(function(e) {
-        $(this).next('.nav-dropdown-content').toggleClass('nav-dropdown-active');
-        $(this).parent().siblings('.nav-dropdown')
-           .children('.nav-dropdown-content').removeClass('nav-dropdown-active');
-      });
-      $("body").click(function(e){
-        $('.nav-dropdown-content').removeClass('nav-dropdown-active');
-      });
-      $(".nav-dropdown").click(function(e){
-        e.stopPropagation();
-      });
-    });
-  </script>
-
-  <style type="text/css">
-
-  /* Theme (user-documented overrideables for nav appearance) */
-
-  .distill-site-nav {
-    color: rgba(255, 255, 255, 0.8);
-    background-color: #0F2E3D;
-    font-size: 15px;
-    font-weight: 300;
-  }
-
-  .distill-site-nav a {
-    color: inherit;
-    text-decoration: none;
-  }
-
-  .distill-site-nav a:hover {
-    color: white;
-  }
-
-  @media print {
-    .distill-site-nav {
-      display: none;
-    }
-  }
-
-  .distill-site-header {
-
-  }
-
-  .distill-site-footer {
-
-  }
-
-
-  /* Site Header */
-
-  .distill-site-header {
-    width: 100%;
-    box-sizing: border-box;
-    z-index: 3;
-  }
-
-  .distill-site-header .nav-left {
-    display: inline-block;
-    margin-left: 8px;
-  }
-
-  @media screen and (max-width: 768px) {
-    .distill-site-header .nav-left {
-      margin-left: 0;
-    }
-  }
-
-
-  .distill-site-header .nav-right {
-    float: right;
-    margin-right: 8px;
-  }
-
-  .distill-site-header a,
-  .distill-site-header .title {
-    display: inline-block;
-    text-align: center;
-    padding: 14px 10px 14px 10px;
-  }
-
-  .distill-site-header .title {
-    font-size: 18px;
-    min-width: 150px;
-  }
-
-  .distill-site-header .logo {
-    padding: 0;
-  }
-
-  .distill-site-header .logo img {
-    display: none;
-    max-height: 20px;
-    width: auto;
-    margin-bottom: -4px;
-  }
-
-  .distill-site-header .nav-image img {
-    max-height: 18px;
-    width: auto;
-    display: inline-block;
-    margin-bottom: -3px;
-  }
-
-
-
-  @media screen and (min-width: 1000px) {
-    .distill-site-header .logo img {
-      display: inline-block;
-    }
-    .distill-site-header .nav-left {
-      margin-left: 20px;
-    }
-    .distill-site-header .nav-right {
-      margin-right: 20px;
-    }
-    .distill-site-header .title {
-      padding-left: 12px;
-    }
-  }
-
-
-  .distill-site-header .nav-toggle {
-    display: none;
-  }
-
-  .nav-dropdown {
-    display: inline-block;
-    position: relative;
-  }
-
-  .nav-dropdown .nav-dropbtn {
-    border: none;
-    outline: none;
-    color: rgba(255, 255, 255, 0.8);
-    padding: 16px 10px;
-    background-color: transparent;
-    font-family: inherit;
-    font-size: inherit;
-    font-weight: inherit;
-    margin: 0;
-    margin-top: 1px;
-    z-index: 2;
-  }
-
-  .nav-dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: white;
-    min-width: 200px;
-    border: 1px solid rgba(0,0,0,0.15);
-    border-radius: 4px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
-    z-index: 1;
-    margin-top: 2px;
-    white-space: nowrap;
-    padding-top: 4px;
-    padding-bottom: 4px;
-  }
-
-  .nav-dropdown-content hr {
-    margin-top: 4px;
-    margin-bottom: 4px;
-    border: none;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  }
-
-  .nav-dropdown-active {
-    display: block;
-  }
-
-  .nav-dropdown-content a, .nav-dropdown-content .nav-dropdown-header {
-    color: black;
-    padding: 6px 24px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
-
-  .nav-dropdown-content .nav-dropdown-header {
-    display: block;
-    padding: 5px 24px;
-    padding-bottom: 0;
-    text-transform: uppercase;
-    font-size: 14px;
-    color: #999999;
-    white-space: nowrap;
-  }
-
-  .nav-dropdown:hover .nav-dropbtn {
-    color: white;
-  }
-
-  .nav-dropdown-content a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-
-  .nav-right .nav-dropdown-content {
-    margin-left: -45%;
-    right: 0;
-  }
-
-  @media screen and (max-width: 768px) {
-    .distill-site-header a, .distill-site-header .nav-dropdown  {display: none;}
-    .distill-site-header a.nav-toggle {
-      float: right;
-      display: block;
-    }
-    .distill-site-header .title {
-      margin-left: 0;
-    }
-    .distill-site-header .nav-right {
-      margin-right: 0;
-    }
-    .distill-site-header {
-      overflow: hidden;
-    }
-    .nav-right .nav-dropdown-content {
-      margin-left: 0;
-    }
-  }
-
-
-  @media screen and (max-width: 768px) {
-    .distill-site-header.responsive {position: relative; min-height: 500px; }
-    .distill-site-header.responsive a.nav-toggle {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .distill-site-header.responsive a,
-    .distill-site-header.responsive .nav-dropdown {
-      display: block;
-      text-align: left;
-    }
-    .distill-site-header.responsive .nav-left,
-    .distill-site-header.responsive .nav-right {
-      width: 100%;
-    }
-    .distill-site-header.responsive .nav-dropdown {float: none;}
-    .distill-site-header.responsive .nav-dropdown-content {position: relative;}
-    .distill-site-header.responsive .nav-dropdown .nav-dropbtn {
-      display: block;
-      width: 100%;
-      text-align: left;
-    }
-  }
-
-  /* Site Footer */
-
-  .distill-site-footer {
-    width: 100%;
-    overflow: hidden;
-    box-sizing: border-box;
-    z-index: 3;
-    margin-top: 30px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    text-align: center;
-  }
-
-  /* Headroom */
-
-  d-title {
-    padding-top: 6rem;
-  }
-
-  @media print {
-    d-title {
-      padding-top: 4rem;
-    }
-  }
-
-  .headroom {
-    z-index: 1000;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-  }
-
-  .headroom--transition {
-    transition: all .4s ease-in-out;
-  }
-
-  .headroom--unpinned {
-    top: -100px;
-  }
-
-  .headroom--pinned {
-    top: 0;
-  }
-
-  /* adjust viewport for navbar height */
-  /* helps vertically center bootstrap (non-distill) content */
-  .min-vh-100 {
-    min-height: calc(100vh - 100px) !important;
-  }
-
-  </style>
-
-  <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
-  <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
-  <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
-  <script src="site_libs/headroom-0.9.4/headroom.min.js"></script>
-  <script src="site_libs/autocomplete-0.37.1/autocomplete.min.js"></script>
-  <script src="site_libs/fuse-6.4.1/fuse.min.js"></script>
-
-  <script type="application/javascript">
-
-  function getMeta(metaName) {
-    var metas = document.getElementsByTagName('meta');
-    for (let i = 0; i < metas.length; i++) {
-      if (metas[i].getAttribute('name') === metaName) {
-        return metas[i].getAttribute('content');
-      }
-    }
-    return '';
-  }
-
-  function offsetURL(url) {
-    var offset = getMeta('distill:offset');
-    return offset ? offset + '/' + url : url;
-  }
-
-  function createFuseIndex() {
-
-    // create fuse index
-    var options = {
-      keys: [
-        { name: 'title', weight: 20 },
-        { name: 'categories', weight: 15 },
-        { name: 'description', weight: 10 },
-        { name: 'contents', weight: 5 },
-      ],
-      ignoreLocation: true,
-      threshold: 0
-    };
-    var fuse = new window.Fuse([], options);
-
-    // fetch the main search.json
-    return fetch(offsetURL('search.json'))
-      .then(function(response) {
-        if (response.status == 200) {
-          return response.json().then(function(json) {
-            // index main articles
-            json.articles.forEach(function(article) {
-              fuse.add(article);
-            });
-            // download collections and index their articles
-            return Promise.all(json.collections.map(function(collection) {
-              return fetch(offsetURL(collection)).then(function(response) {
-                if (response.status === 200) {
-                  return response.json().then(function(articles) {
-                    articles.forEach(function(article) {
-                      fuse.add(article);
-                    });
-                  })
-                } else {
-                  return Promise.reject(
-                    new Error('Unexpected status from search index request: ' +
-                              response.status)
-                  );
-                }
-              });
-            })).then(function() {
-              return fuse;
-            });
-          });
-
-        } else {
-          return Promise.reject(
-            new Error('Unexpected status from search index request: ' +
-                        response.status)
-          );
-        }
-      });
-  }
-
-  window.document.addEventListener("DOMContentLoaded", function (event) {
-
-    // get search element (bail if we don't have one)
-    var searchEl = window.document.getElementById('distill-search');
-    if (!searchEl)
-      return;
-
-    createFuseIndex()
-      .then(function(fuse) {
-
-        // make search box visible
-        searchEl.classList.remove('hidden');
-
-        // initialize autocomplete
-        var options = {
-          autoselect: true,
-          hint: false,
-          minLength: 2,
-        };
-        window.autocomplete(searchEl, options, [{
-          source: function(query, callback) {
-            const searchOptions = {
-              isCaseSensitive: false,
-              shouldSort: true,
-              minMatchCharLength: 2,
-              limit: 10,
-            };
-            var results = fuse.search(query, searchOptions);
-            callback(results
-              .map(function(result) { return result.item; })
-            );
-          },
-          templates: {
-            suggestion: function(suggestion) {
-              var img = suggestion.preview && Object.keys(suggestion.preview).length > 0
-                ? `<img src="${offsetURL(suggestion.preview)}"</img>`
-                : '';
-              var html = `
-                <div class="search-item">
-                  <h3>${suggestion.title}</h3>
-                  <div class="search-item-description">
-                    ${suggestion.description || ''}
-                  </div>
-                  <div class="search-item-preview">
-                    ${img}
-                  </div>
-                </div>
-              `;
-              return html;
-            }
-          }
-        }]).on('autocomplete:selected', function(event, suggestion) {
-          window.location.href = offsetURL(suggestion.path);
-        });
-        // remove inline display style on autocompleter (we want to
-        // manage responsive display via css)
-        $('.algolia-autocomplete').css("display", "");
-      })
-      .catch(function(error) {
-        console.log(error);
-      });
-
-  });
-
-  </script>
-
-  <style type="text/css">
-
-  .nav-search {
-    font-size: x-small;
-  }
-
-  /* Algolioa Autocomplete */
-
-  .algolia-autocomplete {
-    display: inline-block;
-    margin-left: 10px;
-    vertical-align: sub;
-    background-color: white;
-    color: black;
-    padding: 6px;
-    padding-top: 8px;
-    padding-bottom: 0;
-    border-radius: 6px;
-    border: 1px #0F2E3D solid;
-    width: 180px;
-  }
-
-
-  @media screen and (max-width: 768px) {
-    .distill-site-nav .algolia-autocomplete {
-      display: none;
-      visibility: hidden;
-    }
-    .distill-site-nav.responsive .algolia-autocomplete {
-      display: inline-block;
-      visibility: visible;
-    }
-    .distill-site-nav.responsive .algolia-autocomplete .aa-dropdown-menu {
-      margin-left: 0;
-      width: 400px;
-      max-height: 400px;
-    }
-  }
-
-  .algolia-autocomplete .aa-input, .algolia-autocomplete .aa-hint {
-    width: 90%;
-    outline: none;
-    border: none;
-  }
-
-  .algolia-autocomplete .aa-hint {
-    color: #999;
-  }
-  .algolia-autocomplete .aa-dropdown-menu {
-    width: 550px;
-    max-height: 70vh;
-    overflow-x: visible;
-    overflow-y: scroll;
-    padding: 5px;
-    margin-top: 3px;
-    margin-left: -150px;
-    background-color: #fff;
-    border-radius: 5px;
-    border: 1px solid #999;
-    border-top: none;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion {
-    cursor: pointer;
-    padding: 5px 4px;
-    border-bottom: 1px solid #eee;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion:last-of-type {
-    border-bottom: none;
-    margin-bottom: 2px;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item {
-    overflow: hidden;
-    font-size: 0.8em;
-    line-height: 1.4em;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item h3 {
-    font-size: 1rem;
-    margin-block-start: 0;
-    margin-block-end: 5px;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-description {
-    display: inline-block;
-    overflow: hidden;
-    height: 2.8em;
-    width: 80%;
-    margin-right: 4%;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-preview {
-    display: inline-block;
-    width: 15%;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-preview img {
-    height: 3em;
-    width: auto;
-    display: none;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-preview img[src] {
-    display: initial;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion.aa-cursor {
-    background-color: #eee;
-  }
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion em {
-    font-weight: bold;
-    font-style: normal;
-  }
-
-  </style>
-
-
   <!--/radix_placeholder_navigation_in_header-->
   <!--radix_placeholder_distill-->
 
@@ -2042,75 +1445,19 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </script>
 
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.13/header-attrs.js"></script>
-  <script src="site_libs/popper-2.6.0/popper.min.js"></script>
-  <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
-  <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
-  <script src="site_libs/tippy-6.2.7/tippy.umd.min.js"></script>
-  <script src="site_libs/anchor-4.2.2/anchor.min.js"></script>
-  <script src="site_libs/bowser-1.9.3/bowser.min.js"></script>
-  <script src="site_libs/webcomponents-2.0.0/webcomponents.js"></script>
-  <script src="site_libs/distill-2.2.21/template.v2.js"></script>
+  <script src="minggu-1_files/header-attrs-2.13/header-attrs.js"></script>
+  <script src="minggu-1_files/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+  <script src="minggu-1_files/popper-2.6.0/popper.min.js"></script>
+  <link href="minggu-1_files/tippy-6.2.7/tippy.css" rel="stylesheet" />
+  <link href="minggu-1_files/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
+  <script src="minggu-1_files/tippy-6.2.7/tippy.umd.min.js"></script>
+  <script src="minggu-1_files/anchor-4.2.2/anchor.min.js"></script>
+  <script src="minggu-1_files/bowser-1.9.3/bowser.min.js"></script>
+  <script src="minggu-1_files/webcomponents-2.0.0/webcomponents.js"></script>
+  <script src="minggu-1_files/distill-2.2.21/template.v2.js"></script>
   <!--radix_placeholder_site_in_header-->
-  <style type="text/css">
-  .distill-site-nav {
-    color: white;
-    background-color: #990033;
-  }
-
-  .posts-with-sidebar .posts-sidebar {
-    float: right;
-    width: 10%;    
-    margin-top: 60px;
-    padding-top: 24px;
-    padding-bottom: 24px;
-  }
-
-  .posts-with-sidebar .posts-list {
-    width: 67%;
-    margin-left: 10%;
-  }
-
-  .posts-sidebar {
-    font-size: 75%;
-    margin-right: 10%;
-  }
-
-  p a, aside a, li a, d-appendix a, a.footnote-backlink, table a {
-      color: #3366BB;
-      display: inline-block;
-      text-decoration: none;
-      transition: background-size .4s ease;
-      border-bottom: 0px solid;
-  }
-
-  .obj {
-    border: 4px #002855;
-    border-style: solid;
-    padding: 1em;
-    margin: 1em 0;
-    min-height: 120px;
-    /*color: #638f9d;*/
-    color: #002855;
-    background-color: #ffffff;
-    font-size: 16px;
-    line-height: 1.5em;
-    font-family: "Roboto";
-    /*background-image: url("../images/arrow.png");*/
-  }
-
-  .obj>p:first-child {
-    padding-top: 0;
-    margin-top: 0 !important;
-    font-family: "Lora";
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-  }
-
-  </style>
   <!--/radix_placeholder_site_in_header-->
 
-  <link rel="stylesheet" href="styles.css" type="text/css"/>
 
 </head>
 
@@ -2119,253 +1466,161 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Wawasan Agribisnis","authors":[]}
+{"title":"Agribisnis","description":"Sistem dan Manajemen","authors":[{"author":"Tedy Herlambang","authorURL":"https://bangtedy.github.io","affiliation":"&nbsp;","affiliationURL":"#","orcidID":"0000-0002-7296-4357"}],"publishedDate":"2022-03-10T00:00:00.000+07:00","citationText":"Herlambang, 2022"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
 <!--radix_placeholder_navigation_before_body-->
-<header class="header header--fixed" role="banner">
-<nav class="distill-site-nav distill-site-header">
-<div class="nav-left">
-<a href="index.html" class="title">Wawasan Agribisnis</a>
-<input id="distill-search" class="nav-search hidden" type="text" placeholder="Search..."/>
-</div>
-<div class="nav-right">
-<a href="index.html">
-<i class="fa fa-home" aria-hidden="true"></i>
-</a>
-<a href="about.html">Silabus</a>
-<a href="blog.html">Materi</a>
-<a href="index.xml">
-<i class="fa fa-rss" aria-hidden="true"></i>
-</a>
-<a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
-</div>
-</nav>
-</header>
 <!--/radix_placeholder_navigation_before_body-->
 <!--radix_placeholder_site_before_body-->
 <!--/radix_placeholder_site_before_body-->
 
 <div class="d-title">
-<h1>Wawasan Agribisnis</h1>
+<h1>Agribisnis</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
-
+<p><p>Sistem dan Manajemen</p></p>
 </div>
 
+<div class="d-byline">
+  Tedy Herlambang <a href="https://bangtedy.github.io"
+class="uri">https://bangtedy.github.io</a> 
+  
+<br/>2022-03-10
+</div>
 
 <div class="d-article">
-<h4 id="deskripsi-mata-kuliah">Deskripsi Mata Kuliah</h4>
-<p>Mata kuliah ini memperkenalkan kepada mahasiswa tentang agribisnis
-sebagai sebuah sistem dan/atau sebagai praktek manajemen. Mata kuliah
-ini memperkenalkan secara umum dan tidak mendalam prinsip-prinsip
-ekonomi serta konsep-konsep manajemen di dalam bisnis pertanian.
-Pembahasan manajemen agribisnis meliputi: manajemen rantai pasok,
-manajemen pemasaran, manajemen risiko, manajemen SDM dan kepemimpinan
-dalam agribisnis.</p>
-<h4 id="tujuan-pembelajaran">Tujuan Pembelajaran</h4>
-<p>Setelah mengikuti perkuliahan ini, secara umum mahasiswa diharapkan
-dapat memahami prinsip-prinsip dasar ekonomi dan bisnis yang diterapkan
-pada sektor pertanian dari hulu sampai hilir.</p>
-<p>Secara khusus, mahasiswa diharapkan dapat:</p>
+<h3 id="capaian-pembelajaran">Capaian Pembelajaran</h3>
+<p>Setelah mempelajari bab ini, mahasiswa seharusnya dapat:</p>
 <ul>
-<li>Menjelaskan agribisnis sebagai suatu sistem.</li>
-<li>Menjelaskan konsep-konsep dasar manajemen agribisnis.</li>
-<li>Menjelaskan bagaimana ekonomi mempengaruhi fondasi pasar dan
-pemasaran produk agribisnis, kinerja agribisnis dan manajemen
-agribisnis.</li>
-<li>Menjelaskan kerangka ekonomi dimana seorang manajer agribisnis
-membuat keputusan</li>
-<li>Menerapkan konsep-konsep manajemen agribisnis pada persoalan
-spesifik fungsi bisnis</li>
+<li><p>Mendefinisikan dan menjelaskan agribisnis sebagai sistem dan
+manajemen</p></li>
+<li><p>Mendiskusikan asal muasal agribisnis dan perkembangannya</p></li>
+<li><p>Memahami perbedaan antara agribisnis dengan bisnis
+tradisional</p></li>
+<li><p>Mengidentifikasi komponen utama agribisnis di jaman
+sekarang</p></li>
+<li><p>Memahami pentingnya model manajemen agribisnis</p></li>
+<li><p>Menghargai pertumbuhan peluang di dalam agribisnis</p></li>
 </ul>
-<h4 id="sekilas-materi">Sekilas Materi</h4>
-<p>Perkuliahan dilakukan sebanyak 14 kali pertemuan dan 2 kali pertemuan
-untuk ujian tengah semester (<strong>UTS</strong>) dan ujian akhir
-semester (<strong>UAS</strong>). Topik-topik yang akan dibahas sebagai
-berikut:</p>
-<div class="obj">
+<h3 id="definisi-agribisnis">Definisi Agribisnis</h3>
 <ul>
-<li>Minggu 1 Agribisnis: Sistem dan Manajemen</li>
-<li>Minggu 2 Sistem Agribisnis: Subsistem Produksi/Budidaya</li>
-<li>Minggu 3 Sistem Agribisnis: Subsistem Faktor Produksi</li>
-<li>Minggu 4 Sistem Agribisnis: Subsistem Pengolahan Hasil</li>
-<li>Minggu 5 Sistem Agribisnis: Subsistem Pemasaran</li>
-<li>Minggu 6 Sistem Agribisnis: Subsistem Sarana Prasarana</li>
-<li>Minggu 7 Sistem Agribisnis: Subsistem Pembinaan</li>
-<li>Minggu 8 <strong>UJIAN TENGAH SEMESTER</strong></li>
-<li>Minggu 9 Lingkungan Organisasi dan Kompetisi Agribisnis</li>
-<li>Minggu 10 Lingkungan Global dan Etika Agribisnis</li>
-<li>Minggu 11 Pengorganisasian Agribisnis</li>
-<li>Minggu 12 Kepemimpinan Agribisnis</li>
-<li>Minggu 13 Manajemen Rantai Pasok Agribisnis</li>
-<li>Minggu 14 Manajemen Pemasaran Agribisnis</li>
-<li>Minggu 15 Manajemen Risiko Agribisnis</li>
-<li>Minggu 16 <strong>UJIAN AKHIR SEMESTER</strong></li>
+<li><p>Agribusiness involves the production, distribution, and
+consumption of food, clothing, and even shelter.</p></li>
+<li><p>It includes all economic activity in the food and fiber
+system:</p>
+<ul>
+<li>The input supply industries,</li>
+<li>Agricultural production,</li>
+<li>Post-harvest, value-added activities: commodity processing, food
+manufacturing, and food distribution.</li>
+</ul></li>
+<li><p>Most people understand and see its parts, but relatively few see
+the industry in its entirety.</p></li>
+<li><p>In 1957 one ground-breaking book, A Concept of Agribusiness –&gt;
+The book debuted the term “agribusiness.”</p></li>
 </ul>
-</div>
-<h4 id="kegiatan-pembelajaran">Kegiatan Pembelajaran</h4>
-<p>Pelaksanaan Pembelajaran Semester Genap Tahun Akademik 2O21/2O22
-dilakukan dengan <em>Tatap Muka Terbatas</em>. Metode perkuliahan adalah
-kombinasi antara ceramah, diskusi, latihan dan presentasi kelompok.
-Mahasiswa harap memperhatikan pengumuman yang disampaikan dosen di WAG
-yang sudah dibentuk.</p>
-<p>Untuk dapat mengikuti perkuliahan dengan baik, mahasiswa sebaiknya
-membaca terlebih dahulu buku acuan pada bab-bab yang sesuai dengan
-materi pada minggu yang berkaitan dan mengerjakan tugas/latihan yang
-diberikan pada saat perkuliahan. Mahasiswa harus mereview semua bahan
-yang diberikan selama 14 kali untuk persiapan UTS dan UAS.</p>
-<h4 id="buku-acuan">Buku Acuan</h4>
+<h3 id="agribisnis-sekarang">Agribisnis Sekarang</h3>
+<ul>
+<li>Agribusiness firms ranging from large multinational corporations to
+emerging food manufacturing and input supply firms.</li>
+<li>A strong demand for more and better employees trained in both
+management and agricultural sciences.</li>
+</ul>
+<h3
+id="industri-industri-inti-di-dalam-agribisnis-the-core-industries">Industri-Industri
+Inti di dalam Agribisnis (<em>The Core Industries</em>)</h3>
+<ul>
+<li>Everyone knows what “business” is –&gt; how about Agribusiness?</li>
+<li>Agribusiness involves:
 <ol type="1">
-<li><p>Van Fleet, David D.; Ella W. Van Fleet, dan George J. Seperich
-(2014). <em>Agribusiness: Principles of Management</em>. Cengage
-Learning</p></li>
-<li><p>Karmini (2020). Dasar-dasar Agribisnis. Mulawarman University
-Press</p></li>
-</ol>
-<h4 id="evaluasi-dan-penilaian">Evaluasi dan Penilaian</h4>
-<p>Nilai Akhir untuk mata kuliah Kepemimpinan Agribisnis terdiri dari
-nilai ujian tengah semester (UTS), nilai ujian akhir semester (UAS) dan
-nilai komponen lain (KL). Nilai KL terdiri dari tugas individu, tugas
-kelompok, presentasi, kehadiran dan keaktifan.</p>
-<h4 id="tugas-individukelompok">Tugas Individu/Kelompok</h4>
-<p>Tugas diberikan pada saat kuliah dan wajib dikerjakan oleh mahasiswa
-dan hasilnya dikumpulkan sesuai dengan waktu yang telah ditetapkan.
-Keterlambatan pengumpulan tugas akan mengurangi nilai sebesar 10 satuan
-per hari dengan batas maksimum keterlambatan 5 hari.</p>
-<h4 id="persebaran-nilai">Persebaran NIlai</h4>
-<ol type="1">
-<li><p>UTS dan UAS dilakukan melalui ujian tertulis dengan bobot
-maksimum 60%</p></li>
-<li><p>KL dinilai melalui keaktifan mahasiswa pada aktivitas
-pembelajaran (tugas-tugas, diskusi, presentasi dan kehadiran) dengan
-bobot 40%.</p></li>
-</ol>
-<h4 id="selang-penilaian">Selang Penilaian</h4>
-<table>
-<thead>
-<tr class="header">
-<th style="text-align: center;">No</th>
-<th style="text-align: center;">Nilai</th>
-<th style="text-align: center;">Bobot</th>
-<th style="text-align: center;">Min</th>
-<th style="text-align: center;">Max</th>
-<th style="text-align: center;">Lulus</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">A</td>
-<td style="text-align: center;">4.00</td>
-<td style="text-align: center;">80</td>
-<td style="text-align: center;">100</td>
-<td style="text-align: center;">Y</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">B+</td>
-<td style="text-align: center;">3.50</td>
-<td style="text-align: center;">75</td>
-<td style="text-align: center;">79.9</td>
-<td style="text-align: center;">Y</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">3</td>
-<td style="text-align: center;">B</td>
-<td style="text-align: center;">3.00</td>
-<td style="text-align: center;">70</td>
-<td style="text-align: center;">74.9</td>
-<td style="text-align: center;">Y</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">4</td>
-<td style="text-align: center;">C+</td>
-<td style="text-align: center;">2.75</td>
-<td style="text-align: center;">65</td>
-<td style="text-align: center;">69.9</td>
-<td style="text-align: center;">Y</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">5</td>
-<td style="text-align: center;">C</td>
-<td style="text-align: center;">2.00</td>
-<td style="text-align: center;">60</td>
-<td style="text-align: center;">64.9</td>
-<td style="text-align: center;">Y</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">6</td>
-<td style="text-align: center;">D+</td>
-<td style="text-align: center;">1.50</td>
-<td style="text-align: center;">55</td>
-<td style="text-align: center;">59.9</td>
-<td style="text-align: center;">T</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">7</td>
-<td style="text-align: center;">D</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">45</td>
-<td style="text-align: center;">54.9</td>
-<td style="text-align: center;">T</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">8</td>
-<td style="text-align: center;">E</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">44.9</td>
-<td style="text-align: center;">T</td>
-</tr>
-</tbody>
-</table>
-<h4 id="kejujuran-akademik-dan-plagiarisme">Kejujuran Akademik dan
-Plagiarisme</h4>
-<p>Mahasiswa harus mengikuti kebijakan dan aturan Universitas tentang
-kejujuran akademik dan plagiarisme seperti yang tertuang dalam pedoman
-akademik. Pelanggaran terhadap kebijakan tentang kejujuran akademik dan
-plagiarisme akan diberikan sanksi dari surat teguran, diberi nilai nol,
-skorsing sampai dikeluarkan dari Universitas.</p>
-<h4 id="kehadiran-dan-disiplin-mahasiswa">Kehadiran dan Disiplin
-Mahasiswa</h4>
-<p>Dalam hal perkuliahan dilakukan secara <em>luring</em>:</p>
-<ol type="1">
-<li><p>Hadir paling lambat 15 menit. Mahasiswa <strong>TIDAK
-DIPERKENANKAN</strong> masuk kelas setelah 15 menit kuliah
-dimulai.</p></li>
-<li><p>Berpenampilan dan berbusana sopan serta rapi.</p></li>
-<li><p>Tidak menggunakan sandal atau sejenisnya, serta tidak
-mengoperasikan ponsel/laptop kecuali diminta untuk keperluan
-perkualiahan.</p></li>
-<li><p>Mahasiswa wajib mengikuti perkuliahan minimal 80 persen dari
-total 14 kali pertemuan, kecuali dengan alasan dan bukti yang
-valid.</p></li>
-<li><p>Mahasiswa yang menyelesaikan kurang dari 50% tugas-tugas/ujian
-yang diberikan akan diberi nilai <strong>E</strong> (tidak
-lulus).</p></li>
-<li><p>Tidak ada ujian dan penugasan perbaikan.</p></li>
-</ol>
-<h4 id="tindak-kekerasan-dan-pelecehan">Tindak Kekerasan dan
-Pelecehan</h4>
-<p>Mahasiswa harus selalu menjaga sopan santun dan menghormati semua
-dosen, tenaga pendidikan, petugas keamanan, tenaga kesehatan dan sesama
-mahasiswa. Perilaku dan tindak kekerasan serta pelecehan yang
-mendisrupsi kegiatan pembelajaran, mengakibatkan kerusakan fasilitas dan
-properti kampus, akan diproses sesuai dengan aturan yang berlaku.</p>
-<h4 id="evaluasi-perkuliahan-dan-dosen">Evaluasi Perkuliahan dan
-Dosen</h4>
-<p>Masukan mahasiswa untuk tujuan perbaikan perkuliahan akan
-diperhatikan dengan sangat serius. Mahasiswa sangat diharapkan
-menyisihkan waktu di setiap akhir semester untuk memberikan masukan dan
-evaluasi terkait dengan pelaksanaan perkuliahan dan dosen pengajar.
-Evaluasi dan masukan yang diberikan tidak akan mempengaruhi kelulusan
-dan nilai akhir.</p>
-<h4 id="teknologi-yang-diperlukan">Teknologi yang Diperlukan</h4>
-<p>Teknologi yang diperlukan untuk perkuliahan ini adalah komputer
-dengan perangkat lunak yang mendukung, telepon seluler dan koneksi
-internet.</p>
+<li>Inputs—seeds, fertilizer, financing, equipment—that are used in
+production;</li>
+<li>Intermediate activities— grading, storage, processing, packaging,
+distribution, pricing, marketing; and</li>
+<li>Final consumption activities—restaurants, groceries.</li>
+</ol></li>
+<li>The input supply industries, production agriculture, and value-added
+activities are considered the agribusiness core industries.</li>
+<li>These core industries use the material and services of certain
+ancillary industries which are considered agribusiness support
+industries.</li>
+<li>Farming are part of the core of agribusiness, representing its
+production process stage.</li>
+<li>Thus, farming are part of agribusiness. But, they are not the end;
+they are not even the beginning.</li>
+</ul>
+<h3 id="model-manajemen-agribisnis">Model Manajemen Agribisnis</h3>
+<ul>
+<li><p>For centuries, agricultural productivity came from the
+application of two resources: .green[land and labour].</p></li>
+<li><p>More recently a substantial proportion of increased productivity
+in agriculture output has come from the use of another resource:
+<strong>capital</strong></p>
+<ul>
+<li>Primarily in the form of technological change including
+biotechnology, improved animal husbandry, and improvements in machinery
+and chemicals.</li>
+</ul></li>
+<li><p>Future improvements will come from the application of a fourth
+resource: <strong>management</strong>.</p></li>
+<li><p>The industry needs individuals who can harness resources to move
+a perishable product around the globe –&gt; .green[Agribusiness
+Management]</p></li>
+</ul>
+<h3 id="the-chain-of-agribusinessthe-value-chain">The Chain of
+Agribusiness—The Value Chain</h3>
+<ul>
+<li>The linkages between the agribusiness industry activities: the chain
+of agribusiness.</li>
+<li>This chain can be further refined as the agribusiness value
+chain.</li>
+<li>It begins with raw materials and commodities of relatively low
+value;</li>
+<li>Then each step in the chain modifies the material or commodity and
+adds value to the product derived from its step.</li>
+</ul>
+<h3 id="contoh-rantai-pasok-buah">Contoh Rantai Pasok Buah</h3>
+<ul>
+<li>Growers harvest raw fruits or vegetables that are transported in
+bulk to processors or wholesalers,</li>
+<li>Then they are modified or repackaged and transported to grocery
+chains in processed form or in smaller batches,</li>
+<li>Finally at local grocers who display and sell the products in
+quantities more suitable for consumers to purchase.</li>
+</ul>
+<h3 id="another-way-of-looking-at-the-term-agribusiness">Another way of
+looking at the term agribusiness</h3>
+<ul>
+<li>Agribusiness involves all the value chain activities usually
+associated with a business or industry with the additional provision
+that most of the materials, commodities, and end products are
+<strong>perishable</strong> (ringkih, gampang rusak, cepat busuk).</li>
+<li>The perishable nature of a product, along with variability in such
+factors as color, texture, size, and shape, is the distinguishing
+characteristic of agribusiness products and industries from other
+businesses.</li>
+</ul>
+<blockquote>
+<p>This aspect of the agribusiness industry is also a key factor in all
+business decisions.</p>
+</blockquote>
+<h3 id="agribisnis-di-sekitar-kita">Agribisnis di sekitar kita</h3>
+<ul>
+<li>For this reason the story of Ayam Geprek, or Bebek Goreng or Kios
+Buah is an agribusiness story.</li>
+<li>Bagaimana dengan Warteg, Warung Padang, Warung Nasi Pecel dan
+Rawon?</li>
+<li>Its entire business system involved a highly perishable commodity:
+daging ayam, beras, bumbu-bumbu, minyak goreng, dll.</li>
+</ul>
+<h3 id="diskusi">Diskusi</h3>
+<ul>
+<li>Berikan contoh perusahaan, usaha, kegiatan yang bisa dikategorikan
+sebagai agribisnis disekitar Anda!</li>
+<li>Bagaimana dengan peluang usaha di bidang Agribisnis di sekitar
+Anda?</li>
+</ul>
 <div class="sourceCode" id="cb1"><pre
 class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
@@ -2379,12 +1634,7 @@ class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"><
 <!--radix_placeholder_site_after_body-->
 <!--/radix_placeholder_site_after_body-->
 <!--radix_placeholder_appendices-->
-<div class="appendix-bottom">
-<h3 id="updates-and-corrections">Corrections</h3>
-<p>If you see mistakes or want to suggest changes, please <a href="https://github.com/bangtedy/wabis/issues/new">create an issue</a> on the source repository.</p>
-<h3 id="reuse">Reuse</h3>
-<p>Text and figures are licensed under Creative Commons Attribution <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. Source code is available at <a href="https://github.com/bangtedy/wabis">https://github.com/bangtedy/wabis</a>, unless otherwise noted. The figures that have been reused from other sources don't fall under this license and can be recognized by a note in their caption: "Figure from ...".</p>
-</div>
+<div class="appendix-bottom"></div>
 <!--/radix_placeholder_appendices-->
 <!--radix_placeholder_navigation_after_body-->
 <!--/radix_placeholder_navigation_after_body-->

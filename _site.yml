@@ -1,20 +1,26 @@
-name: "source-for-distill"
+name: "Wawasan Agribisnis"
 title: "Wawasan Agribisnis"
 description: |
-  My Blog
+  Bahan Kuliah Wawasan Agribisnis
 output_dir: "docs"
+base_url: https://bangtedy.github.io/wabis
+twitter:
+  creator: "@t_hlb"
+repository_url: https://github.com/bangtedy/wabis
+creative_common: CC BY
+collections:
+  posts:
+    share: [twitter,facebook,linkedin]
 navbar:
   right:
-    - text: "Home"
+    - icon: fa-home
       href: index.html
     - text: "Silabus"
       href: about.html
-    - text: "Materi UTS"
-      menu:
-        - text: "Minggu 1"
-          href: minggu1/minggu1.html
-        - text: "Minggu 2"
-          href: minggu2/minggu2.html
+    - text: "Materi"
+      href: blog.html
+    - icon: fa fa-rss
+      href: index.xml
 output: 
   distill::distill_article:
     css: styles.css

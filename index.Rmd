@@ -4,6 +4,22 @@ site: distill::distill_website
 creative_commons: CC BY
 ---
 
+```{r, include=FALSE, results='asis'}
+library(metathis)
+
+meta() %>%
+  meta_social(
+    title = "Wawasan Agribisnis",
+    description = "Silabus dan Materi Wawasan Agribisnis",
+    url = "https://bangtedy.github.io/wabis",
+    image = "",
+    image_alt = "",
+    og_type = "website",
+    twitter_card_type = "summary",
+    twitter_site = NULL
+  )
+```
+
 ### Kode Mata Kuliah: PA1431
 
 ### SKS/Pertemuan: 2/16
