@@ -26,15 +26,17 @@ Setelah mempelajari bab ini, mahasiswa seharusnya dapat:
 
 * Mendefinisikan dan menjelaskan agribisnis sebagai sistem dan manajemen
 
-* Mendiskusikan asal muasal agribisnis dan perkembangannya
+* Menjelaskan asal muasal agribisnis dan perkembangannya
 
-* Memahami perbedaan antara agribisnis dengan bisnis tradisional
+* Menjelaskan perbedaan antara agribisnis dengan bisnis tradisional
 
 * Mengidentifikasi komponen utama agribisnis di jaman sekarang
 
-* Memahami pentingnya model manajemen agribisnis
+* Menjelaskan pentingnya model manajemen agribisnis
 
-* Menghargai pertumbuhan peluang di dalam agribisnis
+* Menjelaskan pertumbuhan peluang di dalam agribisnis
+
+---
 
 ### Definisi Agribisnis
 
@@ -49,6 +51,8 @@ Setelah mempelajari bab ini, mahasiswa seharusnya dapat:
 
 * In 1957 one ground-breaking book, A Concept of Agribusiness --> The book debuted
 the term “agribusiness.”
+
+---
 
 ### Agribisnis Sekarang
 
@@ -71,6 +75,8 @@ agricultural sciences.
 * Farming are part of the core of agribusiness, representing its production process stage. 
 * Thus, farming are part of agribusiness. But, they are not the end; they are not even the beginning.
 
+---
+
 ### Model Manajemen Agribisnis
 
 * For centuries, agricultural productivity came from the application of two resources: .green[land and labour]. 
@@ -81,6 +87,8 @@ agricultural sciences.
 * Future improvements will come from the application of a fourth resource: **management**.
 
 * The industry needs individuals who can harness resources to move a perishable product around the globe --> .green[Agribusiness Management] 
+
+---
 
 ### The Chain of Agribusiness—The Value Chain
 
@@ -95,6 +103,8 @@ product derived from its step.
 - Then they are modified or repackaged and transported to grocery chains in processed form or in smaller batches, 
 - Finally at local grocers who display and sell the products in quantities more suitable for consumers to purchase.
 
+---
+
 ### Another way of looking at the term agribusiness
 
 * Agribusiness involves all the value chain activities usually associated with a business or industry with the additional provision that most of the materials, commodities, and end products are **perishable** (ringkih, gampang rusak, cepat busuk). 
@@ -102,7 +112,10 @@ product derived from its step.
 
 > This aspect of the agribusiness industry is also a key factor in all business decisions. 
 
+---
+
 ### Agribisnis di sekitar kita
+
 * For this reason the story of Ayam Geprek, or Bebek Goreng or Kios Buah is an agribusiness story. 
 * Bagaimana dengan Warteg, Warung Padang, Warung Nasi Pecel dan Rawon?
 * Its entire business system involved a highly perishable commodity: daging ayam, beras, bumbu-bumbu, minyak goreng, dll.

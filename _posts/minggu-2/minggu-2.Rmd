@@ -1,7 +1,7 @@
 ---
 title: "Sistem Agribisnis"
 description: |
-  Subsistem Produksi
+  Subsistem Budidaya Tanaman
 author: 
   - name: Tedy Herlambang
     url: https://bangtedy.github.io
@@ -32,7 +32,9 @@ Setelah mempelajari materi ini, mahasiswa seharusnya dapat:
 
 ---
 
-## Produksi Pertanian
+## Produksi Pertanian 
+
+<aside>Materi yang disampaikan disini hanya rangkuman. Mahasiswa harus merujuk pada referensi yang dianjurkan untuk mendapatkan informasi yang lebih utuh</aside>
 
 * Pertanian membantu memenuhi kebutuhan dan peradaban manusia dengan menyediakan: *pangan, pakan, pakaian perumahan, obat-obatan, rekreasi*. 
 * Pertanian usaha produktif yang mengubah sumberdaya tanah, cahaya, udara, suhu dan air menjadi sebuah unit produktif primer yang sangat berguna bagi manusia. 

@@ -7,7 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
   <meta name="generator" content="distill" />
-  <link rel="alternate" type="application/rss+xml" href="https://bangtedy.github.io/wabis/blog.xml" />
 
   <style type="text/css">
   /* Hide doc at startup (prevent jankiness while JS renders/transforms) */
@@ -88,640 +87,40 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 
   <!--radix_placeholder_meta_tags-->
-  <title>Wawasan Agribisnis: Materi</title>
+  <title>Sistem Agribisnis</title>
 
-  <meta property="description" itemprop="description" content="Some additional details about the blog"/>
+  <meta property="description" itemprop="description" content="Subsistem Penyediaan Faktor Produksi"/>
 
 
+  <!--  https://schema.org/Article -->
+  <meta property="article:published" itemprop="datePublished" content="2022-03-23"/>
+  <meta property="article:created" itemprop="dateCreated" content="2022-03-23"/>
+  <meta name="article:author" content="Tedy Herlambang"/>
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="Wawasan Agribisnis: Materi"/>
+  <meta property="og:title" content="Sistem Agribisnis"/>
   <meta property="og:type" content="article"/>
-  <meta property="og:description" content="Some additional details about the blog"/>
+  <meta property="og:description" content="Subsistem Penyediaan Faktor Produksi"/>
   <meta property="og:locale" content="en_US"/>
-  <meta property="og:site_name" content="Wawasan Agribisnis"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="Wawasan Agribisnis: Materi"/>
-  <meta property="twitter:description" content="Some additional details about the blog"/>
-  <meta property="twitter:site" content="@t_hlb"/>
+  <meta property="twitter:title" content="Sistem Agribisnis"/>
+  <meta property="twitter:description" content="Subsistem Penyediaan Faktor Produksi"/>
   <meta property="twitter:creator" content="@t_hlb"/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","listing","twitter"]}},"value":[{"type":"character","attributes":{},"value":["Materi"]},{"type":"character","attributes":{},"value":["Some additional details about the blog\n"]},{"type":"character","attributes":{},"value":["posts"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["site"]}},"value":[{"type":"character","attributes":{},"value":["@t_hlb"]}]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","draft","base_url","twitter","output"]}},"value":[{"type":"character","attributes":{},"value":["Sistem Agribisnis"]},{"type":"character","attributes":{},"value":["Subsistem Penyediaan Faktor Produksi\n"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url","orcid_id"]}},"value":[{"type":"character","attributes":{},"value":["Tedy Herlambang"]},{"type":"character","attributes":{},"value":["https://bangtedy.github.io"]},{"type":"character","attributes":{},"value":["0000-0002-7296-4357"]}]}]},{"type":"character","attributes":{},"value":["2022-03-23"]},{"type":"logical","attributes":{},"value":[false]},{"type":"character","attributes":{},"value":["https://bangtedy.github.io/wabis"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["creator"]}},"value":[{"type":"character","attributes":{},"value":["@t_hlb"]}]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
+  
+  <script type="text/json" id="radix-resource-manifest">
+  {"type":"character","attributes":{},"value":["minggu-3_files/anchor-4.2.2/anchor.min.js","minggu-3_files/bowser-1.9.3/bowser.min.js","minggu-3_files/distill-2.2.21/template.v2.js","minggu-3_files/header-attrs-2.13/header-attrs.js","minggu-3_files/jquery-3.6.0/jquery-3.6.0.js","minggu-3_files/jquery-3.6.0/jquery-3.6.0.min.js","minggu-3_files/jquery-3.6.0/jquery-3.6.0.min.map","minggu-3_files/popper-2.6.0/popper.min.js","minggu-3_files/tippy-6.2.7/tippy-bundle.umd.min.js","minggu-3_files/tippy-6.2.7/tippy-light-border.css","minggu-3_files/tippy-6.2.7/tippy.css","minggu-3_files/tippy-6.2.7/tippy.umd.min.js","minggu-3_files/webcomponents-2.0.0/webcomponents.js"]}
+  </script>
   <!--radix_placeholder_navigation_in_header-->
-  <meta name="distill:offset" content=""/>
-
-  <script type="application/javascript">
-
-    window.headroom_prevent_pin = false;
-
-    window.document.addEventListener("DOMContentLoaded", function (event) {
-
-      // initialize headroom for banner
-      var header = $('header').get(0);
-      var headerHeight = header.offsetHeight;
-      var headroom = new Headroom(header, {
-        tolerance: 5,
-        onPin : function() {
-          if (window.headroom_prevent_pin) {
-            window.headroom_prevent_pin = false;
-            headroom.unpin();
-          }
-        }
-      });
-      headroom.init();
-      if(window.location.hash)
-        headroom.unpin();
-      $(header).addClass('headroom--transition');
-
-      // offset scroll location for banner on hash change
-      // (see: https://github.com/WickyNilliams/headroom.js/issues/38)
-      window.addEventListener("hashchange", function(event) {
-        window.scrollTo(0, window.pageYOffset - (headerHeight + 25));
-      });
-
-      // responsive menu
-      $('.distill-site-header').each(function(i, val) {
-        var topnav = $(this);
-        var toggle = topnav.find('.nav-toggle');
-        toggle.on('click', function() {
-          topnav.toggleClass('responsive');
-        });
-      });
-
-      // nav dropdowns
-      $('.nav-dropbtn').click(function(e) {
-        $(this).next('.nav-dropdown-content').toggleClass('nav-dropdown-active');
-        $(this).parent().siblings('.nav-dropdown')
-           .children('.nav-dropdown-content').removeClass('nav-dropdown-active');
-      });
-      $("body").click(function(e){
-        $('.nav-dropdown-content').removeClass('nav-dropdown-active');
-      });
-      $(".nav-dropdown").click(function(e){
-        e.stopPropagation();
-      });
-    });
-  </script>
-
-  <style type="text/css">
-
-  /* Theme (user-documented overrideables for nav appearance) */
-
-  .distill-site-nav {
-    color: rgba(255, 255, 255, 0.8);
-    background-color: #0F2E3D;
-    font-size: 15px;
-    font-weight: 300;
-  }
-
-  .distill-site-nav a {
-    color: inherit;
-    text-decoration: none;
-  }
-
-  .distill-site-nav a:hover {
-    color: white;
-  }
-
-  @media print {
-    .distill-site-nav {
-      display: none;
-    }
-  }
-
-  .distill-site-header {
-
-  }
-
-  .distill-site-footer {
-
-  }
-
-
-  /* Site Header */
-
-  .distill-site-header {
-    width: 100%;
-    box-sizing: border-box;
-    z-index: 3;
-  }
-
-  .distill-site-header .nav-left {
-    display: inline-block;
-    margin-left: 8px;
-  }
-
-  @media screen and (max-width: 768px) {
-    .distill-site-header .nav-left {
-      margin-left: 0;
-    }
-  }
-
-
-  .distill-site-header .nav-right {
-    float: right;
-    margin-right: 8px;
-  }
-
-  .distill-site-header a,
-  .distill-site-header .title {
-    display: inline-block;
-    text-align: center;
-    padding: 14px 10px 14px 10px;
-  }
-
-  .distill-site-header .title {
-    font-size: 18px;
-    min-width: 150px;
-  }
-
-  .distill-site-header .logo {
-    padding: 0;
-  }
-
-  .distill-site-header .logo img {
-    display: none;
-    max-height: 20px;
-    width: auto;
-    margin-bottom: -4px;
-  }
-
-  .distill-site-header .nav-image img {
-    max-height: 18px;
-    width: auto;
-    display: inline-block;
-    margin-bottom: -3px;
-  }
-
-
-
-  @media screen and (min-width: 1000px) {
-    .distill-site-header .logo img {
-      display: inline-block;
-    }
-    .distill-site-header .nav-left {
-      margin-left: 20px;
-    }
-    .distill-site-header .nav-right {
-      margin-right: 20px;
-    }
-    .distill-site-header .title {
-      padding-left: 12px;
-    }
-  }
-
-
-  .distill-site-header .nav-toggle {
-    display: none;
-  }
-
-  .nav-dropdown {
-    display: inline-block;
-    position: relative;
-  }
-
-  .nav-dropdown .nav-dropbtn {
-    border: none;
-    outline: none;
-    color: rgba(255, 255, 255, 0.8);
-    padding: 16px 10px;
-    background-color: transparent;
-    font-family: inherit;
-    font-size: inherit;
-    font-weight: inherit;
-    margin: 0;
-    margin-top: 1px;
-    z-index: 2;
-  }
-
-  .nav-dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: white;
-    min-width: 200px;
-    border: 1px solid rgba(0,0,0,0.15);
-    border-radius: 4px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
-    z-index: 1;
-    margin-top: 2px;
-    white-space: nowrap;
-    padding-top: 4px;
-    padding-bottom: 4px;
-  }
-
-  .nav-dropdown-content hr {
-    margin-top: 4px;
-    margin-bottom: 4px;
-    border: none;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  }
-
-  .nav-dropdown-active {
-    display: block;
-  }
-
-  .nav-dropdown-content a, .nav-dropdown-content .nav-dropdown-header {
-    color: black;
-    padding: 6px 24px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
-
-  .nav-dropdown-content .nav-dropdown-header {
-    display: block;
-    padding: 5px 24px;
-    padding-bottom: 0;
-    text-transform: uppercase;
-    font-size: 14px;
-    color: #999999;
-    white-space: nowrap;
-  }
-
-  .nav-dropdown:hover .nav-dropbtn {
-    color: white;
-  }
-
-  .nav-dropdown-content a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-
-  .nav-right .nav-dropdown-content {
-    margin-left: -45%;
-    right: 0;
-  }
-
-  @media screen and (max-width: 768px) {
-    .distill-site-header a, .distill-site-header .nav-dropdown  {display: none;}
-    .distill-site-header a.nav-toggle {
-      float: right;
-      display: block;
-    }
-    .distill-site-header .title {
-      margin-left: 0;
-    }
-    .distill-site-header .nav-right {
-      margin-right: 0;
-    }
-    .distill-site-header {
-      overflow: hidden;
-    }
-    .nav-right .nav-dropdown-content {
-      margin-left: 0;
-    }
-  }
-
-
-  @media screen and (max-width: 768px) {
-    .distill-site-header.responsive {position: relative; min-height: 500px; }
-    .distill-site-header.responsive a.nav-toggle {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .distill-site-header.responsive a,
-    .distill-site-header.responsive .nav-dropdown {
-      display: block;
-      text-align: left;
-    }
-    .distill-site-header.responsive .nav-left,
-    .distill-site-header.responsive .nav-right {
-      width: 100%;
-    }
-    .distill-site-header.responsive .nav-dropdown {float: none;}
-    .distill-site-header.responsive .nav-dropdown-content {position: relative;}
-    .distill-site-header.responsive .nav-dropdown .nav-dropbtn {
-      display: block;
-      width: 100%;
-      text-align: left;
-    }
-  }
-
-  /* Site Footer */
-
-  .distill-site-footer {
-    width: 100%;
-    overflow: hidden;
-    box-sizing: border-box;
-    z-index: 3;
-    margin-top: 30px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    text-align: center;
-  }
-
-  /* Headroom */
-
-  d-title {
-    padding-top: 6rem;
-  }
-
-  @media print {
-    d-title {
-      padding-top: 4rem;
-    }
-  }
-
-  .headroom {
-    z-index: 1000;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-  }
-
-  .headroom--transition {
-    transition: all .4s ease-in-out;
-  }
-
-  .headroom--unpinned {
-    top: -100px;
-  }
-
-  .headroom--pinned {
-    top: 0;
-  }
-
-  /* adjust viewport for navbar height */
-  /* helps vertically center bootstrap (non-distill) content */
-  .min-vh-100 {
-    min-height: calc(100vh - 100px) !important;
-  }
-
-  </style>
-
-  <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
-  <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
-  <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
-  <script src="site_libs/headroom-0.9.4/headroom.min.js"></script>
-  <script src="site_libs/autocomplete-0.37.1/autocomplete.min.js"></script>
-  <script src="site_libs/fuse-6.4.1/fuse.min.js"></script>
-
-  <script type="application/javascript">
-
-  function getMeta(metaName) {
-    var metas = document.getElementsByTagName('meta');
-    for (let i = 0; i < metas.length; i++) {
-      if (metas[i].getAttribute('name') === metaName) {
-        return metas[i].getAttribute('content');
-      }
-    }
-    return '';
-  }
-
-  function offsetURL(url) {
-    var offset = getMeta('distill:offset');
-    return offset ? offset + '/' + url : url;
-  }
-
-  function createFuseIndex() {
-
-    // create fuse index
-    var options = {
-      keys: [
-        { name: 'title', weight: 20 },
-        { name: 'categories', weight: 15 },
-        { name: 'description', weight: 10 },
-        { name: 'contents', weight: 5 },
-      ],
-      ignoreLocation: true,
-      threshold: 0
-    };
-    var fuse = new window.Fuse([], options);
-
-    // fetch the main search.json
-    return fetch(offsetURL('search.json'))
-      .then(function(response) {
-        if (response.status == 200) {
-          return response.json().then(function(json) {
-            // index main articles
-            json.articles.forEach(function(article) {
-              fuse.add(article);
-            });
-            // download collections and index their articles
-            return Promise.all(json.collections.map(function(collection) {
-              return fetch(offsetURL(collection)).then(function(response) {
-                if (response.status === 200) {
-                  return response.json().then(function(articles) {
-                    articles.forEach(function(article) {
-                      fuse.add(article);
-                    });
-                  })
-                } else {
-                  return Promise.reject(
-                    new Error('Unexpected status from search index request: ' +
-                              response.status)
-                  );
-                }
-              });
-            })).then(function() {
-              return fuse;
-            });
-          });
-
-        } else {
-          return Promise.reject(
-            new Error('Unexpected status from search index request: ' +
-                        response.status)
-          );
-        }
-      });
-  }
-
-  window.document.addEventListener("DOMContentLoaded", function (event) {
-
-    // get search element (bail if we don't have one)
-    var searchEl = window.document.getElementById('distill-search');
-    if (!searchEl)
-      return;
-
-    createFuseIndex()
-      .then(function(fuse) {
-
-        // make search box visible
-        searchEl.classList.remove('hidden');
-
-        // initialize autocomplete
-        var options = {
-          autoselect: true,
-          hint: false,
-          minLength: 2,
-        };
-        window.autocomplete(searchEl, options, [{
-          source: function(query, callback) {
-            const searchOptions = {
-              isCaseSensitive: false,
-              shouldSort: true,
-              minMatchCharLength: 2,
-              limit: 10,
-            };
-            var results = fuse.search(query, searchOptions);
-            callback(results
-              .map(function(result) { return result.item; })
-            );
-          },
-          templates: {
-            suggestion: function(suggestion) {
-              var img = suggestion.preview && Object.keys(suggestion.preview).length > 0
-                ? `<img src="${offsetURL(suggestion.preview)}"</img>`
-                : '';
-              var html = `
-                <div class="search-item">
-                  <h3>${suggestion.title}</h3>
-                  <div class="search-item-description">
-                    ${suggestion.description || ''}
-                  </div>
-                  <div class="search-item-preview">
-                    ${img}
-                  </div>
-                </div>
-              `;
-              return html;
-            }
-          }
-        }]).on('autocomplete:selected', function(event, suggestion) {
-          window.location.href = offsetURL(suggestion.path);
-        });
-        // remove inline display style on autocompleter (we want to
-        // manage responsive display via css)
-        $('.algolia-autocomplete').css("display", "");
-      })
-      .catch(function(error) {
-        console.log(error);
-      });
-
-  });
-
-  </script>
-
-  <style type="text/css">
-
-  .nav-search {
-    font-size: x-small;
-  }
-
-  /* Algolioa Autocomplete */
-
-  .algolia-autocomplete {
-    display: inline-block;
-    margin-left: 10px;
-    vertical-align: sub;
-    background-color: white;
-    color: black;
-    padding: 6px;
-    padding-top: 8px;
-    padding-bottom: 0;
-    border-radius: 6px;
-    border: 1px #0F2E3D solid;
-    width: 180px;
-  }
-
-
-  @media screen and (max-width: 768px) {
-    .distill-site-nav .algolia-autocomplete {
-      display: none;
-      visibility: hidden;
-    }
-    .distill-site-nav.responsive .algolia-autocomplete {
-      display: inline-block;
-      visibility: visible;
-    }
-    .distill-site-nav.responsive .algolia-autocomplete .aa-dropdown-menu {
-      margin-left: 0;
-      width: 400px;
-      max-height: 400px;
-    }
-  }
-
-  .algolia-autocomplete .aa-input, .algolia-autocomplete .aa-hint {
-    width: 90%;
-    outline: none;
-    border: none;
-  }
-
-  .algolia-autocomplete .aa-hint {
-    color: #999;
-  }
-  .algolia-autocomplete .aa-dropdown-menu {
-    width: 550px;
-    max-height: 70vh;
-    overflow-x: visible;
-    overflow-y: scroll;
-    padding: 5px;
-    margin-top: 3px;
-    margin-left: -150px;
-    background-color: #fff;
-    border-radius: 5px;
-    border: 1px solid #999;
-    border-top: none;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion {
-    cursor: pointer;
-    padding: 5px 4px;
-    border-bottom: 1px solid #eee;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion:last-of-type {
-    border-bottom: none;
-    margin-bottom: 2px;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item {
-    overflow: hidden;
-    font-size: 0.8em;
-    line-height: 1.4em;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item h3 {
-    font-size: 1rem;
-    margin-block-start: 0;
-    margin-block-end: 5px;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-description {
-    display: inline-block;
-    overflow: hidden;
-    height: 2.8em;
-    width: 80%;
-    margin-right: 4%;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-preview {
-    display: inline-block;
-    width: 15%;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-preview img {
-    height: 3em;
-    width: auto;
-    display: none;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-preview img[src] {
-    display: initial;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion.aa-cursor {
-    background-color: #eee;
-  }
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion em {
-    font-weight: bold;
-    font-style: normal;
-  }
-
-  </style>
-
-
   <!--/radix_placeholder_navigation_in_header-->
   <!--radix_placeholder_distill-->
 
@@ -2046,313 +1445,372 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </script>
 
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.13/header-attrs.js"></script>
-  <script src="site_libs/popper-2.6.0/popper.min.js"></script>
-  <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
-  <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
-  <script src="site_libs/tippy-6.2.7/tippy.umd.min.js"></script>
-  <script src="site_libs/anchor-4.2.2/anchor.min.js"></script>
-  <script src="site_libs/bowser-1.9.3/bowser.min.js"></script>
-  <script src="site_libs/webcomponents-2.0.0/webcomponents.js"></script>
-  <script src="site_libs/distill-2.2.21/template.v2.js"></script>
+  <script src="minggu-3_files/header-attrs-2.13/header-attrs.js"></script>
+  <script src="minggu-3_files/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+  <script src="minggu-3_files/popper-2.6.0/popper.min.js"></script>
+  <link href="minggu-3_files/tippy-6.2.7/tippy.css" rel="stylesheet" />
+  <link href="minggu-3_files/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
+  <script src="minggu-3_files/tippy-6.2.7/tippy.umd.min.js"></script>
+  <script src="minggu-3_files/anchor-4.2.2/anchor.min.js"></script>
+  <script src="minggu-3_files/bowser-1.9.3/bowser.min.js"></script>
+  <script src="minggu-3_files/webcomponents-2.0.0/webcomponents.js"></script>
+  <script src="minggu-3_files/distill-2.2.21/template.v2.js"></script>
   <!--radix_placeholder_site_in_header-->
-  <style type="text/css">
-  .distill-site-nav {
-    color: white;
-    background-color: #990033;
-  }
-
-  .posts-with-sidebar .posts-sidebar {
-    float: right;
-    width: 10%;    
-    margin-top: 60px;
-    padding-top: 24px;
-    padding-bottom: 24px;
-  }
-
-  .posts-with-sidebar .posts-list {
-    width: 67%;
-    margin-left: 10%;
-  }
-
-  .posts-sidebar {
-    font-size: 75%;
-    margin-right: 10%;
-  }
-
-  p a, aside a, li a, d-appendix a, a.footnote-backlink, table a {
-      color: #3366BB;
-      display: inline-block;
-      text-decoration: none;
-      transition: background-size .4s ease;
-      border-bottom: 0px solid;
-  }
-
-  .obj {
-    border: 2px #002855;
-    border-style: solid;
-    padding: 1em;
-    margin: 1em 0;
-    min-height: 120px;
-    /*color: #638f9d;*/
-    color: #002855;
-    background-color: #ffffff;
-    font-size: 16px;
-    line-height: 1em;
-    font-family: "Roboto";
-    /*background-image: url("../images/arrow.png");*/
-  }
-
-  .obj>p:first-child {
-    padding-top: 0;
-    margin-top: 0 !important;
-    font-family: "Lora";
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-  }
-
-  </style>
   <!--/radix_placeholder_site_in_header-->
 
-  <link rel="stylesheet" href="styles.css" type="text/css"/>
 
 </head>
 
-<body class="layout-listing">
+<body>
 
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Materi","description":"Some additional details about the blog","authors":[]}
+{"title":"Sistem Agribisnis","description":"Subsistem Penyediaan Faktor Produksi","authors":[{"author":"Tedy Herlambang","authorURL":"https://bangtedy.github.io","affiliation":"&nbsp;","affiliationURL":"#","orcidID":"0000-0002-7296-4357"}],"publishedDate":"2022-03-23T00:00:00.000+07:00","citationText":"Herlambang, 2022"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
 <!--radix_placeholder_navigation_before_body-->
-<header class="header header--fixed" role="banner">
-<nav class="distill-site-nav distill-site-header">
-<div class="nav-left">
-<a href="index.html" class="title">Wawasan Agribisnis</a>
-<input id="distill-search" class="nav-search hidden" type="text" placeholder="Search..."/>
-</div>
-<div class="nav-right">
-<a href="index.html">
-<i class="fa fa-home" aria-hidden="true"></i>
-</a>
-<a href="about.html">Silabus</a>
-<a href="blog.html">Materi</a>
-<a href="index.xml">
-<i class="fa fa-rss" aria-hidden="true"></i>
-</a>
-<a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
-</div>
-</nav>
-</header>
 <!--/radix_placeholder_navigation_before_body-->
 <!--radix_placeholder_site_before_body-->
 <!--/radix_placeholder_site_before_body-->
-<!--radix_placeholder_article_listing-->
-
-
-<script type="application/javascript">
-
-function init_posts_list() {
-
-  function load_image(img) {
-    var src = $(img).attr('data-src');
-    if (src) {
-      $(img).attr('src', src);
-      $(img).on("load", function() {
-        img.removeAttribute('data-src');
-      });
-    }
-  }
-
-  function set_posts_visible(posts, visible) {
-    if (visible) {
-
-      // show bottom border by default
-      $(posts).removeClass('post-preview-last');
-
-      // apply limits if need be
-      var max_posts = 25;
-      var apply_limits = $('.posts-container').hasClass('posts-apply-limit');
-      if (apply_limits && posts.length > max_posts) {
-        posts = $(posts).slice(0, max_posts);
-      } else {
-        $('.posts-more a').addClass('hidden');
-      }
-
-      // apply last style
-      $(posts.slice(-1)[0]).addClass('post-preview-last');
-
-      $(posts).removeClass('hidden');
-      $(posts).find('img[data-src]').each(function(i, img) {
-        load_image(img);
-      });
-    } else {
-      $(posts).addClass('hidden');
-    }
-  }
-
-  function apply_hash_filter() {
-
-    // clear active state
-    $('.categories .active').removeClass('active');
-
-    // mark all posts invisible to start
-    set_posts_visible($('.posts-list').children('a'), false);
-
-    // if we have a hash filter
-    if (window.location.hash && window.location.hash.startsWith("#category:")) {
-
-      // mark posts that match the category visible
-      var page_category = window.location.hash.replace(/^#category:/, "");
-      page_category = decodeURIComponent(page_category)
-      var posts = $('.post-metadata').map(function(idx, script) {
-        var metadata = $.parseJSON($(script).html());
-        var post = null;
-        $.each(metadata.categories, function(idx, category) {
-          category = category.replace(/ /g,"_");
-          if ((page_category || '').toLowerCase() === "articles" || category === page_category) {
-            post = $(script).parent().get();
-            return false;
-          }
-        });
-        return post;
-      });
-      set_posts_visible(posts, true);
-
-      // mark the hash active
-      $('.categories li>a[href="' + decodeURIComponent(window.location.hash) + '"]').addClass('active');
-
-      // update the list_caption
-      var list_caption = $('.posts-list-caption');
-      var caption = (page_category || '').toLowerCase() === "articles"
-        ? list_caption.attr('data-caption')
-        : ('Category: ' + page_category.replace(/_/g," "));
-      list_caption.text(caption);
-
-    } else {
-
-      // no hash filter, make all posts visible (subject to max display)
-      set_posts_visible($('.posts-list').children(), true);
-
-      // reset list caption
-      var list_caption = $('.posts-list-caption');
-      list_caption.text(list_caption.attr('data-caption'));
-
-
-    }
-  }
-
-  // more articles
-  function apply_post_limits(apply) {
-    if (apply) {
-      $('.posts-container').addClass('posts-apply-limit');
-      $('.posts-more a').removeClass('hidden');
-    } else {
-      $('.posts-container').removeClass('posts-apply-limit');
-      $('.posts-more a').addClass('hidden');
-    }
-  }
-
-  // click handling for tags
-  $('.dt-tag').click(function(ev) {
-    window.location.hash = '#category:' + $(this).text().replace(/ /g, "_");
-    return false;
-  })
-
-  // hash filter handling
-  apply_hash_filter();
-  $(window).on('hashchange',function() {
-    apply_post_limits(true);
-    apply_hash_filter();
-  });
-
-  // more articles link
-  $('.posts-more a').click(function(e) {
-    e.preventDefault();
-    apply_post_limits(false);
-    apply_hash_filter();
-    return false;
-  });
-
-}
-
-</script>
-
-
-
-<div class="posts-container posts-apply-limit l-page">
-<div class="posts-list">
-<h1 class="posts-list-caption" data-caption="Materi">Materi</h1>
-<a href="posts/minggu-3/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":[]}</script>
-<div class="metadata">
-<div class="publishedDate">March 23, 2022</div>
-<div class="dt-authors">
-<div class="dt-author">Tedy Herlambang</div>
-</div>
-</div>
-<div class="thumbnail">
-<img/>
-</div>
-<div class="description">
-<h2>Sistem Agribisnis</h2>
-<div class="dt-tags"></div>
-<p>Subsistem Penyediaan Faktor Produksi</p>
-</div>
-</a>
-<a href="posts/minggu-2/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":[]}</script>
-<div class="metadata">
-<div class="publishedDate">March 17, 2022</div>
-<div class="dt-authors">
-<div class="dt-author">Tedy Herlambang</div>
-</div>
-</div>
-<div class="thumbnail">
-<img/>
-</div>
-<div class="description">
-<h2>Sistem Agribisnis</h2>
-<div class="dt-tags"></div>
-<p>Subsistem Budidaya Tanaman</p>
-</div>
-</a>
-<a href="posts/minggu-1/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":[]}</script>
-<div class="metadata">
-<div class="publishedDate">March 10, 2022</div>
-<div class="dt-authors">
-<div class="dt-author">Tedy Herlambang</div>
-</div>
-</div>
-<div class="thumbnail">
-<img/>
-</div>
-<div class="description">
-<h2>Agribisnis</h2>
-<div class="dt-tags"></div>
-<p>Sistem dan Manajemen</p>
-</div>
-</a>
-</div>
-<div class="posts-more">
-<a href="#">More articles &raquo;</a>
-</div>
-</div>
-<!--/radix_placeholder_article_listing-->
 
 <div class="d-title">
-<h1>Materi</h1>
+<h1>Sistem Agribisnis</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
-<p><p>Some additional details about the blog</p></p>
+<p><p>Subsistem Penyediaan Faktor Produksi</p></p>
 </div>
 
+<div class="d-byline">
+  Tedy Herlambang <a href="https://bangtedy.github.io"
+class="uri">https://bangtedy.github.io</a> 
+  
+<br/>2022-03-23
+</div>
 
 <div class="d-article">
+<h2 id="capaian-pembelajaran">Capaian Pembelajaran</h2>
+<p>Setelah mempelajari materi ini, mahasiswa seharusnya dapat:</p>
+<ol type="1">
+<li>Menjelaskan faktor produksi di dalam pertanian</li>
+<li>Menjelaskan jenis-jenis faktor produksi di dalam pertanian</li>
+<li>Menjelaskan pentingnya penggunaan faktor produksi untuk pertanian
+berkelanjutan</li>
+</ol>
+<hr />
+<h3 id="faktor-produksi">Faktor Produksi</h3>
+<aside>
+Materi yang disampaikan disini hanya pointers. Mahasiswa harus merujuk
+pada referensi yang dianjurkan untuk mendapatkan informasi yang lebih
+utuh
+</aside>
+<ul>
+<li>Kegiatan produksi pertanian, perikanan, peternakan dan lain-lain
+membutuhkan ketersediaan faktor produksi.</li>
+<li>Faktor produksi diklasifikasikan menjadi 4 jenis yaitu
+<strong>tanah, tenaga kerja, modal</strong>, dan
+<strong>keahlian</strong>.</li>
+</ul>
+<hr />
+<h3 id="tanah">1. Tanah</h3>
+<ul>
+<li>Faktor produksi tanah atau sumberdaya alam adalah segala sesuatu
+yang dapat digunakan untuk kegiatan produksi yang berasal dari atau
+disediakan oleh alam:</li>
+</ul>
+<ol type="1">
+<li>Tanah dan segala yang tumbuh diatasnya dan yang terkandung
+didalamnya (bahan tambang).</li>
+<li>Tenaga air untuk pengairan, pelayaran, pembangkit tenaga listrik,
+dan sebagainya.</li>
+<li>Iklim, cuaca, curah hujan, arus angin, temperatur, CO2 dan
+sebagainya.</li>
+<li>Ikan, hewan, burung, lebah dll</li>
+</ol>
+<hr />
+<h3 id="lahan">Lahan</h3>
+<ul>
+<li>Lahan diperlukan sebagai tempat untuk melaksanakan usaha budidaya
+tanaman, ikan maupun ternak.</li>
+<li>Lahan pertanian dapat dibedakan dengan tanah pertanian.</li>
+<li>Lahan pertanian adalah tanah yang dipersiapkan untuk usahatani
+misalnya sawah</li>
+<li>Tanah pertanian adalah tanah yang belum tentu diusahakan untuk usaha
+pertanian.</li>
+</ul>
+<hr />
+<h3 id="pengelompokan-lahan">Pengelompokan Lahan</h3>
+<ul>
+<li><p>Tingkat kesuburan tanah. Jika ditinjau dari tingkat kesuburan
+tanah maka ada tanah yang subur dan tidak subur. Tingkat kesuburan tanah
+akan mempengaruhi produktivitas tanaman.</p></li>
+<li><p>Tingkat elevasi. Lahan pertanian dapat berada di dataran tinggi,
+dataran rendah, dan pantai.</p></li>
+<li><p>Tata guna lahan. Berdasarkan kegunaannya, maka ada lahan yang
+digunakan untuk pekarangan, sawah, tegal, dan lain-lain.</p></li>
+<li><p>Luas lahan. Agribisnis dapat dilakukan pada lahan yang luas,
+sedang atau sempit.</p>
+<ul>
+<li>Satuan untuk menunjukkan luas lahan pertanian antara lain hektar,
+ru, bata, jengkal, patok, bahu, dan sebagainya.</li>
+</ul></li>
+<li><p>Nilai lahan. Nilai lahan pertanian akan sangat tergantung pada
+faktor lingkungan termasuk lokasi dan topografi, kondisi fisik, kimia,
+dan biologi tanah.</p></li>
+<li><p>Status lahan. Kepemilikan faktor produksi tanah di masyarakat
+tidak merata. Sumber kepemilikan bermacam-macam yaitu dibeli, disewa,
+disakap, pemberian negara, warisan, wakap, dan lain-lain.</p></li>
+<li><p>Status kepemilikian tanah pertanian menunjukkan hubungan tanah
+pertanian dengan pengolah atau pemiliknya.</p></li>
+</ul>
+<hr />
+<h3 id="status-kepemilikan-tanah-pertanian">Status kepemilikan tanah
+pertanian</h3>
+<ul>
+<li><p>Tanah milik di mana memiliki ciri bebas diolah dan digunakan oleh
+pemiliknya, bebas diperjualbelikan, dan pemilik memiliki tanggung jawab
+hukum atas tanah tersebut seperti adanya kewajiban membayar
+pajak.</p></li>
+<li><p>Tanah sewa adalah tanah yang disewakan pemilik ke pihak lain
+dengan membayar sewa untuk kegiatan pertanian.</p></li>
+<li><p>Tanah sakap adalah tanah orang lain yang atas persetujuan
+pemiliknya digarap oleh pihak lain dengan bagi hasil.</p></li>
+<li><p>Tanah pinjaman adalah tanah yang dipinjam oleh pihak tertentu
+dari pemiliknya.</p></li>
+<li><p>Tanah milik negara yang dibuka oleh masyarakat, misalnya wilayah
+hutan dengan hak ulayat (pengelolaan suatu wilayah hutan oleh masyarakat
+adat)</p></li>
+</ul>
+<hr />
+<h3 id="sumber-air">Sumber Air</h3>
+<ul>
+<li>Ketersediaan air sangat penting dalam kegiatan budidaya
+tanaman,ternak, ikan.</li>
+<li>Air yang cukup diperlukan untuk menjamin kegiatan pemeliharaan
+tanaman dan ternak dapat berjalan dengan baik.</li>
+<li>Air yang digunakan dalam kegiatan pertanian dan peternakan dapat
+berasal dari sumber air alam, sumur gali atau sumber air yang lain.</li>
+</ul>
+<hr />
+<h3 id="tenaga-kerja">2. Tenaga Kerja</h3>
+<ul>
+<li><p>Faktor produksi tenaga kerja adalah sebagian atau seluruh
+kemampuan jasmani dan rohani yang dimiliki manusia dan/atau kemampuan
+fisik ternak dan mesin yang digunakan untuk kegiatan produksi.</p></li>
+<li><p>Tenaga kerja diperlukan untuk melaksanakan kegiatan budidaya
+seperti untuk kegiatan pengolahan lahan, penanaman, pengairan,
+pemupukan, pemeliharaan, pengendalian hama dan penyakit, pemanenan, dan
+pasca panen.</p></li>
+<li><p>Sistem kerja pada kegiatan pertanian terdiri dari harian,
+bulanan, borongan, bagi hasil, dan gotong royong.</p></li>
+<li><p>Balas jasa untuk penggunaan tenaga kerja adalah upah, gaji, atau
+royalty (pembayaran atas paten)</p></li>
+</ul>
+<hr />
+<h3 id="modal">3. Modal</h3>
+<ul>
+<li><p>Faktor produksi modal/kapital adalah semua jenis barang atau jasa
+yang bersama-sama dengan faktor produksi lain menghasilkan barang dan
+atau jasa baru atau menunjang kegiatan produksi barang dan atau jasa
+baru.</p></li>
+<li><p>Modal disebut juga alat-alat produksi yang dihasilkan oleh faktor
+produksi alam dan tenaga kerja.</p></li>
+<li><p>Modal juga dinamakan barang-barang investasi terdiri dari
+mesin-mesin, peralatan, bangunan, dan lain-lain.</p></li>
+<li><p>Seluruh barang dan atau jasa yang memiliki sifat produktif dan
+dapat digunakan untuk kegiatan produksi berikutnya disebut barang
+modal/barang investasi/barang modal riil (riil capital goods).</p></li>
+<li><p>Pengertian barang modal sebagai faktor produksi adalah barang
+modal riil dan bukan modal finansial (financial capital).</p></li>
+</ul>
+<hr />
+<h3 id="sarana-produksi">Sarana Produksi</h3>
+<ul>
+<li><p>Bahan Tanaman, Bibit Ternak dan Ikan</p>
+<ul>
+<li>Bahan tanaman adalah bagian tanaman yang hidup yang akan
+ditanam.</li>
+<li>Bagian tanaman yang dapat dijadikan bahan tanaman tergantung pada
+jenis tanamannya, bisa daun, ranting, cabang, batang, akar, rhizoma,
+umbi, buah, dan biji serta jaringan tanaman lain.</li>
+<li>Biji yang digunakan sebagai bahan tanaman disebut benih.</li>
+</ul></li>
+<li><p>Pupuk</p>
+<ul>
+<li>Pupuk dapat berupa pupuk kimia (pupuk Urea, Kalium, Phonska, NPK
+Mutiara, SP-36), pupuk bukan kimia seperti pupuk hayati, pupuk hijau dan
+kompos yaitu pupuk yang terbuat dari fermentasi daun, batang
+tanaman.</li>
+<li>Dalam penggunaan pupuk, perlu diperhatikan hal-hal sebagai berikut
+jenis tanaman, jenis tanah, dosis pupuk yang digunakan, dan waktu
+memupuk.</li>
+</ul></li>
+<li><p>Pestisida</p>
+<ul>
+<li>Pengendalian terhadap organisme pengganggu tanaman dapat dilakukan
+secara kimiawi yaitu dengan mengunakan senyawa kimia yang meracuni
+penyebab gangguan atau disebut dengan pestisida. Pestisida dibedakan
+atas macam-macam nama sesuai dengan penyebab gangguan yang ingin
+dikendalikan.</li>
+<li>Senyawa untuk mengendalikan jamur disebut fungisida, untuk bakteri
+disebut bakterisida, untuk amuba disebut amubisida, untuk serangga
+disebut insektisida, untuk binatang pengerat disebut rodentisida, untuk
+gulma disebut herbisida.</li>
+<li>Pada penggunaan pestisida untuk mengendalikan gangguan di antara
+tanaman pertanian, perlu dipilih senyawa yang dapat mengendalikan atau
+mematikan penyebab gangguan tetapi tidak meracuni tanaman pokok.</li>
+<li>Pestisida yang aman digunakan kalau dosis kurativa tanaman pokok
+terhadap pestisida tersebut jauh lebih tinggi daripada penyebab
+gangguan.</li>
+<li>Dosis kurativa ialah dosis minimum yang sudah menyebabkan
+keracunan.</li>
+<li>Dosis yang belum menyebabkan gangguan dinamakan dosis tolerata
+sedangkan dosis lethal ialah dosis penyebab kematian.</li>
+</ul></li>
+</ul>
+<hr />
+<h3 id="mesin-dan-peralatan">Mesin dan Peralatan</h3>
+<ul>
+<li>Semakin modern kegiatan usahatani maka semakin terasa kebutuhan akan
+mesin dan peralatan yang modern.</li>
+<li>Alat yang diperlukan untuk melakukan kegiatan usahatani atau
+budidaya ternak antara lain cangkul, parang, arit, sprayer, dan
+lain-lain.</li>
+</ul>
+<hr />
+<h3 id="keahlian-dan-pengalaman">4. Keahlian dan Pengalaman</h3>
+<ul>
+<li>Ketiga faktor produksi sebelumnya bersifat fisik.</li>
+<li>Faktor produksi keahlian non-fisik tetapi sangat menentukan
+keberhasilan kegiatan produksi.</li>
+<li>Faktor produksi keahlian (skill) atau kecakapan tata
+laksana/kewirausahaan (entrepreneurship) adalah keahlian manajerial atau
+kecakapan tata laksana/kewirausahaan yang berperan dalam mengelola
+faktor produksi tanah, tenaga kerja, dan modal pada kegiatan produksi
+pertanian.</li>
+<li>Faktor produksi keahlian diperlukan agar ketiga faktor produksi yang
+lain berfungsi optimum dalam kegiatan produksi.</li>
+<li>Faktor produksi keahlian bertugas menjamin berlangsungnya proses
+produksi dengan cara mengatur penggunaan faktor produksi lainnya.</li>
+</ul>
+<hr />
+<h3 id="masalah-pestisida">Masalah: Pestisida</h3>
+<p>Penggunaan insektisida yang tidak bijak dapat mengakibatkan antara
+lain:</p>
+<ol type="1">
+<li>Membunuh musuh alami serangga hama tersebut.</li>
+<li>Serangga yang semula belum merupakan hama penting, berubah statusnya
+menjadi hama penting karena tidak ada saingannya.</li>
+<li>Hama tersebut menjadi kebal terhadap insektisida yang dipakai.</li>
+<li>Terjadi resurgensi hama semula artinya bertambah hebat serangannya
+kembali.</li>
+</ol>
+<hr />
+<h3 id="masalah-tanah">Masalah: Tanah</h3>
+<ul>
+<li>Soil is a complex matrix in which a lot of processes are taking
+place at the same time. These processes affect the availability of
+nutrients to plants.</li>
+<li>Plants need about 18 nutrients like nitrogen, phosphorus, and
+potassium essential for their growth and life cycle completion.</li>
+<li>When the crop is harvested, these nutrients do not reimburse to the
+soil, and levels of these nutrient decrease with time.</li>
+<li>This decrease in nutrient level affects the crop both qualitatively
+and quantitatively.</li>
+<li>These nutrients need to be remunerated either by returning soil
+extracted nutrients, by the natural decomposition (decay of plants and
+organism bodies) process, or by directly applying these nutrients as
+fertilizers .</li>
+<li>From ancient times, organic fertilizers were used to supply
+nutrients to crop, but this practice decreased since the 1980s because
+of more availability and affordability of chemical fertilizers.</li>
+</ul>
+<hr />
+<h3 id="tanah-dan-pupuk-kimia">Tanah dan Pupuk Kimia</h3>
+<ul>
+<li>The application of fertilizers, chemical fertilizers, has become a
+consecration on humanity. The use of chemical fertilizers helps in
+overcoming hunger and death in many areas of the world.</li>
+<li>Chemical fertilizers are amendments comprising of nutrients needed
+for plant growth.</li>
+<li>These nutrients are classified as primary nutrients, secondary
+nutrients, micronutrients, and non-mineral elements. Primary and
+secondary nutrients are mutually termed as macronutrients.</li>
+<li>Macronutrients are required by plants in large quantities, while
+micronutrients are required in smaller quantities.</li>
+<li>Apart from main constituent elements, oxygen and hydrogen, and
+carbon, are uptaken by plants in gaseous form and obtained from water
+and air.</li>
+</ul>
+<hr />
+<h3 id="pupuk-kimia-chemical-fertilizer">Pupuk Kimia (<em>Chemical
+Fertilizer</em>)</h3>
+<ul>
+<li>The fertilizer industry is usually involved in the manufacture of
+primary plant nutrients, e.g., nitrogen, phosphorus, and potassium,
+appropriate for soil application.</li>
+<li>Agriculture is provided with essential nutrients through the use of
+these fertilizers though it is also facing many severe issues like
+declining productivity, low fertilizer use efficiencies, the
+disproportion in between addition and removal of nutrients from the
+soil, and low soil organic carbon.</li>
+</ul>
+<hr />
+<h3 id="mutu-tanah">Mutu Tanah</h3>
+<ul>
+<li>Chemical fertilizers not only upsurge the crop production by
+supplying more nutrients in the soil for plant uptake, but it also
+affects the soil physical, chemical, and biological properties both
+positively and negatively.
+<ul>
+<li>These all soil properties maintain soil health and improve crop
+growth.</li>
+</ul></li>
+<li>Soil physical properties, such as texture, compaction, infiltration
+rate, seepage, hydraulic conductivity, soil porosity, bulk density, and
+soil chemical properties; and nutrients status, cation exchange
+capacity, electrical conductivity, pH, and soil microbial community
+change with long term and intensive application of chemical
+fertilizers.</li>
+</ul>
+<hr />
+<h3 id="pupuk-hayati-biofertilizers">Pupuk Hayati (Biofertilizers)</h3>
+<ul>
+<li>Agriculturists have succeeded in the scenario to enhance yearly crop
+productivity at the cost of environmental degradation by applying
+synthetic persistent substances, viz., synthetic fertilizers,
+pesticides, and herbicides.
+<ul>
+<li>Impacts: The elimination of key biota, nutrient pollution, as
+evidenced by an algae bloom, eutrophication, water quality issues, lower
+oxygen levels and danger to fish stocks.</li>
+</ul></li>
+<li>The scientific approach to maintain sustainable fertility in soil
+and plants is to switch over to biofertilizers.</li>
+</ul>
+<hr />
+<h3 id="switch-over-to-biofertilizers">Switch Over to
+Biofertilizers</h3>
+<ul>
+<li>Pupuk hayati: compounds of organic matter that are applied to crops
+for growth and health. Their constituent microorganisms interact with
+the soil, root and plant seed in an eco-friendly manner, promoting the
+growth of micro-flora that enhance soil fertility.</li>
+<li>They are known to play several vital roles in soil fertility, crop
+productivity and production in agriculture.</li>
+<li>The application of biofertilizers results in increased mineral and
+water uptake, root development, vegetative growth and nitrogen
+fixation.</li>
+<li>They liberate growth-promoting substances plus vitamins and help in
+maintaining soil fertility.</li>
+<li>They act as antagonists and play a pivotal role in neutralizing the
+soil-borne plant pathogens and thus, help in the bio-control of
+diseases.</li>
+<li>The application of biofertilizers in lieu of synthetic fertilizers
+could be a promising technique to raise agricultural productivity
+without degrading the environmental quality.</li>
+</ul>
 <div class="sourceCode" id="cb1"><pre
 class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
@@ -2366,10 +1824,7 @@ class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"><
 <!--radix_placeholder_site_after_body-->
 <!--/radix_placeholder_site_after_body-->
 <!--radix_placeholder_appendices-->
-<div class="appendix-bottom">
-<h3 id="updates-and-corrections">Corrections</h3>
-<p>If you see mistakes or want to suggest changes, please <a href="https://github.com/bangtedy/wabis/issues/new">create an issue</a> on the source repository.</p>
-</div>
+<div class="appendix-bottom"></div>
 <!--/radix_placeholder_appendices-->
 <!--radix_placeholder_navigation_after_body-->
 <!--/radix_placeholder_navigation_after_body-->
