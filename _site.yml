@@ -13,14 +13,10 @@ collections:
     share: [twitter,facebook,linkedin]
 navbar:
   right:
-    - icon: fa-home
-      href: index.html
-    - text: "Silabus"
+    - text: "Sekilas"
       href: about.html
     - text: "Materi"
-      href: blog.html
-    - icon: fa fa-rss
-      href: index.xml
+      href: index.html
 output: 
   distill::distill_article:
     css: styles.css

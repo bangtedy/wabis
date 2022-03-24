@@ -7,6 +7,11 @@ creative_commons: CC BY
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
+### Kode Mata Kuliah: PA1431
+
+### SKS/Pertemuan: 2/16
+
+### Dosen: [Tedy Herlambang](https://bangtedy.github.io)
 
 #### Deskripsi Mata Kuliah
 

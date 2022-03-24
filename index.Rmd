@@ -1,6 +1,7 @@
 ---
-title: "Wawasan Agribisnis"
+title: "Materi"
 site: distill::distill_website
+listing: posts
 creative_commons: CC BY
 ---
 
@@ -20,8 +21,4 @@ meta() %>%
   )
 ```
 
-### Kode Mata Kuliah: PA1431
 
-### SKS/Pertemuan: 2/16
-
-### Dosen: [Tedy Herlambang](https://bangtedy.github.io)
