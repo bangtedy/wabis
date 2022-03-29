@@ -1,7 +1,7 @@
 ---
 title: "Sistem Agribisnis"
 description: |
-  Subsistem Budidaya Tanaman
+  Subsistem Budidaya
 author: 
   - name: Tedy Herlambang
     url: https://bangtedy.github.io
@@ -224,3 +224,10 @@ and socially acceptable.
 - Tidak hanya produksi tanaman dan ternak sebagai tujuan ekonomi
 - Tetapi juga dampaknya terhadap tanah, air, kesejahteraan ternak, kesehatan manusia, lansekap dan keragaman hayati.
 
+<!-- AddToAny BEGIN -->
+<div class="a2a_kit a2a_kit_size_16 a2a_default_style"; data-a2a-url="https://bangtedy.github.io/wabis" data-a2a-title="Sistem Agribisnis: SubSistem Budidaya">
+<a class="a2a_button_whatsapp"></a>
+<a class="a2a_button_telegram"></a>
+</div>
+<script async src="https://static.addtoany.com/menu/page.js"></script>
+<!-- AddToAny END -->
