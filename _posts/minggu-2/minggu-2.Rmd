@@ -1,7 +1,7 @@
 ---
-title: "Sistem Agribisnis"
+title: "Subsistem Produksi/Budidaya"
 description: |
-  Subsistem Budidaya
+  Sistem Agribisnis (1)
 author: 
   - name: Tedy Herlambang
     url: https://bangtedy.github.io
@@ -14,6 +14,10 @@ twitter:
 output:
   distill::distill_article:
     self_contained: false
+categories:
+  - Materi
+
+
 ---
 
 

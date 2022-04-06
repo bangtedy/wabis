@@ -7,28 +7,40 @@
     <description>Bahan Kuliah Wawasan Agribisnis
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Wed, 30 Mar 2022 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 07 Apr 2022 00:00:00 +0000</lastBuildDate>
     <item>
-      <title>Sistem Agribisnis</title>
+      <title>Subsistem Pemasaran</title>
+      <dc:creator>Tedy Herlambang</dc:creator>
+      <link>https://bangtedy.github.io/wabis/posts/minggu-5</link>
+      <description>Sistem Agribisnis (4).</description>
+      <category>Materi</category>
+      <guid>https://bangtedy.github.io/wabis/posts/minggu-5</guid>
+      <pubDate>Thu, 07 Apr 2022 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Subsistem Pengolahan Hasil</title>
       <dc:creator>Tedy Herlambang</dc:creator>
       <link>https://bangtedy.github.io/wabis/posts/minggu-4</link>
-      <description>Subsistem Pengolahan Hasil</description>
+      <description>Sistem Agribisnis (3)</description>
+      <category>Materi</category>
       <guid>https://bangtedy.github.io/wabis/posts/minggu-4</guid>
       <pubDate>Wed, 30 Mar 2022 00:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Sistem Agribisnis</title>
+      <title>Subsistem Penyediaan Faktor Produksi</title>
       <dc:creator>Tedy Herlambang</dc:creator>
       <link>https://bangtedy.github.io/wabis/posts/minggu-3</link>
-      <description>Subsistem Penyediaan Faktor Produksi</description>
+      <description>Sistem Agribisnis (2)</description>
+      <category>Materi</category>
       <guid>https://bangtedy.github.io/wabis/posts/minggu-3</guid>
       <pubDate>Wed, 23 Mar 2022 00:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Sistem Agribisnis</title>
+      <title>Subsistem Produksi/Budidaya</title>
       <dc:creator>Tedy Herlambang</dc:creator>
       <link>https://bangtedy.github.io/wabis/posts/minggu-2</link>
-      <description>Subsistem Budidaya</description>
+      <description>Sistem Agribisnis (1)</description>
+      <category>Materi</category>
       <guid>https://bangtedy.github.io/wabis/posts/minggu-2</guid>
       <pubDate>Thu, 17 Mar 2022 00:00:00 +0000</pubDate>
     </item>
@@ -37,6 +49,7 @@
       <dc:creator>Tedy Herlambang</dc:creator>
       <link>https://bangtedy.github.io/wabis/posts/minggu-1</link>
       <description>Pengantar ke Wawasan Agribisnis</description>
+      <category>Materi</category>
       <guid>https://bangtedy.github.io/wabis/posts/minggu-1</guid>
       <pubDate>Thu, 10 Mar 2022 00:00:00 +0000</pubDate>
     </item>

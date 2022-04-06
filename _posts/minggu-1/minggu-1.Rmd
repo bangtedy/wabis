@@ -14,6 +14,10 @@ twitter:
 output:
   distill::distill_article:
     self_contained: false
+
+categories:
+  - Materi
+
 ---
 
 ```{r setup, include=FALSE}

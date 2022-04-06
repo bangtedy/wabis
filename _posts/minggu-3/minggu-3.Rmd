@@ -1,19 +1,26 @@
 ---
-title: "Sistem Agribisnis"
+title: "Subsistem Penyediaan Faktor Produksi"
 description: |
-  Subsistem Penyediaan Faktor Produksi
+  Sistem Agribisnis (2)
+
 author: 
   - name: Tedy Herlambang
     url: https://bangtedy.github.io
     orcid_id: 0000-0002-7296-4357
 date: 2022-03-23
 draft: false
+
 base_url: https://bangtedy.github.io/wabis
 twitter:
   creator: "@t_hlb"
+
 output:
   distill::distill_article:
     self_contained: false
+
+categories:
+  - Materi
+
 ---
 
 
@@ -29,7 +36,7 @@ Setelah mempelajari materi ini, mahasiswa seharusnya dapat:
 2. Menjelaskan jenis-jenis faktor produksi di dalam pertanian
 3. Menjelaskan pentingnya penggunaan faktor produksi untuk pertanian berkelanjutan
 
----
+<br />
 
 ### Faktor Produksi
 

@@ -1,7 +1,7 @@
 ---
-title: "Sistem Agribisnis"
+title: "Subsistem Pengolahan Hasil"
 description: |
-  Subsistem Pengolahan Hasil
+  Sistem Agribisnis (3)
 date: 2022-03-30
 
 author:
@@ -16,6 +16,10 @@ twitter:
 output:
   distill::distill_article:
     self_contained: false
+
+categories:
+  - Materi
+  
 ---
 
 
