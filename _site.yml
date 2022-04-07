@@ -16,6 +16,10 @@ navbar:
       href: about.html
     - text: "Materi"
       href: index.html
+    - text: "Tugas"
+      menu:
+        - text: "Tataniaga Mangga"
+          href: tugas/tn-mangga.html
 output: 
   distill::distill_article:
     css: styles.css
