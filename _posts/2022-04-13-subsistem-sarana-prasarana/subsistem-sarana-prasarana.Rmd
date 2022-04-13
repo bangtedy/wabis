@@ -26,12 +26,16 @@ categories:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-## PENDAHULUAN
+```{r load_packages, echo=FALSE}
+library('fontawesome')
+```
+
+## `r fa('readme')` PENDAHULUAN
 
 - Pengembangan agribisnis di suatu daerah memerlukan dukungan prasarana yang memadai. 
 - Prasarana fisik dan non-fisik dibutuhkan untuk menunjang terlaksananya kegiatan penyediaan faktor produksi, kegiatan produksi, pengolahan, dan pemasaran.
 
-### A. Prasarana Fisik
+### `r fa('book-open')` A. Prasarana Fisik
 
 - segala jenis fasilitas yang
 disediakan baik oleh masyarakat maupun pemerintah untuk
@@ -53,7 +57,7 @@ kegiatan agribisnis (Soekartawi, 1993; 2000) adalah:
   + Menambah keuntungan yang diterima petani.
   + Meningkatkan perekonomian daerah.
   
-### B. Prasarana Non-Fisik
+### `r fa('book-open')` B. Prasarana Non-Fisik
 
 - Prasarana
 non-fisik

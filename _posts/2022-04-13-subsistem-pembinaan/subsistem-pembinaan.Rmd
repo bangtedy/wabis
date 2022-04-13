@@ -23,6 +23,9 @@ output:
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
+```{r load_packages, echo=FALSE}
+library('fontawesome')
+```
 
 Kegiatan pembinaan umumnya dilakukan oleh
 pemerintah, swasta, lembaga swadaya masyarakat, kelompok
