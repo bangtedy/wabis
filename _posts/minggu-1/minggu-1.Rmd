@@ -129,13 +129,3 @@ product derived from its step.
 * Berikan contoh perusahaan, usaha, kegiatan yang bisa dikategorikan sebagai agribisnis disekitar Anda! 
 * Bagaimana dengan peluang usaha di bidang Agribisnis di sekitar Anda?
 
-
-<!-- AddToAny BEGIN -->
-<div class="a2a_kit a2a_kit_size_16 a2a_default_style"; data-a2a-url="https://bangtedy.github.io/wabis" data-a2a-title="Agribisnis: Sistem dan Manajemen">
-<a class="a2a_button_whatsapp"></a>
-<a class="a2a_button_telegram"></a>
-<a class="a2a_button_facebook"></a>
-<a class="a2a_button_twitter"></a>
-</div>
-<script async src="https://static.addtoany.com/menu/page.js"></script>
-<!-- AddToAny END -->

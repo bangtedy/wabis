@@ -23,9 +23,6 @@ output:
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
-```{r load_packages, echo=FALSE}
-library('fontawesome')
-```
 
 Kegiatan pembinaan umumnya dilakukan oleh
 pemerintah, swasta, lembaga swadaya masyarakat, kelompok
@@ -117,11 +114,7 @@ kegiatannya.
 4. Lembaga keuangan menyediakan dan menyalurkan kredit untuk
 modal usaha bagi petani, swasta, dan lembaga agribisnis lainnya.
 5. Lembaga pemasaran membeli produk petani untuk dijual kembali.
-6. Pemerintah
-melakukan
-pembinaan
-dengan
-memberikan
+6. Pemerintah melakukan pembinaan dengan memberikan
 bimbingan teknis, membangun prasarana, membuat kebijakan,
 memberikan modal usaha, dan bekerjasama dengan semua pelaku
 agribisnis.

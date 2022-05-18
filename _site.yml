@@ -2,14 +2,21 @@ name: "Wawasan Agribisnis"
 title: "Wabis"
 description: |
   Bahan Kuliah Wawasan Agribisnis
-output_dir: "docs"
+author:
+  - first_name: "Tedy"
+    last_name: "Herlambang"
+    url: https://bangtedy.github.io
+    affiliation: 
+    orcid_id: 0000-0002-7296-4357
 base_url: https://bangtedy.github.io/wabis
+output_dir: "docs"
 twitter:
   creator: "@t_hlb"
 repository_url: https://github.com/bangtedy/wabis
 creative_common: CC BY
 collections:
   posts:
+    share: [twitter, facebook, linkedin]
 navbar:
   right:
     - text: "Sekilas"
