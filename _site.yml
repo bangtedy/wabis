@@ -13,7 +13,6 @@ output_dir: "docs"
 twitter:
   creator: "@t_hlb"
 repository_url: https://github.com/bangtedy/wabis
-creative_common: CC BY
 collections:
   posts:
     share: [twitter, facebook, linkedin]

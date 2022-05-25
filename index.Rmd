@@ -11,7 +11,7 @@ library(metathis)
 meta() %>%
   meta_social(
     title = "Wawasan Agribisnis",
-    description = "Silabus dan Materi Wawasan Agribisnis",
+    description = "Materi Wawasan Agribisnis",
     url = "https://bangtedy.github.io/wabis",
     image = "",
     image_alt = "",
