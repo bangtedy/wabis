@@ -7,7 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
   <meta name="generator" content="distill" />
-  <link rel="alternate" type="application/rss+xml" href="https://bangtedy.github.io/wabis/blog.xml" />
 
   <style type="text/css">
   /* Hide doc at startup (prevent jankiness while JS renders/transforms) */
@@ -89,640 +88,39 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 
   <!--radix_placeholder_meta_tags-->
-  <title>Wabis: Materi</title>
+  <title>Bisnis Agribisnis</title>
 
-  <meta property="description" itemprop="description" content="Some additional details about the blog"/>
+  <meta property="description" itemprop="description" content="Peran Manajemen Agribisnis"/>
 
 
+  <!--  https://schema.org/Article -->
+  <meta property="article:published" itemprop="datePublished" content="2022-06-02"/>
+  <meta property="article:created" itemprop="dateCreated" content="2022-06-02"/>
+  <meta name="article:author" content="Tedy Herlambang"/>
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="Wabis: Materi"/>
+  <meta property="og:title" content="Bisnis Agribisnis"/>
   <meta property="og:type" content="article"/>
-  <meta property="og:description" content="Some additional details about the blog"/>
+  <meta property="og:description" content="Peran Manajemen Agribisnis"/>
   <meta property="og:locale" content="en_US"/>
-  <meta property="og:site_name" content="Wabis"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="Wabis: Materi"/>
-  <meta property="twitter:description" content="Some additional details about the blog"/>
-  <meta property="twitter:site" content="@t_hlb"/>
-  <meta property="twitter:creator" content="@t_hlb"/>
+  <meta property="twitter:title" content="Bisnis Agribisnis"/>
+  <meta property="twitter:description" content="Peran Manajemen Agribisnis"/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","listing","twitter"]}},"value":[{"type":"character","attributes":{},"value":["Materi"]},{"type":"character","attributes":{},"value":["Some additional details about the blog\n"]},{"type":"character","attributes":{},"value":["posts"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["site"]}},"value":[{"type":"character","attributes":{},"value":["@t_hlb"]}]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output","preview"]}},"value":[{"type":"character","attributes":{},"value":["Bisnis Agribisnis"]},{"type":"character","attributes":{},"value":["Peran Manajemen Agribisnis\n"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url","orcid_id"]}},"value":[{"type":"character","attributes":{},"value":["Tedy Herlambang"]},{"type":"character","attributes":{},"value":["https://bangtedy.github.io"]},{"type":"character","attributes":{},"value":["0000-0002-7296-4357"]}]}]},{"type":"character","attributes":{},"value":["2022-06-02"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained","toc"]}},"value":[{"type":"logical","attributes":{},"value":[false]},{"type":"logical","attributes":{},"value":[true]}]}]},{"type":"character","attributes":{},"value":["grapevine.png"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
+  
+  <script type="text/json" id="radix-resource-manifest">
+  {"type":"character","attributes":{},"value":["bisnis-agribisnis_files/anchor-4.2.2/anchor.min.js","bisnis-agribisnis_files/bowser-1.9.3/bowser.min.js","bisnis-agribisnis_files/distill-2.2.21/template.v2.js","bisnis-agribisnis_files/header-attrs-2.14/header-attrs.js","bisnis-agribisnis_files/jquery-3.6.0/jquery-3.6.0.js","bisnis-agribisnis_files/jquery-3.6.0/jquery-3.6.0.min.js","bisnis-agribisnis_files/jquery-3.6.0/jquery-3.6.0.min.map","bisnis-agribisnis_files/popper-2.6.0/popper.min.js","bisnis-agribisnis_files/tippy-6.2.7/tippy-bundle.umd.min.js","bisnis-agribisnis_files/tippy-6.2.7/tippy-light-border.css","bisnis-agribisnis_files/tippy-6.2.7/tippy.css","bisnis-agribisnis_files/tippy-6.2.7/tippy.umd.min.js","bisnis-agribisnis_files/webcomponents-2.0.0/webcomponents.js","grapevine.png","potted-plants.png"]}
+  </script>
   <!--radix_placeholder_navigation_in_header-->
-  <meta name="distill:offset" content=""/>
-
-  <script type="application/javascript">
-
-    window.headroom_prevent_pin = false;
-
-    window.document.addEventListener("DOMContentLoaded", function (event) {
-
-      // initialize headroom for banner
-      var header = $('header').get(0);
-      var headerHeight = header.offsetHeight;
-      var headroom = new Headroom(header, {
-        tolerance: 5,
-        onPin : function() {
-          if (window.headroom_prevent_pin) {
-            window.headroom_prevent_pin = false;
-            headroom.unpin();
-          }
-        }
-      });
-      headroom.init();
-      if(window.location.hash)
-        headroom.unpin();
-      $(header).addClass('headroom--transition');
-
-      // offset scroll location for banner on hash change
-      // (see: https://github.com/WickyNilliams/headroom.js/issues/38)
-      window.addEventListener("hashchange", function(event) {
-        window.scrollTo(0, window.pageYOffset - (headerHeight + 25));
-      });
-
-      // responsive menu
-      $('.distill-site-header').each(function(i, val) {
-        var topnav = $(this);
-        var toggle = topnav.find('.nav-toggle');
-        toggle.on('click', function() {
-          topnav.toggleClass('responsive');
-        });
-      });
-
-      // nav dropdowns
-      $('.nav-dropbtn').click(function(e) {
-        $(this).next('.nav-dropdown-content').toggleClass('nav-dropdown-active');
-        $(this).parent().siblings('.nav-dropdown')
-           .children('.nav-dropdown-content').removeClass('nav-dropdown-active');
-      });
-      $("body").click(function(e){
-        $('.nav-dropdown-content').removeClass('nav-dropdown-active');
-      });
-      $(".nav-dropdown").click(function(e){
-        e.stopPropagation();
-      });
-    });
-  </script>
-
-  <style type="text/css">
-
-  /* Theme (user-documented overrideables for nav appearance) */
-
-  .distill-site-nav {
-    color: rgba(255, 255, 255, 0.8);
-    background-color: #0F2E3D;
-    font-size: 15px;
-    font-weight: 300;
-  }
-
-  .distill-site-nav a {
-    color: inherit;
-    text-decoration: none;
-  }
-
-  .distill-site-nav a:hover {
-    color: white;
-  }
-
-  @media print {
-    .distill-site-nav {
-      display: none;
-    }
-  }
-
-  .distill-site-header {
-
-  }
-
-  .distill-site-footer {
-
-  }
-
-
-  /* Site Header */
-
-  .distill-site-header {
-    width: 100%;
-    box-sizing: border-box;
-    z-index: 3;
-  }
-
-  .distill-site-header .nav-left {
-    display: inline-block;
-    margin-left: 8px;
-  }
-
-  @media screen and (max-width: 768px) {
-    .distill-site-header .nav-left {
-      margin-left: 0;
-    }
-  }
-
-
-  .distill-site-header .nav-right {
-    float: right;
-    margin-right: 8px;
-  }
-
-  .distill-site-header a,
-  .distill-site-header .title {
-    display: inline-block;
-    text-align: center;
-    padding: 14px 10px 14px 10px;
-  }
-
-  .distill-site-header .title {
-    font-size: 18px;
-    min-width: 150px;
-  }
-
-  .distill-site-header .logo {
-    padding: 0;
-  }
-
-  .distill-site-header .logo img {
-    display: none;
-    max-height: 20px;
-    width: auto;
-    margin-bottom: -4px;
-  }
-
-  .distill-site-header .nav-image img {
-    max-height: 18px;
-    width: auto;
-    display: inline-block;
-    margin-bottom: -3px;
-  }
-
-
-
-  @media screen and (min-width: 1000px) {
-    .distill-site-header .logo img {
-      display: inline-block;
-    }
-    .distill-site-header .nav-left {
-      margin-left: 20px;
-    }
-    .distill-site-header .nav-right {
-      margin-right: 20px;
-    }
-    .distill-site-header .title {
-      padding-left: 12px;
-    }
-  }
-
-
-  .distill-site-header .nav-toggle {
-    display: none;
-  }
-
-  .nav-dropdown {
-    display: inline-block;
-    position: relative;
-  }
-
-  .nav-dropdown .nav-dropbtn {
-    border: none;
-    outline: none;
-    color: rgba(255, 255, 255, 0.8);
-    padding: 16px 10px;
-    background-color: transparent;
-    font-family: inherit;
-    font-size: inherit;
-    font-weight: inherit;
-    margin: 0;
-    margin-top: 1px;
-    z-index: 2;
-  }
-
-  .nav-dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: white;
-    min-width: 200px;
-    border: 1px solid rgba(0,0,0,0.15);
-    border-radius: 4px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
-    z-index: 1;
-    margin-top: 2px;
-    white-space: nowrap;
-    padding-top: 4px;
-    padding-bottom: 4px;
-  }
-
-  .nav-dropdown-content hr {
-    margin-top: 4px;
-    margin-bottom: 4px;
-    border: none;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  }
-
-  .nav-dropdown-active {
-    display: block;
-  }
-
-  .nav-dropdown-content a, .nav-dropdown-content .nav-dropdown-header {
-    color: black;
-    padding: 6px 24px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
-
-  .nav-dropdown-content .nav-dropdown-header {
-    display: block;
-    padding: 5px 24px;
-    padding-bottom: 0;
-    text-transform: uppercase;
-    font-size: 14px;
-    color: #999999;
-    white-space: nowrap;
-  }
-
-  .nav-dropdown:hover .nav-dropbtn {
-    color: white;
-  }
-
-  .nav-dropdown-content a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-
-  .nav-right .nav-dropdown-content {
-    margin-left: -45%;
-    right: 0;
-  }
-
-  @media screen and (max-width: 768px) {
-    .distill-site-header a, .distill-site-header .nav-dropdown  {display: none;}
-    .distill-site-header a.nav-toggle {
-      float: right;
-      display: block;
-    }
-    .distill-site-header .title {
-      margin-left: 0;
-    }
-    .distill-site-header .nav-right {
-      margin-right: 0;
-    }
-    .distill-site-header {
-      overflow: hidden;
-    }
-    .nav-right .nav-dropdown-content {
-      margin-left: 0;
-    }
-  }
-
-
-  @media screen and (max-width: 768px) {
-    .distill-site-header.responsive {position: relative; min-height: 500px; }
-    .distill-site-header.responsive a.nav-toggle {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .distill-site-header.responsive a,
-    .distill-site-header.responsive .nav-dropdown {
-      display: block;
-      text-align: left;
-    }
-    .distill-site-header.responsive .nav-left,
-    .distill-site-header.responsive .nav-right {
-      width: 100%;
-    }
-    .distill-site-header.responsive .nav-dropdown {float: none;}
-    .distill-site-header.responsive .nav-dropdown-content {position: relative;}
-    .distill-site-header.responsive .nav-dropdown .nav-dropbtn {
-      display: block;
-      width: 100%;
-      text-align: left;
-    }
-  }
-
-  /* Site Footer */
-
-  .distill-site-footer {
-    width: 100%;
-    overflow: hidden;
-    box-sizing: border-box;
-    z-index: 3;
-    margin-top: 30px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    text-align: center;
-  }
-
-  /* Headroom */
-
-  d-title {
-    padding-top: 6rem;
-  }
-
-  @media print {
-    d-title {
-      padding-top: 4rem;
-    }
-  }
-
-  .headroom {
-    z-index: 1000;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-  }
-
-  .headroom--transition {
-    transition: all .4s ease-in-out;
-  }
-
-  .headroom--unpinned {
-    top: -100px;
-  }
-
-  .headroom--pinned {
-    top: 0;
-  }
-
-  /* adjust viewport for navbar height */
-  /* helps vertically center bootstrap (non-distill) content */
-  .min-vh-100 {
-    min-height: calc(100vh - 100px) !important;
-  }
-
-  </style>
-
-  <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
-  <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
-  <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
-  <script src="site_libs/headroom-0.9.4/headroom.min.js"></script>
-  <script src="site_libs/autocomplete-0.37.1/autocomplete.min.js"></script>
-  <script src="site_libs/fuse-6.4.1/fuse.min.js"></script>
-
-  <script type="application/javascript">
-
-  function getMeta(metaName) {
-    var metas = document.getElementsByTagName('meta');
-    for (let i = 0; i < metas.length; i++) {
-      if (metas[i].getAttribute('name') === metaName) {
-        return metas[i].getAttribute('content');
-      }
-    }
-    return '';
-  }
-
-  function offsetURL(url) {
-    var offset = getMeta('distill:offset');
-    return offset ? offset + '/' + url : url;
-  }
-
-  function createFuseIndex() {
-
-    // create fuse index
-    var options = {
-      keys: [
-        { name: 'title', weight: 20 },
-        { name: 'categories', weight: 15 },
-        { name: 'description', weight: 10 },
-        { name: 'contents', weight: 5 },
-      ],
-      ignoreLocation: true,
-      threshold: 0
-    };
-    var fuse = new window.Fuse([], options);
-
-    // fetch the main search.json
-    return fetch(offsetURL('search.json'))
-      .then(function(response) {
-        if (response.status == 200) {
-          return response.json().then(function(json) {
-            // index main articles
-            json.articles.forEach(function(article) {
-              fuse.add(article);
-            });
-            // download collections and index their articles
-            return Promise.all(json.collections.map(function(collection) {
-              return fetch(offsetURL(collection)).then(function(response) {
-                if (response.status === 200) {
-                  return response.json().then(function(articles) {
-                    articles.forEach(function(article) {
-                      fuse.add(article);
-                    });
-                  })
-                } else {
-                  return Promise.reject(
-                    new Error('Unexpected status from search index request: ' +
-                              response.status)
-                  );
-                }
-              });
-            })).then(function() {
-              return fuse;
-            });
-          });
-
-        } else {
-          return Promise.reject(
-            new Error('Unexpected status from search index request: ' +
-                        response.status)
-          );
-        }
-      });
-  }
-
-  window.document.addEventListener("DOMContentLoaded", function (event) {
-
-    // get search element (bail if we don't have one)
-    var searchEl = window.document.getElementById('distill-search');
-    if (!searchEl)
-      return;
-
-    createFuseIndex()
-      .then(function(fuse) {
-
-        // make search box visible
-        searchEl.classList.remove('hidden');
-
-        // initialize autocomplete
-        var options = {
-          autoselect: true,
-          hint: false,
-          minLength: 2,
-        };
-        window.autocomplete(searchEl, options, [{
-          source: function(query, callback) {
-            const searchOptions = {
-              isCaseSensitive: false,
-              shouldSort: true,
-              minMatchCharLength: 2,
-              limit: 10,
-            };
-            var results = fuse.search(query, searchOptions);
-            callback(results
-              .map(function(result) { return result.item; })
-            );
-          },
-          templates: {
-            suggestion: function(suggestion) {
-              var img = suggestion.preview && Object.keys(suggestion.preview).length > 0
-                ? `<img src="${offsetURL(suggestion.preview)}"</img>`
-                : '';
-              var html = `
-                <div class="search-item">
-                  <h3>${suggestion.title}</h3>
-                  <div class="search-item-description">
-                    ${suggestion.description || ''}
-                  </div>
-                  <div class="search-item-preview">
-                    ${img}
-                  </div>
-                </div>
-              `;
-              return html;
-            }
-          }
-        }]).on('autocomplete:selected', function(event, suggestion) {
-          window.location.href = offsetURL(suggestion.path);
-        });
-        // remove inline display style on autocompleter (we want to
-        // manage responsive display via css)
-        $('.algolia-autocomplete').css("display", "");
-      })
-      .catch(function(error) {
-        console.log(error);
-      });
-
-  });
-
-  </script>
-
-  <style type="text/css">
-
-  .nav-search {
-    font-size: x-small;
-  }
-
-  /* Algolioa Autocomplete */
-
-  .algolia-autocomplete {
-    display: inline-block;
-    margin-left: 10px;
-    vertical-align: sub;
-    background-color: white;
-    color: black;
-    padding: 6px;
-    padding-top: 8px;
-    padding-bottom: 0;
-    border-radius: 6px;
-    border: 1px #0F2E3D solid;
-    width: 180px;
-  }
-
-
-  @media screen and (max-width: 768px) {
-    .distill-site-nav .algolia-autocomplete {
-      display: none;
-      visibility: hidden;
-    }
-    .distill-site-nav.responsive .algolia-autocomplete {
-      display: inline-block;
-      visibility: visible;
-    }
-    .distill-site-nav.responsive .algolia-autocomplete .aa-dropdown-menu {
-      margin-left: 0;
-      width: 400px;
-      max-height: 400px;
-    }
-  }
-
-  .algolia-autocomplete .aa-input, .algolia-autocomplete .aa-hint {
-    width: 90%;
-    outline: none;
-    border: none;
-  }
-
-  .algolia-autocomplete .aa-hint {
-    color: #999;
-  }
-  .algolia-autocomplete .aa-dropdown-menu {
-    width: 550px;
-    max-height: 70vh;
-    overflow-x: visible;
-    overflow-y: scroll;
-    padding: 5px;
-    margin-top: 3px;
-    margin-left: -150px;
-    background-color: #fff;
-    border-radius: 5px;
-    border: 1px solid #999;
-    border-top: none;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion {
-    cursor: pointer;
-    padding: 5px 4px;
-    border-bottom: 1px solid #eee;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion:last-of-type {
-    border-bottom: none;
-    margin-bottom: 2px;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item {
-    overflow: hidden;
-    font-size: 0.8em;
-    line-height: 1.4em;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item h3 {
-    font-size: 1rem;
-    margin-block-start: 0;
-    margin-block-end: 5px;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-description {
-    display: inline-block;
-    overflow: hidden;
-    height: 2.8em;
-    width: 80%;
-    margin-right: 4%;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-preview {
-    display: inline-block;
-    width: 15%;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-preview img {
-    height: 3em;
-    width: auto;
-    display: none;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-preview img[src] {
-    display: initial;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion.aa-cursor {
-    background-color: #eee;
-  }
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion em {
-    font-weight: bold;
-    font-style: normal;
-  }
-
-  </style>
-
-
   <!--/radix_placeholder_navigation_in_header-->
   <!--radix_placeholder_distill-->
 
@@ -2070,414 +1468,347 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </script>
 
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
-  <script src="site_libs/popper-2.6.0/popper.min.js"></script>
-  <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
-  <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
-  <script src="site_libs/tippy-6.2.7/tippy.umd.min.js"></script>
-  <script src="site_libs/anchor-4.2.2/anchor.min.js"></script>
-  <script src="site_libs/bowser-1.9.3/bowser.min.js"></script>
-  <script src="site_libs/webcomponents-2.0.0/webcomponents.js"></script>
-  <script src="site_libs/distill-2.2.21/template.v2.js"></script>
+  <script src="bisnis-agribisnis_files/header-attrs-2.14/header-attrs.js"></script>
+  <script src="bisnis-agribisnis_files/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+  <script src="bisnis-agribisnis_files/popper-2.6.0/popper.min.js"></script>
+  <link href="bisnis-agribisnis_files/tippy-6.2.7/tippy.css" rel="stylesheet" />
+  <link href="bisnis-agribisnis_files/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
+  <script src="bisnis-agribisnis_files/tippy-6.2.7/tippy.umd.min.js"></script>
+  <script src="bisnis-agribisnis_files/anchor-4.2.2/anchor.min.js"></script>
+  <script src="bisnis-agribisnis_files/bowser-1.9.3/bowser.min.js"></script>
+  <script src="bisnis-agribisnis_files/webcomponents-2.0.0/webcomponents.js"></script>
+  <script src="bisnis-agribisnis_files/distill-2.2.21/template.v2.js"></script>
   <!--radix_placeholder_site_in_header-->
-  <style type="text/css">
-  .distill-site-nav {
-    color: white;
-    background-color: #66cdaa;
-  }
-
-  .posts-with-sidebar .posts-sidebar {
-    float: right;
-    width: 10%;    
-    margin-top: 60px;
-    padding-top: 24px;
-    padding-bottom: 24px;
-  }
-
-  .posts-with-sidebar .posts-list {
-    width: 67%;
-    margin-left: 10%;
-  }
-
-  .posts-sidebar {
-    font-size: 75%;
-    margin-right: 10%;
-  }
-
-  p a, aside a, li a, d-appendix a, a.footnote-backlink, table a {
-      color: #3366BB;
-      display: inline-block;
-      text-decoration: none;
-      transition: background-size .4s ease;
-      border-bottom: 0px solid;
-  }
-
-  .obj {
-    border: 2px #66cdaa;
-    border-style: solid;
-    padding: 1em;
-    margin: 1em 0;
-    min-height: 120px;
-    /*color: #638f9d;*/
-    color: #002855;
-    background-color: #ffffff;
-    font-size: 16px;
-    line-height: 1em;
-    font-family: "Roboto";
-    /*background-image: url("../images/arrow.png");*/
-  }
-
-  .obj>p:first-child {
-    padding-top: 0;
-    margin-top: 0 !important;
-    font-family: "Lora";
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-  }
-
-  </style>
   <!--/radix_placeholder_site_in_header-->
 
-  <link rel="stylesheet" href="styles.css" type="text/css"/>
 
 </head>
 
-<body class="layout-listing">
+<body>
 
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Materi","description":"Some additional details about the blog","authors":[]}
+{"title":"Bisnis Agribisnis","description":"Peran Manajemen Agribisnis","authors":[{"author":"Tedy Herlambang","authorURL":"https://bangtedy.github.io","affiliation":"&nbsp;","affiliationURL":"#","orcidID":"0000-0002-7296-4357"}],"publishedDate":"2022-06-02T00:00:00.000+07:00","citationText":"Herlambang, 2022"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
 <!--radix_placeholder_navigation_before_body-->
-<header class="header header--fixed" role="banner">
-<nav class="distill-site-nav distill-site-header">
-<div class="nav-left">
-<a href="index.html" class="title">Wabis</a>
-<input id="distill-search" class="nav-search hidden" type="text" placeholder="Search..."/>
-</div>
-<div class="nav-right">
-<a href="about.html">Sekilas</a>
-<a href="index.html">Materi</a>
-<div class="nav-dropdown">
-<button class="nav-dropbtn">
-Tugas
- 
-<span class="down-arrow">&#x25BE;</span>
-</button>
-<div class="nav-dropdown-content">
-<a href="tugas/tn-mangga.html">Tataniaga Mangga</a>
-</div>
-</div>
-<a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
-</div>
-</nav>
-</header>
 <!--/radix_placeholder_navigation_before_body-->
 <!--radix_placeholder_site_before_body-->
 <!--/radix_placeholder_site_before_body-->
-<!--radix_placeholder_article_listing-->
-
-
-<script type="application/javascript">
-
-function init_posts_list() {
-
-  function load_image(img) {
-    var src = $(img).attr('data-src');
-    if (src) {
-      $(img).attr('src', src);
-      $(img).on("load", function() {
-        img.removeAttribute('data-src');
-      });
-    }
-  }
-
-  function set_posts_visible(posts, visible) {
-    if (visible) {
-
-      // show bottom border by default
-      $(posts).removeClass('post-preview-last');
-
-      // apply limits if need be
-      var max_posts = 25;
-      var apply_limits = $('.posts-container').hasClass('posts-apply-limit');
-      if (apply_limits && posts.length > max_posts) {
-        posts = $(posts).slice(0, max_posts);
-      } else {
-        $('.posts-more a').addClass('hidden');
-      }
-
-      // apply last style
-      $(posts.slice(-1)[0]).addClass('post-preview-last');
-
-      $(posts).removeClass('hidden');
-      $(posts).find('img[data-src]').each(function(i, img) {
-        load_image(img);
-      });
-    } else {
-      $(posts).addClass('hidden');
-    }
-  }
-
-  function apply_hash_filter() {
-
-    // clear active state
-    $('.categories .active').removeClass('active');
-
-    // mark all posts invisible to start
-    set_posts_visible($('.posts-list').children('a'), false);
-
-    // if we have a hash filter
-    if (window.location.hash && window.location.hash.startsWith("#category:")) {
-
-      // mark posts that match the category visible
-      var page_category = window.location.hash.replace(/^#category:/, "");
-      page_category = decodeURIComponent(page_category)
-      var posts = $('.post-metadata').map(function(idx, script) {
-        var metadata = $.parseJSON($(script).html());
-        var post = null;
-        $.each(metadata.categories, function(idx, category) {
-          category = category.replace(/ /g,"_");
-          if ((page_category || '').toLowerCase() === "articles" || category === page_category) {
-            post = $(script).parent().get();
-            return false;
-          }
-        });
-        return post;
-      });
-      set_posts_visible(posts, true);
-
-      // mark the hash active
-      $('.categories li>a[href="' + decodeURIComponent(window.location.hash) + '"]').addClass('active');
-
-      // update the list_caption
-      var list_caption = $('.posts-list-caption');
-      var caption = (page_category || '').toLowerCase() === "articles"
-        ? list_caption.attr('data-caption')
-        : ('Category: ' + page_category.replace(/_/g," "));
-      list_caption.text(caption);
-
-    } else {
-
-      // no hash filter, make all posts visible (subject to max display)
-      set_posts_visible($('.posts-list').children(), true);
-
-      // reset list caption
-      var list_caption = $('.posts-list-caption');
-      list_caption.text(list_caption.attr('data-caption'));
-
-
-    }
-  }
-
-  // more articles
-  function apply_post_limits(apply) {
-    if (apply) {
-      $('.posts-container').addClass('posts-apply-limit');
-      $('.posts-more a').removeClass('hidden');
-    } else {
-      $('.posts-container').removeClass('posts-apply-limit');
-      $('.posts-more a').addClass('hidden');
-    }
-  }
-
-  // click handling for tags
-  $('.dt-tag').click(function(ev) {
-    window.location.hash = '#category:' + $(this).text().replace(/ /g, "_");
-    return false;
-  })
-
-  // hash filter handling
-  apply_hash_filter();
-  $(window).on('hashchange',function() {
-    apply_post_limits(true);
-    apply_hash_filter();
-  });
-
-  // more articles link
-  $('.posts-more a').click(function(e) {
-    e.preventDefault();
-    apply_post_limits(false);
-    apply_hash_filter();
-    return false;
-  });
-
-}
-
-</script>
-
-
-
-<div class="posts-container posts-with-sidebar posts-apply-limit l-screen-inset">
-<div class="posts-list">
-<h1 class="posts-list-caption" data-caption="Materi">Materi</h1>
-<a href="posts/minggu-5/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["Materi"]}</script>
-<div class="metadata">
-<div class="publishedDate">May 19, 2022</div>
-<div class="dt-authors">
-<div class="dt-author">Tedy Herlambang</div>
-</div>
-</div>
-<div class="thumbnail">
-<img/>
-</div>
-<div class="description">
-<h2>Subsistem Pemasaran</h2>
-<div class="dt-tags">
-<div class="dt-tag">Materi</div>
-</div>
-<p>Sistem Agribisnis (4).</p>
-</div>
-</a>
-<a href="posts/2022-04-13-subsistem-pembinaan/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["Materi"]}</script>
-<div class="metadata">
-<div class="publishedDate">April 13, 2022</div>
-<div class="dt-authors">
-<div class="dt-author">Tedy Herlambang</div>
-</div>
-</div>
-<div class="thumbnail">
-<img/>
-</div>
-<div class="description">
-<h2>Subsistem Pembinaan</h2>
-<div class="dt-tags">
-<div class="dt-tag">Materi</div>
-</div>
-<p>Sistem Agribisnis (6)</p>
-</div>
-</a>
-<a href="posts/2022-04-13-subsistem-sarana-prasarana/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["Materi"]}</script>
-<div class="metadata">
-<div class="publishedDate">April 13, 2022</div>
-<div class="dt-authors">
-<div class="dt-author">Tedy Herlambang</div>
-</div>
-</div>
-<div class="thumbnail">
-<img/>
-</div>
-<div class="description">
-<h2>Subsistem Prasarana</h2>
-<div class="dt-tags">
-<div class="dt-tag">Materi</div>
-</div>
-<p>Sistem Agribisnis (5)</p>
-</div>
-</a>
-<a href="posts/minggu-4/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["Materi"]}</script>
-<div class="metadata">
-<div class="publishedDate">March 30, 2022</div>
-<div class="dt-authors">
-<div class="dt-author">Tedy Herlambang</div>
-</div>
-</div>
-<div class="thumbnail">
-<img/>
-</div>
-<div class="description">
-<h2>Subsistem Pengolahan Hasil</h2>
-<div class="dt-tags">
-<div class="dt-tag">Materi</div>
-</div>
-<p>Sistem Agribisnis (3)</p>
-</div>
-</a>
-<a href="posts/minggu-3/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["Materi"]}</script>
-<div class="metadata">
-<div class="publishedDate">March 23, 2022</div>
-<div class="dt-authors">
-<div class="dt-author">Tedy Herlambang</div>
-</div>
-</div>
-<div class="thumbnail">
-<img/>
-</div>
-<div class="description">
-<h2>Subsistem Penyediaan Faktor Produksi</h2>
-<div class="dt-tags">
-<div class="dt-tag">Materi</div>
-</div>
-<p>Sistem Agribisnis (2)</p>
-</div>
-</a>
-<a href="posts/minggu-2/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["Materi"]}</script>
-<div class="metadata">
-<div class="publishedDate">March 17, 2022</div>
-<div class="dt-authors">
-<div class="dt-author">Tedy Herlambang</div>
-</div>
-</div>
-<div class="thumbnail">
-<img/>
-</div>
-<div class="description">
-<h2>Subsistem Produksi/Budidaya</h2>
-<div class="dt-tags">
-<div class="dt-tag">Materi</div>
-</div>
-<p>Sistem Agribisnis (1)</p>
-</div>
-</a>
-<a href="posts/minggu-1/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["Materi"]}</script>
-<div class="metadata">
-<div class="publishedDate">March 10, 2022</div>
-<div class="dt-authors">
-<div class="dt-author">Tedy Herlambang</div>
-</div>
-</div>
-<div class="thumbnail">
-<img/>
-</div>
-<div class="description">
-<h2>Agribisnis: Sistem dan Manajemen</h2>
-<div class="dt-tags">
-<div class="dt-tag">Materi</div>
-</div>
-<p>Pengantar ke Wawasan Agribisnis</p>
-</div>
-</a>
-</div>
-<div class="posts-sidebar">
-<div class="sidebar-section categories">
-<h3>Categories</h3>
-<ul>
-<li>
-<a href="#category:Articles">Articles</a>
-<span class="category-count">(7)</span>
-</li>
-<li>
-<a href="#category:Materi">Materi</a>
-<span class="category-count">(7)</span>
-</li>
-</ul>
-</div>
-</div>
-<div class="posts-more">
-<a href="#">More articles &raquo;</a>
-</div>
-</div>
-<!--/radix_placeholder_article_listing-->
 
 <div class="d-title">
-<h1>Materi</h1>
+<h1>Bisnis Agribisnis</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
-<p><p>Some additional details about the blog</p></p>
+<p><p>Peran Manajemen Agribisnis</p></p>
 </div>
 
+<div class="d-byline">
+  Tedy Herlambang <a href="https://bangtedy.github.io"
+class="uri">https://bangtedy.github.io</a> 
+  
+<br/>2022-06-02
+</div>
 
 <div class="d-article">
+<div class="d-contents d-contents-float">
+<nav class="l-text toc figcaption" id="TOC">
+<h3>Contents</h3>
+<ul>
+<li><a href="#tujuan-pembelajaran">Tujuan Pembelajaran</a></li>
+<li><a href="#pendahuluan">Pendahuluan</a></li>
+<li><a href="#sistem-produksi-dan-pemasaran">Sistem Produksi dan
+Pemasaran</a></li>
+<li><a href="#the-key-functions-of-management-in-agribusiness">The key
+functions of management in agribusiness</a>
+<ul>
+<li><a href="#manajemen-pemasaran-marketing-management">Manajemen
+Pemasaran (<em>marketing management</em>)</a></li>
+<li><a href="#financial-management">Financial management</a></li>
+<li><a href="#supply-chain-management">Supply chain management</a></li>
+<li><a href="#human-resources-management">Human resources
+management</a></li>
+<li><a
+href="#unique-dimensions-of-the-food-and-agribusiness-markets">Unique
+dimensions of the food and agribusiness markets</a></li>
+</ul></li>
+</ul>
+</nav>
+</div>
+<h2 id="tujuan-pembelajaran">Tujuan Pembelajaran</h2>
+<p>Setelah mempelajari materi ini, Mahasiswa diharapkan dapat:</p>
+<ul>
+<li>Menjelaskan peran manajemen di dalam agribisnis</li>
+<li>Menjelaskan tanggung jawab fungsional dari manajemen</li>
+<li>Menjelaskan karakteristik unik dari industri pangan dan
+agribisnis</li>
+<li>Menjelaskan cakupan dan pentingnya sistem produksi dan pemasaran
+pangan</li>
+</ul>
+<p><br /></p>
+<h2 id="pendahuluan">Pendahuluan</h2>
+<ul>
+<li>It is exciting and diverse.</li>
+<li>It is changing quickly.</li>
+<li>It relies on the weather, uses an incredible array of technology, is
+tied in every way to our natural resources, and embraces the world.</li>
+<li>If you eat, you are involved in it as a consumer of its final
+products.</li>
+<li>If you farm, you are involved in it as a producer of the raw
+materials that ultimately make their way to the end consumer.</li>
+<li>It is the extremely efficient, very complex, global, food and fiber
+production and marketing system.</li>
+<li>Apa lagi…?</li>
+</ul>
+<h2 id="sistem-produksi-dan-pemasaran">Sistem Produksi dan
+Pemasaran</h2>
+<ul>
+<li><p>Made up of thousands of <em>partisipan</em> dari hulu sampai
+hilir, dari petani-petani di Sumber sampai para konsumen di Surabaya,
+Jakarta dll.</p></li>
+<li><p>It is management that drives and directs the firms, farms, and
+food companies that come together in the food production and marketing
+system.</p></li>
+<li><p>A retail supermarket, pabrik makanan dan minuman, toko saprotan,
+keluarga petani: each have a person or a group of people responsible for
+making sure that things get done.</p></li>
+<li><p><strong>These are the managers</strong>.</p></li>
+<li><p>Managers are responsible for assuring successful completion of
+the functions, tasks, and activities that will determine an
+organization’s success.</p></li>
+</ul>
+<h2 id="the-key-functions-of-management-in-agribusiness">The key
+functions of management in agribusiness</h2>
+<ul>
+<li><p>The responsibilities of managers in agribusiness are highly
+varied and can range from ordering inputs for the year ahead, to hiring
+and firing individuals, to making the decision to sell a multi-billion
+dollar international subsidiary.</p></li>
+<li><p>A chief executive officer, for instance, is responsible for the
+overall activities of a large, diversified food or agribusiness
+firm.</p></li>
+<li><p>In such firms, teams of managers are likely responsible for
+specialized areas within the firm.</p></li>
+<li><p>On a smaller farm business, one individual may assume roles
+ranging from chief executive officer, to manager, to labourer, managing
+multiple projects at different levels simultaneously.</p></li>
+<li><p>The practice of management can be broken down into four key
+functions:</p>
+<ul>
+<li>Marketing management</li>
+<li>Financial management</li>
+<li>Supply chain management</li>
+<li>Human resource management</li>
+</ul></li>
+</ul>
+<h3 id="manajemen-pemasaran-marketing-management">Manajemen Pemasaran
+(<em>marketing management</em>)</h3>
+<ul>
+<li><strong>Marketing</strong> focuses on the process by which products
+flow through the food system from producer to final consumer.</li>
+<li>It involves the physical and economic activities performed in moving
+products from the initial producer through intermediaries to the final
+consumer.</li>
+<li><strong>Marketing management</strong> involves understanding
+customer needs and effectively positioning and selling products and
+services in the marketplace.</li>
+<li>Marketing management represents an integration of several different
+activities: selling, advertising, web page design, promotions, marketing
+research, new-product development, customer service, and pricing</li>
+<li>All focused on customer needs, wants, and, ultimately, the quest for
+customer satisfaction.</li>
+<li>Marketing management is focused on careful and planned execution of
+how, why, where, when and who sells a product or service and to whom it
+is sold.</li>
+<li>Decisions here include what products to produce, what services to
+offer, what information to provide, what price to charge, how to promote
+the product, and how to distribute the product.</li>
+</ul>
+<h3 id="financial-management">Financial management</h3>
+<ul>
+<li>Profit is the driver for agribusinesses as they work to generate the
+greatest possible returns from their resources.</li>
+<li>Successful achievement of this objective means making good
+decisions, and it means carefully managing the financial resources of
+the firm.</li>
+<li>Financial management is involved in these areas and includes
+generating the data needed to make good decisions, using the tools of
+finance to make effective decisions, and managing the assets,
+liabilities, and owner’s investment in the firm.</li>
+<li>Financial information allows managers to understand the current
+“health” of the firm as well as to determine what actions the business
+might take to improve or grow.</li>
+<li>Balance sheets and income statements can provide a wealth of
+information useful in making decisions.</li>
+<li>Financial analysis provides agribusiness managers with insights by
+which to better base decisions.
+<ul>
+<li>The tools of finance such as budgeting, ratio analysis, financial
+forecasting, and breakeven analysis can be used by agribusiness managers
+to develop long-range plans and make short-run operating decisions.</li>
+</ul></li>
+</ul>
+<h3 id="supply-chain-management">Supply chain management</h3>
+<ul>
+<li>The push for quality, the drive for lower costs, changes in the
+supply chain, and general pressures to be more efficient in meeting
+consumer demands are swiftly altering the production and distribution
+activities of agribusiness.</li>
+<li>Supply chain management focuses on these areas and provides the
+tools managers need to meet these operations and logistical challenges.
+<ul>
+<li>As a result, supply chain management has come to the forefront as a
+key management function for the agribusiness manager.</li>
+</ul></li>
+<li>Operations management focuses on the direction and the control of
+the processes used to produce the goods and services that we buy and use
+each day.
+<ul>
+<li>Managers must worry about issues of scheduling, controlling,
+storing, and shipping as the product moves from the producer’s truck to
+the supermarket.</li>
+</ul></li>
+<li>Logistics management involves the set of activities around storing
+and transporting goods and services.</li>
+<li>Shipping and inventory costs are huge costs of doing business for
+many food and agribusiness firms.</li>
+<li>The logistics management function is focused on new ways to lower
+these costs, by finding better ways to ship and store product.</li>
+<li>Successful agribusinesses are those who consistently produce faster,
+better, and cheaper.</li>
+<li>Effective supply chain management will continue to be crucial in the
+successful execution of any strategic plan for agribusiness firms.</li>
+<li>Quicker response to consumer needs, faster delivery times, shorter
+product development cycles and more rapid recovery after service
+problems are all components of time-based advantage in supply chain
+management.</li>
+</ul>
+<h3 id="human-resources-management">Human resources management</h3>
+<ul>
+<li>In the end, management is about people.</li>
+<li>Without the ability to manage the human element —the resources each
+business has in its employees — businesses do not succeed.</li>
+<li>When combining efficient management of the marketing/finance/supply
+chain functions of the business, with the thoughtful management of the
+human side of the business, managers are on the road to successful
+implementation of their strategy.</li>
+<li>Agribusiness managers who can manage people well can signifi cantly
+impact both productivity and financial success.</li>
+<li>Human resources management encompasses managing two areas:
+<ul>
+<li>the mechanics of the personnel administration, and the finer points
+of motivating people to offer and contribute their maximum
+potential.</li>
+</ul></li>
+<li>Decisions here include how to organize the firm, where to find
+people, how to hire them, how to compensate them and how to evaluate
+them.</li>
+<li>Today’s lean agribusiness firms continue to demand more performance
+from their managers, sales force, and service and support
+personnel.</li>
+<li>These types of demands will require agribusinesses to hire
+individuals with greater initial skills as well as with the ability to
+grow into different jobs throughout the course of their careers.</li>
+<li>Agribusinesses will need to be flexible while providing continuing
+education and development of key skills. Some examples of such skills
+are general business, negotiation, problem-solving, technical,
+information management, and communication.</li>
+<li>Recognition of raw ability, and then development and fine-tuning
+these skills and abilities will be the human resource challenge.</li>
+</ul>
+<h3 id="unique-dimensions-of-the-food-and-agribusiness-markets">Unique
+dimensions of the food and agribusiness markets</h3>
+<h4 id="food-as-a-product.">Food as a product.</h4>
+<ul>
+<li>Food is vital to the survival and health of every individual.</li>
+<li>Food is one of the most fundamental needs of humans, and provides
+the foundation for economic development — nations first worry about
+feeding their people before turning their attention to higher order
+needs.</li>
+<li>For these reasons, food is considered a critical component of
+national security.</li>
+</ul>
+<h4 id="biological-nature-of-production-agriculture.">Biological nature
+of production agriculture.</h4>
+<ul>
+<li>Both crops and livestock are biological organisms — living things.
+The biological nature of crops and livestock makes them particularly
+susceptible to forces beyond human control.</li>
+<li>The variances and extremes of weather, pests, disease, and weeds
+exemplify factors that greatly impact production.</li>
+<li>In many cases, little can be done to affect them outright.</li>
+</ul>
+<h4 id="seasonal-nature-of-business.">Seasonal nature of business.</h4>
+<ul>
+<li><p>Partly as a result of the biological nature of food production,
+firms in the food and agribusiness markets can face highly seasonal
+business situations.</p></li>
+<li><p>Sometimes this seasonality is supply driven — massive amounts of
+potatoes, tomatoes and mangoes are harvested.</p></li>
+<li><p>Sometimes this seasonality is demand driven — the market for ice
+cream has a series of seasonal peaks and valleys, as do the markets for
+blewah or semangka.</p></li>
+<li><p>Such ebbs and flows in supply and demand create special problems
+for food and agribusiness managers.</p></li>
+</ul>
+<h4 id="uncertainty-of-the-weather.">Uncertainty of the weather.</h4>
+<ul>
+<li>Food and agribusiness firms must deal with the vagaries of
+nature.</li>
+<li>Drought, flood, insects, and disease are a constant threat for most
+agribusinesses.</li>
+<li>All market participants, from the banker to the crop production
+chemical manufacturer are concerned with the weather.</li>
+</ul>
+<h4 id="types-of-firms">Types of firms</h4>
+<ul>
+<li>There is tremendous variety across the types of businesses in the
+food and agribusiness sectors.</li>
+<li>From farmers to transportation firms, brokers, wholesalers,
+processors, manufacturers, storage firms, mining firms, financial
+institutions, retailers, food chains, and restaurants — the list is
+almost endless.</li>
+<li>Following sebutir kentang from the time it is seed prepared for
+shipment to the farmer until its placement on the retail grocer’s shelf
+involves numerous types of business enterprises.</li>
+</ul>
+<h4 id="variety-of-market-conditions.">Variety of market
+conditions.</h4>
+<ul>
+<li>The wide range of firm types and the risk characteristics of the
+food and agribusiness markets have led to an equally wide range of
+market structures.</li>
+<li>Padi, bawang merah, kentang, kubis, berbagai jenis buah-buahan –&gt;
+find themselves in an almost textbook case of the perfectly competitive
+market where individual sellers have almost no influence over
+price.</li>
+<li>At the same time, daging dan telur ayam, susu–&gt; have a literal
+monopolistics competition??</li>
+</ul>
+<h4 id="rural-ties">Rural ties</h4>
+<ul>
+<li>Many agribusiness firms are located in small towns and rural
+areas.</li>
+<li>As such, food and agribusiness are likely the backbone of the rural
+economy and have a very important role in rural economic
+development.</li>
+</ul>
+<h4 id="government-involvement">Government involvement</h4>
+<ul>
+<li>Due to almost every other factor raised above, the government has a
+fundamental role in food and agribusiness.</li>
+<li>Some government programs influence commodity prices and farm
+income.</li>
+<li>Others are intended to protect the health of the consumer through
+safe food and better nutrition information.</li>
+<li>Still other policies regulate the use of crop protection chemicals,
+and affect how livestock producers handle animal waste.</li>
+<li>Tariffs and quotas impact international trade.</li>
+<li>The government, through policies and regulations, has a pervasive
+impact on the job of the food and agribusiness manager.</li>
+</ul>
 <div class="sourceCode" id="cb1"><pre
 class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
@@ -2491,10 +1822,7 @@ class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"><
 <!--radix_placeholder_site_after_body-->
 <!--/radix_placeholder_site_after_body-->
 <!--radix_placeholder_appendices-->
-<div class="appendix-bottom">
-<h3 id="updates-and-corrections">Corrections</h3>
-<p>If you see mistakes or want to suggest changes, please <a href="https://github.com/bangtedy/wabis/issues/new">create an issue</a> on the source repository.</p>
-</div>
+<div class="appendix-bottom"></div>
 <!--/radix_placeholder_appendices-->
 <!--radix_placeholder_navigation_after_body-->
 <!--/radix_placeholder_navigation_after_body-->

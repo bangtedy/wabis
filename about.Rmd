@@ -44,13 +44,13 @@ ujian tengah semester (**UTS**) dan ujian akhir semester (**UAS**). Topik-topik 
 * Minggu 6 Sistem Agribisnis: Subsistem Sarana Prasarana
 * Minggu 7 Sistem Agribisnis: Subsistem Pembinaan
 * Minggu 8 **UJIAN TENGAH SEMESTER**
-* Minggu 9 Lingkungan Organisasi dan Kompetisi Agribisnis 
-* Minggu 10 Lingkungan Global dan Etika Agribisnis
-* Minggu 11 Pengorganisasian Agribisnis
-* Minggu 12 Kepemimpinan Agribisnis
-* Minggu 13 Manajemen Rantai Pasok Agribisnis
-* Minggu 14 Manajemen Pemasaran Agribisnis
-* Minggu 15 Manajemen Risiko Agribisnis
+* Minggu 9 Bisnis dalam Agribisnis 
+* Minggu 10 Mengelola Agribisnis
+* Minggu 11 Ilmu Ekonomi untuk Manajer Agribisnis
+* Minggu 12 Manajemen Pemasaran untuk Agribisnis
+* Minggu 13 Manajemen Keuangan untuk Agribisnis
+* Minggu 14 Manajemen Operasi untuk Agribisnis
+* Minggu 15 Manajemen Sumber Daya Manusia untuk Agribisnis
 * Minggu 16 **UJIAN AKHIR SEMESTER**
 
 :::
