@@ -10,6 +10,7 @@ date: '2022-06-09'
 output:
   distill::distill_article:
     self_contained: false
+    toc: true
 ---
 
 ```{r setup, include=FALSE}
@@ -44,12 +45,12 @@ achieve the performance objectives of the ﬁrm’s owners.
 - Managers deploy resources to take advantage of fortunate circumstances or to minimize the fallout from unlucky ones. 
 - Managers drive performance in agribusiness ﬁrms.
 
-#### How do agribusiness managers actually accomplish their task?
+## How do agribusiness managers actually accomplish their task?
 
 - Perhaps a few individuals are “born managers,” but managing is not innate to most people. 
 - For most of us, managing is a learned skill.
 
-### Apakah manajemen itu?
+## Apakah manajemen itu?
 
 - Management is both an art and a science. 
 - Managers must efﬁciently combine available human, ﬁnancial, and physical assets to maximize the long-run proﬁts of an operation by proﬁtably satisfying its customer’s demands. 
@@ -58,39 +59,39 @@ achieve the performance objectives of the ﬁrm’s owners.
   + The ability to motivate people is also essential. 
   + They must be proﬁcient in the technical skills of management such as accounting, ﬁnance, forecasting, and so on. 
 
-### Bagaimanakah dengan Manajemen Agribisnis?
+## Bagaimanakah dengan Manajemen Agribisnis?
 
 - In addition to a strong background in management, agribusiness managers need a strong understanding of the biological and institutional factors surrounding the production of food and ﬁber.
 - Not only must they excel at the normal concerns of business management, agribusiness managers must also factor in the uncertainty of the weather, the perishable nature of many of agriculture’s products, government policies, and the rapidly changing technology employed in agriculture. 
 - They must possess the ability to quickly adapt to changes in market conditions that result from changes in these uncertain factors of weather, product perishability, government policies, technology, etc. 
 - Managers must be able to mix each of these skills and perspectives in the right proportion to deliver the greatest long-run net beneﬁt for the ﬁrm. 
 
-### Kata-Kata Kunci Manajemen
+## Kata-Kata Kunci Manajemen
 
 - Management  is the *art and science* of *successfully* pursuing desired results with the *resources available* to the organization.
 
-#### Art and science 
+### Art and science 
 
 - Because management deals largely with people, management principles must be viewed as imperfect, at best.
 
-#### Successful
+### Successful
 - Whatever else good management is, it must be successful in meeting desired and predetermined goals or results. 
 - Managers must know where they are headed in order to achieve such success.
 
-#### Resources available
+### Resources available
 - Each organization possesses or has at its command a variety of resources — ﬁnancial, human, facilities, equipment, patents, and so on. 
 - Successful managers coax the highest potential returns from the resources available. - They recognize the difference between what should be and what is. 
 - At the same time, they know how to expand the ﬁrm’s resource base when resource constraints hamper potential. 
 
 **A manager can be deﬁned as that person who provides the organization with leadership and who acts as a catalyst for change**
 
-### Keunikan-Keunikan Manajemen Agribisnis
+## Keunikan-Keunikan Manajemen Agribisnis
 
 - In many ways, management principles and concepts are the same for any business. 
 - Both the largest business in the country and the smallest one-person agribusiness are guided by the same general principles. 
 - The differences between managing large and small businesses, between agribusinesses and other kinds of businesses, rests in the art of applying fundamental management principles to the speciﬁc situation facing the business.
 
-#### 8 keunikan lingkungan manajemen agribisnis:
+## 8 keunikan lingkungan manajemen agribisnis:
 
 1. Food as a product 
 2. Biological nature of production agriculture 
@@ -103,7 +104,7 @@ achieve the performance objectives of the ﬁrm’s owners.
 
 **Agribusiness is unique, and requires that the agribusiness manager use the principles of management in a distinct way** 
 
-#### The four key tasks of agribusiness managers 
+## The four key tasks of agribusiness managers 
 
 ```{r out.width="51%"}
 knitr::include_graphics("roda-manajemen.png")
